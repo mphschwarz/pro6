@@ -1,0 +1,1787 @@
+Cmp-Mod V01 Created by PcbNew   date = Tue 23 Apr 2019 08:45:38 CEST
+
+BeginCmp
+TimeStamp = 59F60AF2
+Path = /58E53A10
+Reference = PM3;
+ValeurCmp = Pin;
+IdModule  = FootprintCst:Pin_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD440FE
+Path = /5AD97F47
+Reference = R44;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44591
+Path = /5AD6387E
+Reference = U37;
+ValeurCmp = ADR3425;
+IdModule  = FootprintCst:SOT-23-6_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4429B
+Path = /59FD1953
+Reference = U1;
+ValeurCmp = FPGA-MAX1000;
+IdModule  = FootprintCst:MAX1000;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44393
+Path = /5AD49ACD
+Reference = U13;
+ValeurCmp = LTC2313;
+IdModule  = FootprintCst:TSOT-23-8_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4369F
+Path = /5ACC3295
+Reference = C14;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43D12
+Path = /59E3D0DD
+Reference = J3;
+ValeurCmp = ~;
+IdModule  = FootprintCst:IDC_Header_Straight_10pins;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD435C2
+Path = /5ACC8069
+Reference = C1;
+ValeurCmp = 4.7uF;
+IdModule  = FootprintCst:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 59F58ED3
+Path = /58E536F3
+Reference = PM1;
+ValeurCmp = Pin;
+IdModule  = FootprintCst:Pin_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 59F60AED
+Path = /58E53919
+Reference = PM2;
+ValeurCmp = Pin;
+IdModule  = FootprintCst:Pin_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5A588AD8
+Path = /58E53AFC
+Reference = PM4;
+ValeurCmp = Pin;
+IdModule  = FootprintCst:Pin_M3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD435D3
+Path = /5ACC8A11
+Reference = C2;
+ValeurCmp = 4.7uF;
+IdModule  = FootprintCst:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD435E4
+Path = /5ACC8160
+Reference = C3;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD435F5
+Path = /5ACCB04A
+Reference = C4;
+ValeurCmp = 47uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43606
+Path = /5ACD7550
+Reference = C5;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43617
+Path = /5ACD76B1
+Reference = C6;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43628
+Path = /5ADA05BE
+Reference = C7;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43639
+Path = /5ADA0846
+Reference = C8;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4364A
+Path = /5AD08BBF
+Reference = C9;
+ValeurCmp = x;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4365B
+Path = /5AD9E05E
+Reference = C10;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4366C
+Path = /5ACC6A03
+Reference = C11;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4367D
+Path = /5ACC6DE2
+Reference = C12;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4368E
+Path = /5ACD13E0
+Reference = C13;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD436B0
+Path = /5AD2F4F5
+Reference = C15;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD436C1
+Path = /5AD49B43
+Reference = C16;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD436D2
+Path = /5AD49B49
+Reference = C17;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD436E3
+Path = /5AD49B25
+Reference = C18;
+ValeurCmp = x;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD436F4
+Path = /5AD49B3D
+Reference = C19;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43705
+Path = /5AD49AF5
+Reference = C20;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43716
+Path = /5AD49AFB
+Reference = C21;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43727
+Path = /5AD49B07
+Reference = C22;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43738
+Path = /5AD49AE9
+Reference = C23;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43749
+Path = /5AD49B37
+Reference = C24;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4375A
+Path = /5AD4D62A
+Reference = C25;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4376B
+Path = /5AD4D630
+Reference = C26;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4377C
+Path = /5AD4D60C
+Reference = C27;
+ValeurCmp = x;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4378D
+Path = /5AD4D624
+Reference = C28;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4379E
+Path = /5AD4D5DC
+Reference = C29;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD437AF
+Path = /5AD4D5E2
+Reference = C30;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD437C0
+Path = /5AD4D5EE
+Reference = C31;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD437D1
+Path = /5AD4D5D0
+Reference = C32;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD437E2
+Path = /5AD4D61E
+Reference = C33;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD437F3
+Path = /5AD53C2F
+Reference = C34;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43804
+Path = /5AD53C29
+Reference = C35;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43815
+Path = /5AD53C4D
+Reference = C36;
+ValeurCmp = x;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43826
+Path = /5AD53C35
+Reference = C37;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43837
+Path = /5AD53C7D
+Reference = C38;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43848
+Path = /5AD53C77
+Reference = C39;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43859
+Path = /5AD53C6B
+Reference = C40;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4386A
+Path = /5AD53C89
+Reference = C41;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4387B
+Path = /5AD53C3B
+Reference = C42;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4388C
+Path = /5AD53B5C
+Reference = C43;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4389D
+Path = /5AD53B56
+Reference = C44;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD438AE
+Path = /5AD53B7A
+Reference = C45;
+ValeurCmp = x;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD438BF
+Path = /5AD53B62
+Reference = C46;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD438D0
+Path = /5AD53BAA
+Reference = C47;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD438E1
+Path = /5AD53BA4
+Reference = C48;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD438F2
+Path = /5AD53B98
+Reference = C49;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43903
+Path = /5AD53BB6
+Reference = C50;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43914
+Path = /5AD53B68
+Reference = C51;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43925
+Path = /5AD53A89
+Reference = C52;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43936
+Path = /5AD53A83
+Reference = C53;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43947
+Path = /5AD53AA7
+Reference = C54;
+ValeurCmp = x;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43958
+Path = /5AD53A8F
+Reference = C55;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43969
+Path = /5AD53AD7
+Reference = C56;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4397A
+Path = /5AD53AD1
+Reference = C57;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4398B
+Path = /5AD53AC5
+Reference = C58;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4399C
+Path = /5AD53AE3
+Reference = C59;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD439AD
+Path = /5AD53A95
+Reference = C60;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD439BE
+Path = /5AD79272
+Reference = C61;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD439CF
+Path = /5AD7925A
+Reference = C62;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD439E0
+Path = /5ADA8FD2
+Reference = C63;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD439F1
+Path = /5ADA8FD8
+Reference = C64;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43A02
+Path = /5ADB75A7
+Reference = C65;
+ValeurCmp = 1nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43A13
+Path = /5AD97FBE
+Reference = C66;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43A24
+Path = /5AD97FA6
+Reference = C67;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43A35
+Path = /5AD97F5A
+Reference = C68;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43A46
+Path = /5AD97F60
+Reference = C69;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43A57
+Path = /5AD97F78
+Reference = C70;
+ValeurCmp = 1nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43A68
+Path = /5AD9DA10
+Reference = C71;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43A79
+Path = /5AD9D9F8
+Reference = C72;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43A8A
+Path = /5AD9D9AC
+Reference = C73;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43A9B
+Path = /5AD9D9B2
+Reference = C74;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43AAC
+Path = /5AD9D9CA
+Reference = C75;
+ValeurCmp = 1nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43ABD
+Path = /5AD60422
+Reference = C76;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43ACE
+Path = /5AD5F2B0
+Reference = C77;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43ADF
+Path = /5AD5BFBC
+Reference = C78;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43AF0
+Path = /5AD3B08B
+Reference = C79;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43B01
+Path = /5AD638A6
+Reference = C80;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43B12
+Path = /5AD638A0
+Reference = C81;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43B23
+Path = /5AD63892
+Reference = C82;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43B34
+Path = /5AD39ECE
+Reference = C83;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43B45
+Path = /5AD80C3F
+Reference = C84;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43B56
+Path = /5AD8A87A
+Reference = C85;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43B67
+Path = /5AD46353
+Reference = C86;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43B78
+Path = /5AD60351
+Reference = C87;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43B89
+Path = /5AD255CE
+Reference = C88;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43B9A
+Path = /5AD8D969
+Reference = C89;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43BAB
+Path = /5AD8D96F
+Reference = C90;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43BBC
+Path = /5ADC14AF
+Reference = C91;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43BCD
+Path = /5ADC14A9
+Reference = C92;
+ValeurCmp = 2.2uF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43BDE
+Path = /5ADC78C7
+Reference = C93;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43BEF
+Path = /5AD315C9
+Reference = C94;
+ValeurCmp = 100nF;
+IdModule  = FootprintCst:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43C68
+Path = /5AD6F832
+Reference = D1;
+ValeurCmp = LED_;
+IdModule  = FootprintCst:LED_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43C7B
+Path = /5AD70C51
+Reference = D2;
+ValeurCmp = LED_;
+IdModule  = FootprintCst:LED_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43C8E
+Path = /5ACBB5EF
+Reference = D3;
+ValeurCmp = LED_;
+IdModule  = FootprintCst:LED_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43CA1
+Path = /5ACB4ADF
+Reference = D4;
+ValeurCmp = LED_;
+IdModule  = FootprintCst:LED_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43CB4
+Path = /5ACB4BC3
+Reference = D5;
+ValeurCmp = LED_;
+IdModule  = FootprintCst:LED_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43CC7
+Path = /5ACB4BC9
+Reference = D6;
+ValeurCmp = LED_;
+IdModule  = FootprintCst:LED_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43CD8
+Path = /5ACD22B3
+Reference = J1;
+ValeurCmp = RND_Terminal_2P;
+IdModule  = FootprintCst:RND_Terminal_2P_381;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43CEC
+Path = /5AD1BD88
+Reference = J2;
+ValeurCmp = RND_Terminal_3P;
+IdModule  = FootprintCst:RND_Terminal_3P_381;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43D56
+Path = /5AD36CFF
+Reference = J4;
+ValeurCmp = CONN_02X20;
+IdModule  = FootprintCst:IDC_Header_Straight_40pins;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43D8D
+Path = /5AD4DC24
+Reference = L1;
+ValeurCmp = 10uH;
+IdModule  = FootprintCst:L_Wuerth_4020_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43D9D
+Path = /5AD088BB
+Reference = L2;
+ValeurCmp = x;
+IdModule  = FootprintCst:L_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43DAD
+Path = /5AD49B1F
+Reference = L3;
+ValeurCmp = x;
+IdModule  = FootprintCst:L_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43DBD
+Path = /5AD4D606
+Reference = L4;
+ValeurCmp = x;
+IdModule  = FootprintCst:L_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43DCD
+Path = /5AD53C53
+Reference = L5;
+ValeurCmp = x;
+IdModule  = FootprintCst:L_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43DDD
+Path = /5AD53B80
+Reference = L6;
+ValeurCmp = x;
+IdModule  = FootprintCst:L_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43DED
+Path = /5AD53AAD
+Reference = L7;
+ValeurCmp = x;
+IdModule  = FootprintCst:L_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43DFD
+Path = /5ADB57DC
+Reference = L8;
+ValeurCmp = x;
+IdModule  = FootprintCst:L_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43E0D
+Path = /5AD97F6C
+Reference = L9;
+ValeurCmp = x;
+IdModule  = FootprintCst:L_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43E1D
+Path = /5AD9D9BE
+Reference = L10;
+ValeurCmp = x;
+IdModule  = FootprintCst:L_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43E4E
+Path = /5ACC8237
+Reference = R1;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43E5E
+Path = /5A5C9042
+Reference = R2;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43E6E
+Path = /5AD2D311
+Reference = R3;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43E7E
+Path = /5AD34D86
+Reference = R4;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43E8E
+Path = /5AD6F838
+Reference = R5;
+ValeurCmp = 180;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43E9E
+Path = /5AD70E85
+Reference = R6;
+ValeurCmp = 180;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43EAE
+Path = /5AD8E8AD
+Reference = R7;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43EBE
+Path = /5ACDE64E
+Reference = R8;
+ValeurCmp = 120;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43ECE
+Path = /5AD08DCB
+Reference = R9;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43EDE
+Path = /5AD08DD1
+Reference = R10;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43EEE
+Path = /5ACD3C64
+Reference = R11;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43EFE
+Path = /5ACD530F
+Reference = R12;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43F0E
+Path = /5AD49B2B
+Reference = R13;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43F1E
+Path = /5AD49B31
+Reference = R14;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43F2E
+Path = /5AD49B13
+Reference = R15;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43F3E
+Path = /5AD49B19
+Reference = R16;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43F4E
+Path = /5AD4D612
+Reference = R17;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43F5E
+Path = /5AD4D618
+Reference = R18;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43F6E
+Path = /5AD4D5FA
+Reference = R19;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43F7E
+Path = /5AD4D600
+Reference = R20;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43F8E
+Path = /5AD53C47
+Reference = R21;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43F9E
+Path = /5AD53C41
+Reference = R22;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43FAE
+Path = /5AD53C5F
+Reference = R23;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43FBE
+Path = /5AD53C59
+Reference = R24;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43FCE
+Path = /5AD53B74
+Reference = R25;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43FDE
+Path = /5AD53B6E
+Reference = R26;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43FEE
+Path = /5AD53B8C
+Reference = R27;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD43FFE
+Path = /5AD53B86
+Reference = R28;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4400E
+Path = /5AD53AA1
+Reference = R29;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4401E
+Path = /5AD53A9B
+Reference = R30;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4402E
+Path = /5AD53AB9
+Reference = R31;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4403E
+Path = /5AD53AB3
+Reference = R32;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4404E
+Path = /5AD40A6F
+Reference = R33;
+ValeurCmp = 0;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4405E
+Path = /5AD41295
+Reference = R34;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4406E
+Path = /5AD3E492
+Reference = R35;
+ValeurCmp = 0;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4407E
+Path = /5AD3EA99
+Reference = R36;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4408E
+Path = /5AD7FA6C
+Reference = R37;
+ValeurCmp = 0;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4409E
+Path = /5AD7FA72
+Reference = R38;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD440AE
+Path = /5ACF6C73
+Reference = R39;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD440BE
+Path = /5ACF6C79
+Reference = R40;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD440CE
+Path = /5ADB7340
+Reference = R41;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD440DE
+Path = /5AD97FDD
+Reference = R42;
+ValeurCmp = 0;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD440EE
+Path = /5AD97FE3
+Reference = R43;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4410E
+Path = /5AD97F4D
+Reference = R45;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4411E
+Path = /5AD97F72
+Reference = R46;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4412E
+Path = /5AD9DA2F
+Reference = R47;
+ValeurCmp = 0;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4413E
+Path = /5AD9DA35
+Reference = R48;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4414E
+Path = /5AD9D999
+Reference = R49;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4415E
+Path = /5AD9D99F
+Reference = R50;
+ValeurCmp = x;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4416E
+Path = /5AD9D9C4
+Reference = R51;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4417E
+Path = /5AD0D501
+Reference = R52;
+ValeurCmp = 1k5;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4418E
+Path = /5AD76F30
+Reference = R53;
+ValeurCmp = 0;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4419E
+Path = /5ADC1482
+Reference = R54;
+ValeurCmp = 1k5;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD441AE
+Path = /5AD5CFC6
+Reference = R55;
+ValeurCmp = 0;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD441BE
+Path = /5ACB5A66
+Reference = R56;
+ValeurCmp = 180;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD441CE
+Path = /5ACB750B
+Reference = R57;
+ValeurCmp = 180;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD441DE
+Path = /5ACB75F7
+Reference = R58;
+ValeurCmp = 180;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD441EE
+Path = /5ACB75FD
+Reference = R59;
+ValeurCmp = 180;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD441FE
+Path = /5AD2C707
+Reference = R60;
+ValeurCmp = 0;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4420E
+Path = /5AD2C70D
+Reference = R61;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4421E
+Path = /5AD2C595
+Reference = R62;
+ValeurCmp = O;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4422E
+Path = /5AD2C59B
+Reference = R63;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4423E
+Path = /5AD2AAA5
+Reference = R64;
+ValeurCmp = 0;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4424E
+Path = /5AD2BFA8
+Reference = R65;
+ValeurCmp = OPEN;
+IdModule  = FootprintCst:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD442B8
+Path = /5ACD1CE5
+Reference = U2;
+ValeurCmp = MCP2562;
+IdModule  = FootprintCst:SOIC-8_S;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD442C3
+Path = /5ACAAEAC
+Reference = U3;
+ValeurCmp = TSR_2-2450;
+IdModule  = FootprintCst:TSR_2-2450;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD442D7
+Path = /5AC9D20A
+Reference = U4;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD442EB
+Path = /5AC9D204
+Reference = U5;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD442FF
+Path = /5AC9CF60
+Reference = U6;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44313
+Path = /5AC9CF5A
+Reference = U7;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44327
+Path = /5AC9CE6E
+Reference = U8;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4433B
+Path = /5AC9CE68
+Reference = U9;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4434F
+Path = /5AC93215
+Reference = U10;
+ValeurCmp = OPA322;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44367
+Path = /5ACB026C
+Reference = U11;
+ValeurCmp = LTC2313;
+IdModule  = FootprintCst:TSOT-23-8_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4437B
+Path = /5AD49AC7
+Reference = U12;
+ValeurCmp = OPA322;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD443A7
+Path = /5AD4D5AE
+Reference = U14;
+ValeurCmp = OPA322;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD443BF
+Path = /5AD4D5B4
+Reference = U15;
+ValeurCmp = LTC2313;
+IdModule  = FootprintCst:TSOT-23-8_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD443D3
+Path = /5AD53CAB
+Reference = U16;
+ValeurCmp = OPA322;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD443EB
+Path = /5AD53CA5
+Reference = U17;
+ValeurCmp = LTC2313;
+IdModule  = FootprintCst:TSOT-23-8_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD443FF
+Path = /5AD53BD8
+Reference = U18;
+ValeurCmp = OPA322;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44417
+Path = /5AD53BD2
+Reference = U19;
+ValeurCmp = LTC2313;
+IdModule  = FootprintCst:TSOT-23-8_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4442B
+Path = /5AD53B05
+Reference = U20;
+ValeurCmp = OPA322;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44443
+Path = /5AD53AFF
+Reference = U21;
+ValeurCmp = LTC2313;
+IdModule  = FootprintCst:TSOT-23-8_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44457
+Path = /5AC9C3F1
+Reference = U22;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4446B
+Path = /5AD4904B
+Reference = U23;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4447F
+Path = /5AD4EAEC
+Reference = U24;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44493
+Path = /5AD4EB1B
+Reference = U25;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD444A7
+Path = /5AD4F15E
+Reference = U26;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD444BB
+Path = /5AD4F18D
+Reference = U27;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD444CF
+Path = /5AD4F6A4
+Reference = U28;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD444E3
+Path = /5AD4F6D3
+Reference = U29;
+ValeurCmp = SN74LV1T126;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD444FB
+Path = /5ACA8733
+Reference = U30;
+ValeurCmp = AD5061;
+IdModule  = FootprintCst:SOT-23-8_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4450F
+Path = /5ACF6C66
+Reference = U31;
+ValeurCmp = OPA322;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44527
+Path = /5AD97F2C
+Reference = U32;
+ValeurCmp = AD5061;
+IdModule  = FootprintCst:SOT-23-8_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4453B
+Path = /5AD97F3B
+Reference = U33;
+ValeurCmp = OPA322;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44553
+Path = /5AD9D97E
+Reference = U34;
+ValeurCmp = AD5061;
+IdModule  = FootprintCst:SOT-23-8_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD44567
+Path = /5AD9D98D
+Reference = U35;
+ValeurCmp = OPA322;
+IdModule  = FootprintCst:SOT-23-5_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4457C
+Path = /5AD58FCF
+Reference = U36;
+ValeurCmp = ADR3440;
+IdModule  = FootprintCst:SOT-23-6_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD445AE
+Path = /5AD1D500
+Reference = U38;
+ValeurCmp = MCP3550;
+IdModule  = FootprintCst:SOIC-8_S;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD445CB
+Path = /5ADC149D
+Reference = U39;
+ValeurCmp = MCP3550;
+IdModule  = FootprintCst:SOIC-8_S;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD445FC
+Path = /5AC8E23F
+Reference = U40;
+ValeurCmp = MCP23S17;
+IdModule  = FootprintCst:SOIC-28W_7.5x17.9mm_Pitch1.27mm;
+EndCmp
+
+EndListe

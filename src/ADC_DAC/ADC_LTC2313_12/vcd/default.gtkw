@@ -1,0 +1,89 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Thu May 10 11:43:51 2018
+[*]
+[dumpfile] "D:\Dropbox\ABBTS_DA\FPGA\FPGA_DA_MODUL_MAX1000_00_02\src\ADC_DAC\ADC_LTC2313_12\vcd\icarus_tb.vcd"
+[dumpfile_mtime] "Thu May 10 11:20:57 2018"
+[dumpfile_size] 68150
+[savefile] "D:\Dropbox\ABBTS_DA\FPGA\FPGA_DA_MODUL_MAX1000_00_02\src\ADC_DAC\ADC_LTC2313_12\vcd\default.gtkw"
+[timestart] 0
+[size] 1918 2098
+[pos] -1 -1
+*-4.580311 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ICARUS_TB.
+[sst_width] 197
+[signals_width] 306
+[sst_expanded] 1
+[sst_vpaned_height] 1019
+@200
+-ADC_LTC2313_12
+@28
+ICARUS_TB.adc_ltc2313_12.CLK
+ICARUS_TB.adc_ltc2313_12.LATCH
+ICARUS_TB.adc_ltc2313_12.SDI_ADC
+ICARUS_TB.adc_ltc2313_12.CONV_ADC
+ICARUS_TB.adc_ltc2313_12.CLK_ADC
+@22
+ICARUS_TB.adc_ltc2313_12.VALUE[15:0]
+@200
+-
+@24
+ICARUS_TB.adc_ltc2313_12.state[4:0]
+@28
+ICARUS_TB.adc_ltc2313_12.latch_start
+ICARUS_TB.adc_ltc2313_12.clk_adc_re
+ICARUS_TB.adc_ltc2313_12.clk_adc_fe
+@22
+ICARUS_TB.adc_ltc2313_12.value_temp[11:0]
+@24
+ICARUS_TB.adc_ltc2313_12.ctr_clk_spi[15:0]
+ICARUS_TB.adc_ltc2313_12.index[11:0]
+@200
+-
+-
+-ADC_LTC2313_12_MOV_AVG
+@28
+ICARUS_TB.adc_ltc2313_mov_avg.CLK
+ICARUS_TB.adc_ltc2313_mov_avg.LATCH
+ICARUS_TB.adc_ltc2313_mov_avg.SDI_ADC
+ICARUS_TB.adc_ltc2313_mov_avg.CONV_ADC
+ICARUS_TB.adc_ltc2313_mov_avg.CLK_ADC
+@c00022
+ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+@28
+(0)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(1)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(2)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(3)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(4)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(5)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(6)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(7)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(8)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(9)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(10)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(11)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(12)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(13)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(14)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+(15)ICARUS_TB.adc_ltc2313_mov_avg.VALUE[15:0]
+@1401200
+-group_end
+@23
+ICARUS_TB.adc_ltc2313_mov_avg.VALUE_AVG[15:0]
+@28
+ICARUS_TB.adc_ltc2313_mov_avg.LATCH_DAC
+@200
+-
+@22
+ICARUS_TB.adc_ltc2313_mov_avg.value_adc_1[31:0]
+ICARUS_TB.adc_ltc2313_mov_avg.value_adc_2[31:0]
+ICARUS_TB.adc_ltc2313_mov_avg.value_adc_3[31:0]
+ICARUS_TB.adc_ltc2313_mov_avg.value_adc_4[31:0]
+ICARUS_TB.adc_ltc2313_mov_avg.summe_mov_avg[31:0]
+ICARUS_TB.adc_ltc2313_mov_avg.value_temp[31:0]
+@24
+ICARUS_TB.adc_ltc2313_mov_avg.state[15:0]
+ICARUS_TB.adc_ltc2313_mov_avg.ctr_mov_avg[10:0]
+[pattern_trace] 1
+[pattern_trace] 0

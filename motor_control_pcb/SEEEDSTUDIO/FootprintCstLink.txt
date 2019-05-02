@@ -1,0 +1,5 @@
+Nickname
+FootprintCst
+
+Bibliothekspfad
+Z:\D\Dropbox\ABBTS_LABOR_DOZ\VERSUCH_HEIZUNG\V3\PCB\PWM_PS\FootprintCst.pretty

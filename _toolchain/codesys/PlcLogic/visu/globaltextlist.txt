@@ -1,0 +1,277 @@
+Id;Default
+2604;$R$N%$R$N3.1f Hz
+2110;$R$NZK-SPG$R$N%3.1f Hz
+1155;%1.1f
+340;%1.1f %
+1598;%1.1f Hz
+383;%1.1f °
+425;%1.3f
+1140;%1.5f
+787;%d
+715;%i
+911;%s
+2244;0
+1254;00
+1249;01
+1243;02
+1238;03
+1233;04
+1227;05
+1223;06
+1217;07
+1211;08
+769;09
+444;1
+1206;10
+1201;11
+374;12
+375;13
+1196;14
+1190;15
+376;16
+377;17
+378;18
+16;19
+1922;2
+17;20
+18;21
+19;22
+20;23
+21;24
+22;25
+23;26
+379;27
+273;2A4
+274;2A5
+275;2A6
+276;2A7
+277;2B0
+278;2B1
+912;2B2
+913;2B3
+914;2B4
+270;2B5
+271;2B6
+272;2B7
+1957;3
+24;4
+25;5
+26;6
+1427;7
+1329;8
+961;9
+791;abyRGB1
+792;abyRGB2
+793;abyRGB3
+431;aktiviert
+1133;amplitude
+1204;anti-windup ll
+1195;anti-windup ul
+423;AntiWindUp
+1034;AUS
+308;B$R$N%d
+799;bActAntiWindUp_LL
+784;bActAntiWindUp_UL
+959;bAct_LL
+949;bAct_UL
+794;bAntrieb_ENABLE
+633;bDAC_U5_ADC_U8
+427;bEnable
+337;bFrg
+796;bInd_Sensor_ES_LINKS
+797;bInd_Sensor_ES_RECHTS
+798;bInd_Sensor_NULLPOS
+1552;BLAU Drehzahl Sollwert (w) [Hz]$R$NBLAU Drehzahl Istwert (x_ungefiltert) [Hz]$R$NGRUEN Drehzahl Istwert (x) [Hz]$R$NROT Drehzahl Stellgrösse (y) [%]$R$NBRAUN Drehzahl Stellgrösse (y_lineariert) [%]
+412;BLAU Drehzahl Sollwert (w) [Hz]$R$NBLAU Drehzahl Istwert (x_ungefiltert) [Hz]$R$NGRUEN Drehzahl Istwert (x) [Hz]$R$NROT Drehzahl Stellgrösse (y) [%]$R$NORANGE Drehzahl Stellgrösse Vorsteuerung (y_FF) [%]$R$NBRAUN Drehzahl Stellgrösse (y_lineariert) [%]
+777;BLAU Drehzahl Sollwert (w) [Hz]$R$NGRUEN Drehzahl Istwert (x) [Hz]$R$NROT Drehzahl Istwert ungefiltert (x) [Pa]$R$NROT Druck Stellgrösse (y) [%]$R$NORANGE Druck Stellgrösse linearisiert (y_lin) [%]$R$NHELLROT Druck Stellgrösse Regler (y_RE) [%]$R$NDUNKELROT Druck Stellgrösse Vorsteuerung (y_FF) [%]$R$NBRAUN Druck Regelfehler (e) [Pa]$R$NROT Druck AntiWindUp UL [...]$R$NORANGE Druck AntiWindUp LL [...]
+381;BLAU Druck Sollwert (w) [Pa]$R$NGRUEN Druck Istwert (x) [Pa]$R$NHELLGRUEN Druck Istwert ungefiltert (x) [Pa]$R$NROT Druck Stellgrösse (y) [%]$R$NORANGE Druck Stellgrösse linearisiert (y_lin) [%]$R$NHELLROT Druck Stellgrösse Regler (y_RE) [%]$R$NDUNKELROT Druck Stellgrösse Vorsteuerung (y_FF) [%]$R$NBRAUN Druck Regelfehler (e) [Pa]$R$NROT Druck AntiWindUp UL [...]$R$NORANGE Druck AntiWindUp LL [...]
+972;BLAU Generator [%]$R$NGRUEN Speed [Hz]
+339;BLAU Generator [%]$R$NROT Position [mm]
+305;BLAU Generator [%]$R$NROT Position [mm]$R$NGRUEN Winkel [°]
+1523;BLAU Generator [%]$R$NROT Speed [Hz]
+1570;BLAU Position Sollwert (w) [°]$R$NBLAU PositionIstwert (x_ungefiltert) [°]$R$NGRUEN PositionIstwert (x) [°]$R$NROT PositionStellgrösse (y) [%]$R$NBRAUN PositionStellgrösse (y_lineariert) [%]
+347;bOut
+624;bQE1_CCW
+623;bQE1_CW
+627;bQE1_Reset
+629;bQE2_CCW
+628;bQE2_CW
+632;bQE2_Reset
+1009;bQE_CCW
+1473;bQE_CW
+335;bQE_Reset
+1170;bRauschen
+158;bReset
+1659;CCw
+1498;CCW
+109;CLOSE
+188;COUNTER$R$N%d
+1502;CW
+393;DC-MOTOR
+625;diQE1_Counter
+626;diQE1_Speed
+630;diQE2_Counter
+631;diQE2_Speed
+1106;diQE_Counter
+962;diQE_Speed
+503;Drehzahl$R$N%1.2f Hz
+686;Drehzahl-Regler
+197;Drehzahlregelung
+138;DT1
+98;e
+390;ENABLE
+115;ENCODER
+710;filtertyp
+939;FL_vorfilter
+55;FPGA
+785;FPGA - Modul
+1148;frequenz [hz]
+433;G$R$N%d
+341;Generator
+155;I
+830;iCount
+1609;iFpgaToRPi4$R$N%d
+766;INITIAL
+424;Instance: %s
+695;IN_OUT_16
+432;IO - TEST
+721;iOrdnung
+696;IO_LCD
+1921;iRpiToFpga4$R$N%d
+384;K = %1.2f
+849;KalmanFilter
+429;Kennlinie
+446;Kennlinie - Linearisierung
+1496;Kennlinie_2
+940;Limitierung
+801;LIN
+240;Linearisierung Drehzahl
+968;Linearisierung Position
+382;Logger$R$N%1.1f %
+2631;Lüfter PWM$R$N%3.1f %
+1168;Lüfter PWM$R$N%3.1f %%
+293;Lüfter PWM$R$N%3.1f V
+814;Mittelwert
+391;Modulation$R$N%3.1f %
+345;Motor$R$NENABLE
+290;Motor EIN
+1111;offset
+1119;offset_rampe
+600;P
+1162;phasenverschiebung [°]
+1859;Positions-Regler
+1530;Postionsregelung
+800;Propeller EIN
+767;PT1
+618;PT2
+924;PT2s
+475;PTt
+344;Puls Blocker Limit$R$N(12-Bitauflösung)$R$N%d
+334;pulserTime
+469;R$R$N%d
+497;rA
+131;rA0
+132;rA1
+133;rA2
+134;rA3
+1126;rampensteilheit
+15;Raspberry Pi
+521;Rauschen
+298;rB
+135;rB0
+1357;rB1
+1366;rB2
+1376;rB3
+1385;rB4
+139;rE
+754;REGELKREIS
+246;Regelkreis Drehzahl
+823;Regelkreis Position
+97;Regler
+99;reglertyp
+496;reset
+1077;RESET
+342;Reset$R$NPosition$R$N%1.1f mm
+267;Reset$R$NSpeed$R$N%1.1f mm
+1354;Reset$R$NWinkel$R$N%1.0f °
+343;Reset$R$NWinkel$R$N%1.3f °
+822;rIn
+606;rK
+1213;rKr
+177;rOmega
+845;rOut
+54;RPI
+346;rPuls
+838;rPulsTime
+850;rQ
+851;rR
+1177;rRauschenVerstaerkung
+50;rT
+1036;rT1
+1045;rT2
+157;rTi
+1222;rTn
+915;rTt
+140;rTv
+141;rTvz
+525;rVerstaerkung
+156;rX
+426;rY
+783;rYlim
+782;rYmax
+428;rYmin
+1231;rY_RE
+175;rZeta
+705;Signalfilter
+762;SIGNALFILTER
+1903;Signalfilter Drehzahl
+2148;Signalfilter Position
+1028;Signalflussgraph
+1097;Signalgenerator
+1557;Signalgenerator DAC3
+110;Signalgenerator Y
+610;Signalgenerator Y (Drehzahl)
+1332;Signalgenerator Y (Position)
+1134;Sollwert Drehzahl
+117;Sollwert Position
+936;Sollwert Winkel
+430;spiegelung an x=y
+774;SPRUNGANTWORT RK
+770;SPRUNGANTWORT RS
+802;STOERGROESSENAUF.
+932;T = %1.2f s
+750;T1 = %1.2f s
+1950;T2 = %1.2f s
+1046;Td = %1.2f s
+1039;Ti = %1.2f s
+420;TRACE
+697;TRESOR
+1104;typ
+786;uiADC_U4
+788;uiADC_U8
+789;uiADC_U9
+634;uiAntrieb_ADC_Limit
+795;uiAntrieb_PWM
+790;uiDAC_U5
+1259;uiFpgaToRPi1$R$N%d
+1265;uiFpgaToRPi2$R$N%d
+1270;uiFpgaToRPi3$R$N%d
+622;uiLuefter_PWM
+1275;uiRpiToFpga1$R$N%d
+2145;uiRpiToFpga2$R$N%d
+2154;uiRpiToFpga3$R$N%d
+230;Vorsteuerung
+758;VORSTEUERUNG
+220;Vorsteuerung Drehzahl
+56;Vorsteuerung Winkel
+380;Winkel-Regelkreis
+941;X
+300;xmax
+299;xmin
+803;z
+778;Zeit %s
+122;ZK-SPG$R$N%3.1f Hz
+1421;ZK-SPG$R$N%3.1f V
+955;Zwischenkreis$R$N%3.1f V
+1958;Zwischenkreis-$R$N%3.1f V
+1643;Zwischenkreis-Spannung$R$N%3.1f V

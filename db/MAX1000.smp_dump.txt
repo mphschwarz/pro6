@@ -1,0 +1,70 @@
+
+State Machine - |MAX1000|DAC_AD5061:dac3|state
+Name state.00000 state.00010 state.00001 
+state.00000 0 0 0 
+state.00001 1 0 1 
+state.00010 1 1 0 
+
+State Machine - |MAX1000|DAC_AD5061:dac2|state
+Name state.00000 state.00010 state.00001 
+state.00000 0 0 0 
+state.00001 1 0 1 
+state.00010 1 1 0 
+
+State Machine - |MAX1000|DAC_AD5061:dac1|state
+Name state.00000 state.00010 state.00001 
+state.00000 0 0 0 
+state.00001 1 0 1 
+state.00010 1 1 0 
+
+State Machine - |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12|state
+Name state.00011 state.00010 state.00001 state.00000 
+state.00000 0 0 0 0 
+state.00001 0 0 1 1 
+state.00010 0 1 0 1 
+state.00011 1 0 0 1 
+
+State Machine - |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|state
+Name state.00011 state.00010 state.00001 state.00000 
+state.00000 0 0 0 0 
+state.00001 0 0 1 1 
+state.00010 0 1 0 1 
+state.00011 1 0 0 1 
+
+State Machine - |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|state
+Name state.00011 state.00010 state.00001 state.00000 
+state.00000 0 0 0 0 
+state.00001 0 0 1 1 
+state.00010 0 1 0 1 
+state.00011 1 0 0 1 
+
+State Machine - |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|state
+Name state.00011 state.00010 state.00001 state.00000 
+state.00000 0 0 0 0 
+state.00001 0 0 1 1 
+state.00010 0 1 0 1 
+state.00011 1 0 0 1 
+
+State Machine - |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|state
+Name state.00011 state.00010 state.00001 state.00000 
+state.00000 0 0 0 0 
+state.00001 0 0 1 1 
+state.00010 0 1 0 1 
+state.00011 1 0 0 1 
+
+State Machine - |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|state
+Name state.00011 state.00010 state.00001 state.00000 
+state.00000 0 0 0 0 
+state.00001 0 0 1 1 
+state.00010 0 1 0 1 
+state.00011 1 0 0 1 
+
+State Machine - |MAX1000|WDT:wdt|status
+Name status.1 
+status.0 0 
+status.1 1 
+
+State Machine - |MAX1000|SEL_SPI_INPUT:sel_spi_input|status
+Name status.1 
+status.0 0 
+status.1 1 

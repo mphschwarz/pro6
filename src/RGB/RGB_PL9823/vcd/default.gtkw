@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Tue Aug 01 10:57:25 2017
+[*]
+[dumpfile] "D:\Dropbox\ABBTS_LABOR_DOZ\NETZFREQUENZ\QUARTUS\FREQUENZMESSUNG\src\CLOCK\WDT\vcd\icarus_tb.vcd"
+[dumpfile_mtime] "Tue Aug 01 10:57:05 2017"
+[dumpfile_size] 144907
+[savefile] "D:\Dropbox\ABBTS_LABOR_DOZ\NETZFREQUENZ\QUARTUS\FREQUENZMESSUNG\src\CLOCK\WDT\vcd\default.gtkw"
+[timestart] 0
+[size] 1278 1378
+[pos] -1 -1
+*-13.000000 8420 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ICARUS_TB.
+[sst_width] 197
+[signals_width] 254
+[sst_expanded] 1
+[sst_vpaned_height] 678
+@29
+ICARUS_TB.wdt.CLK
+@28
+ICARUS_TB.wdt.CLK_1Hz
+ICARUS_TB.wdt.CLK_UC
+ICARUS_TB.wdt.OUT
+@24
+ICARUS_TB.wdt.counter[15:0]
+@420
+ICARUS_TB.wdt.status[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

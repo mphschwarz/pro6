@@ -1,0 +1,66 @@
+// Democode IO Expander Microchip MCP23S17
+// ===========================================================================================
+// Definition der Register
+var IODIRA    = 0x00; //Data Direction Register for PORTA   
+var IODIRB    = 0x01; //Data Direction Register for PORTB
+var IPOLA     = 0x02; //Input Polarity Register for PORTA
+var IPOLB     = 0x03; //Input Polarity Register for PORTB
+var GPINTENA  = 0x04; //Interrupt-on-change enable Register for PORTA
+var GPINTENB  = 0x05; //Interrupt-on-change enable Register for PORTB
+var DEFVALA   = 0x06; //Default Value Register for PORTA   
+var DEFVALB   = 0x07; //Default Value Register for PORTB     
+var INTCONA   = 0x08; //Interrupt-on-change control Register for PORTA 
+var INTCONB   = 0x09; //Interrupt-on-change control Register for PORTB     
+var IOCON     = 0x0A; //Configuration register for device                     
+var GPPUA     = 0x0C; //100kOhm pullup resistor register for PORTA (sets pin to input when set)   
+var GPPUB     = 0x0D; //100kOhm pullup resistor register for PORTB (sets pin to input when set)     
+var INTFA     = 0x0E; //Interrupt flag Register for PORTA       
+var INTFB     = 0x0F; //Interrupt flag Register for PORTB   
+var INTCAPA   = 0x10; //Interrupt captured value Register for PORTA 
+var INTCAPB   = 0x11; //Interrupt captured value Register for PORTB   
+var GPIOA     = 0x12; //General purpose I/O Register for PORTA 
+var GPIOB     = 0x13; //General purpose I/O Register for PORTB
+var OLATA     = 0x14; //Output latch Register for PORTA
+var OLATB     = 0x15; //Output latch Register for PORTB  
+// ===========================================================================================
+// Read Write von U1 und U2
+var rU1 = 0x40 + (5 << 1) + 1;// 0x4B Adresse 5
+var wU1 = 0x40 + (5 << 1);// 0x4A Adresse 5
+var rU2 = 0x40 + (6 << 1) + 1;// 0x4D Adresse 6
+var wU2 = 0x40 + (6 << 1);// 0x4C Adresse 6
+// ===========================================================================================
+// Adressierung aktivieren
+Start(); Write(8, [0x40, IOCON, 0x28]); Stop();// sequential operation mode disabled, address mode enabled
+Start(); Write(8, [wU1, IOCON, 0x28]); Stop();// sequential operation mode disabled, address mode enabled
+Start(); Write(8, [wU2, IOCON, 0x28]); Stop();// sequential operation mode disabled, address mode enabled
+// ===========================================================================================
+// die Outputs auf einen definierten Zustand setzen
+//Start(); Write(8, [wU1, GPIOB, 0x00]); Stop();// reset outputs
+//Start(); Write(8, [wU2, GPIOB, 0x00]); Stop();// reset outputs
+// ===========================================================================================
+// Polaritäten der Inputs
+// 1 = GPIO register bit will reflect the opposite logic state of the input pin. 0 = GPIO register bit will reflect the same logic state of the input pin.
+Start(); Write(8, [wU1, IPOLA, 0xFF]); Stop();// 
+Start(); Write(8, [wU2, IPOLA, 0xFF]); Stop();// 
+// ===========================================================================================
+// Zuweisung Input oder Output
+Start(); Write(8, [wU1, IODIRA, 0xFF]); Stop();// direction PORT A, 0 = OUTPUT, 1 = INPUT
+Start(); Write(8, [wU1, IODIRB, 0x00]); Stop();// direction PORT A, 0 = OUTPUT, 1 = INPUT
+Start(); Write(8, [wU2, IODIRA, 0xFF]); Stop();// direction PORT A, 0 = OUTPUT, 1 = INPUT
+Start(); Write(8, [wU2, IODIRB, 0x00]); Stop();// direction PORT A, 0 = OUTPUT, 1 = INPUT
+// Pull-up Chipintern
+Start(); Write(8, [wU1, GPPUA, 0x00]); Stop();// pull-up resistor for corresponding input, 0 = INACTIVE, 1 = ACTIVE
+Start(); Write(8, [wU1, GPPUB, 0x00]); Stop();// pull-up resistor for corresponding input, 0 = INACTIVE, 1 = ACTIVE
+Start(); Write(8, [wU2, GPPUA, 0x00]); Stop();// pull-up resistor for corresponding input, 0 = INACTIVE, 1 = ACTIVE
+Start(); Write(8, [wU2, GPPUB, 0x00]); Stop();// pull-up resistor for corresponding input, 0 = INACTIVE, 1 = ACTIVE
+// ===========================================================================================
+// lesen der Inputs
+Start(); var rU1inp = ReadWrite(8, [rU1, GPIOA, 0xFF]); Stop();// read INPUTS
+Start(); var rU2inp = ReadWrite(8, [rU2, GPIOA, 0xFF]); Stop();// read INPUTS
+// ===========================================================================================
+// schreiben der Outputs
+Start(); Write(8, [wU1, GPIOB, rU1inp[2]]); Stop();// write OUTPUTS
+//Start(); Write(8, [wU1, GPIOB, 0x0F); Stop();// write OUTPUTS
+Start(); Write(8, [wU2, GPIOB, rU2inp[2]]); Stop();// write OUTPUTS
+//Start(); Write(8, [wU2, GPIOB, 0xF0]); Stop();// write OUTPUTS
+// ===========================================================================================

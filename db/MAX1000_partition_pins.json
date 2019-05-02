@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED8",
+					"strict" : false
+				},
+				{
+					"name" : "LED1",
+					"strict" : false
+				},
+				{
+					"name" : "LED2",
+					"strict" : false
+				},
+				{
+					"name" : "BDBUS2",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_MISO",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_CONV",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_SYNC",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_1_SDO",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_2_SDO",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_3_SDO",
+					"strict" : false
+				},
+				{
+					"name" : "U23_IN",
+					"strict" : false
+				},
+				{
+					"name" : "U4_IN",
+					"strict" : false
+				},
+				{
+					"name" : "U5_IN",
+					"strict" : false
+				},
+				{
+					"name" : "U9_IN",
+					"strict" : false
+				},
+				{
+					"name" : "U8_IN",
+					"strict" : false
+				},
+				{
+					"name" : "D23",
+					"strict" : false
+				},
+				{
+					"name" : "D24",
+					"strict" : false
+				},
+				{
+					"name" : "USER_BTN",
+					"strict" : false
+				},
+				{
+					"name" : "BDBUS4",
+					"strict" : false
+				},
+				{
+					"name" : "BDBUS3",
+					"strict" : false
+				},
+				{
+					"name" : "BDBUS5",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_CS",
+					"strict" : false
+				},
+				{
+					"name" : "BDBUS1",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_MOSI",
+					"strict" : false
+				},
+				{
+					"name" : "BDBUS0",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_5_SDI",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_3_SDI",
+					"strict" : false
+				},
+				{
+					"name" : "U26_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_6_SDI",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_4_SDI",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_2_SDI",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_1_SDI",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

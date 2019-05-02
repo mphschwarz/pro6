@@ -1,0 +1,116 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 5GTH9
+K LED
+$ENDCMP
+#
+$CMP B40D
+D Diode bridge (pins: 1=+, 2=-, 3=AC, 4=AC)
+K rectifier acdc
+$ENDCMP
+#
+$CMP CONN_02X05
+D Connector, double row, 02x05, pin header
+K connector
+$ENDCMP
+#
+$CMP CONN_02X20
+D Connector, double row, 02x20, pin header
+K connector
+$ENDCMP
+#
+$CMP D_Zener_SOT23
+D Zener Diode
+K diode
+F https://en.wikipedia.org/wiki/Zener_diode
+$ENDCMP
+#
+$CMP Diode_Schottky
+D Schottky diode
+K diode Schottky
+$ENDCMP
+#
+$CMP Diode_Schottky_SOT23
+D Schottky diode
+K diode Schottky
+$ENDCMP
+#
+$CMP LCD16X2_
+D NHD-0216K1Z-FL-GBW
+K Generic LCD 16x2 Alphanumeric 16pin Green Backlight
+$ENDCMP
+#
+$CMP LCD8X2_
+D NHD-0216K1Z-FL-GBW
+K Generic LCD 16x2 Alphanumeric 16pin Green Backlight
+$ENDCMP
+#
+$CMP LED_
+K LED
+$ENDCMP
+#
+$CMP LM336
+D Zener Diode
+K diode
+F https://en.wikipedia.org/wiki/Zener_diode
+$ENDCMP
+#
+$CMP LMV431
+D Schottky diode
+K diode Schottky
+$ENDCMP
+#
+$CMP L_
+D Inductor
+K inductor choke coil reactor magnetic
+$ENDCMP
+#
+$CMP Lspule_
+D Inductor
+K inductor choke coil reactor magnetic
+$ENDCMP
+#
+$CMP MCP3550
+D Single Delta-Sigma 22bit Analog to Digital Converter, SPI Interface, 50Hz Rejection, MSOP-8
+K Sigma-Delta ADC Converter 22bit SPI 1ch
+F http://ww1.microchip.com/downloads/en/devicedoc/21950c.pdf
+$ENDCMP
+#
+$CMP MCP3550_
+D Single Delta-Sigma 22bit Analog to Digital Converter, SPI Interface, 50Hz Rejection, MSOP-8
+K Sigma-Delta ADC Converter 22bit SPI 1ch
+F http://ww1.microchip.com/downloads/en/devicedoc/21950c.pdf
+$ENDCMP
+#
+$CMP MCP3551-E/MS
+D Single Delta-Sigma 22bit Analog to Digital Converter, SPI Interface, MSOP-8
+K Sigma-Delta ADC Converter 22bit SPI 1ch
+F http://ww1.microchip.com/downloads/en/devicedoc/21950c.pdf
+$ENDCMP
+#
+$CMP Taster
+K LED
+$ENDCMP
+#
+$CMP USB
+D USB mini/micro connector
+K connector USB
+$ENDCMP
+#
+$CMP Umschalter
+K LED
+$ENDCMP
+#
+$CMP WeMos_mini
+D WeMos D1 mini
+K esp8266, wemos
+F http://www.wemos.cc/Products/d1_mini.html
+$ENDCMP
+#
+$CMP Wemos_LoLin32
+D WeMos D1 mini
+K esp8266, wemos
+F http://www.wemos.cc/Products/d1_mini.html
+$ENDCMP
+#
+#End Doc Library
