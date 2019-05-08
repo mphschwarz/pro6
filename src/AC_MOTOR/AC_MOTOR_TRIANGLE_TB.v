@@ -8,7 +8,7 @@ module AC_MOTOR_TRIANGLE_TB;
 	reg ccw_in;
 	// reg [4:0] amplitude;
 	//
-	wire signed [12+12:0] triangle;
+	wire signed [12+12-1:0] triangle;
 	wire cw_out;
 	wire ccw_out;
 	wire lock;

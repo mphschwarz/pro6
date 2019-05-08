@@ -26,7 +26,7 @@ module AC_MOTOR_COMPARATOR(
 
 	initial begin
 		sine_int <= 0;
-		dead_time <= 0;
+		dead_time <= 1;
 		out_count <= 0;
 		out_count_dir <= 1;
 		OUT1 <= 0;
@@ -37,7 +37,10 @@ module AC_MOTOR_COMPARATOR(
 	always @(posedge CLK) begin
 		sine_int <= SINE;
 		triangle_int <= TRIANGLE;
-		if (sine_int > triangle_int) out_count_dir <= 1;
+	end
+
+	always @(posedge CLK) begin
+		if (sine_int >= triangle_int) out_count_dir <= 1;
 		else out_count_dir <= -1;
 	end
 

@@ -6,8 +6,8 @@ module AC_MOTOR_TRIANGLE(
 	parameter output_bits = 24;
 	parameter level_bits = 13;
 
-	parameter triangle_max =  2**(level_bits - 1) - 1;
-	parameter triangle_min = -2**(level_bits - 1) + 1;
+	parameter triangle_max =  2**(level_bits - 1) - 2;
+	parameter triangle_min = (-1 * 2**(level_bits - 1)) + 2;
 
 	reg cw_int;
 	reg ccw_int;
@@ -28,8 +28,8 @@ module AC_MOTOR_TRIANGLE(
 	end
 
 	always @(posedge CLK) begin
-		if (triangle_int >= triangle_max) triangle_dir <= -1;
-		if (triangle_int <= triangle_min) triangle_dir <= 1;
+		if (triangle_int == triangle_max) triangle_dir <= -1;
+		if (triangle_int == triangle_min) triangle_dir <= 1;
 	end
 
 	always @(posedge CLK) begin

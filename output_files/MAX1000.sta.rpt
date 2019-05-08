@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for MAX1000
-Wed Apr 17 16:53:53 2019
+Tue May  7 12:26:30 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -108,7 +108,6 @@ refer to the applicable agreement for further details.
 ; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; Base      ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500  ;            ;           ;             ;       ;        ;           ;            ;          ;               ;                                                   ; { AC_MOTOR_TRIANGLE:inst2|LOCK }                    ;
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; Generated ; 19.999 ; 50.0 MHz   ; 0.000 ; 9.999  ; 50.00      ; 6         ; 25          ;       ;        ;           ;            ; false    ; SYS_CLK_12MHz ; pll|altpll_component|auto_generated|pll1|inclk[0] ; { pll|altpll_component|auto_generated|pll1|clk[0] } ;
 ; pll|altpll_component|auto_generated|pll1|clk[1] ; Generated ; 9.999  ; 100.01 MHz ; 0.000 ; 4.999  ; 50.00      ; 3         ; 25          ;       ;        ;           ;            ; false    ; SYS_CLK_12MHz ; pll|altpll_component|auto_generated|pll1|inclk[0] ; { pll|altpll_component|auto_generated|pll1|clk[1] } ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; Generated ; 12.222 ; 81.82 MHz  ; 0.000 ; 6.111  ; 50.00      ; 11        ; 75          ;       ;        ;           ;            ; false    ; SYS_CLK_12MHz ; pll|altpll_component|auto_generated|pll1|inclk[0] ; { pll|altpll_component|auto_generated|pll1|clk[2] } ;
 ; SYS_CLK_12MHz                                   ; Base      ; 83.333 ; 12.0 MHz   ; 0.000 ; 41.666 ;            ;           ;             ;       ;        ;           ;            ;          ;               ;                                                   ; { SYS_CLK_12MHz }                                   ;
 +-------------------------------------------------+-----------+--------+------------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------+---------------------------------------------------+-----------------------------------------------------+
 
@@ -118,9 +117,8 @@ refer to the applicable agreement for further details.
 +------------+-----------------+-------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                      ; Note ;
 +------------+-----------------+-------------------------------------------------+------+
-; 94.89 MHz  ; 94.89 MHz       ; pll|altpll_component|auto_generated|pll1|clk[0] ;      ;
-; 111.09 MHz ; 111.09 MHz      ; pll|altpll_component|auto_generated|pll1|clk[2] ;      ;
-; 118.34 MHz ; 118.34 MHz      ; pll|altpll_component|auto_generated|pll1|clk[1] ;      ;
+; 100.43 MHz ; 100.43 MHz      ; pll|altpll_component|auto_generated|pll1|clk[0] ;      ;
+; 113.91 MHz ; 113.91 MHz      ; pll|altpll_component|auto_generated|pll1|clk[1] ;      ;
 +------------+-----------------+-------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -130,10 +128,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------+--------+---------------+
 ; Clock                                           ; Slack  ; End Point TNS ;
 +-------------------------------------------------+--------+---------------+
-; pll|altpll_component|auto_generated|pll1|clk[2] ; -9.571 ; -1231.794     ;
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -7.055 ; -159.036      ;
-; pll|altpll_component|auto_generated|pll1|clk[1] ; 1.549  ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[0] ; 7.171  ; 0.000         ;
+; pll|altpll_component|auto_generated|pll1|clk[1] ; -9.218 ; -826.968      ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -5.962 ; -11.888       ;
+; pll|altpll_component|auto_generated|pll1|clk[0] ; 7.263  ; 0.000         ;
 +-------------------------------------------------+--------+---------------+
 
 
@@ -143,9 +140,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Clock                                           ; Slack ; End Point TNS ;
 +-------------------------------------------------+-------+---------------+
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; 0.361 ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[1] ; 0.361 ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; 0.362 ; 0.000         ;
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; 2.986 ; 0.000         ;
+; pll|altpll_component|auto_generated|pll1|clk[1] ; 0.362 ; 0.000         ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; 3.436 ; 0.000         ;
 +-------------------------------------------------+-------+---------------+
 
 
@@ -166,10 +162,9 @@ No paths to report.
 +-------------------------------------------------+--------+---------------+
 ; Clock                                           ; Slack  ; End Point TNS ;
 +-------------------------------------------------+--------+---------------+
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -1.487 ; -41.636       ;
-; pll|altpll_component|auto_generated|pll1|clk[1] ; 4.729  ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; 5.687  ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[0] ; 9.725  ; 0.000         ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -1.487 ; -4.461        ;
+; pll|altpll_component|auto_generated|pll1|clk[1] ; 3.749  ; 0.000         ;
+; pll|altpll_component|auto_generated|pll1|clk[0] ; 9.726  ; 0.000         ;
 ; SYS_CLK_12MHz                                   ; 41.561 ; 0.000         ;
 +-------------------------------------------------+--------+---------------+
 
@@ -178,10 +173,10 @@ No paths to report.
 ; Slow 1200mV 85C Model Metastability Summary ;
 -----------------------------------------------
 The design MTBF is not calculated because there are no specified synchronizers in the design.
-Number of Synchronizer Chains Found: 171
+Number of Synchronizer Chains Found: 135
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 13.329 ns
+Worst Case Available Settling Time: 10.138 ns
 
 
 
@@ -191,9 +186,8 @@ Worst Case Available Settling Time: 13.329 ns
 +------------+-----------------+-------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                      ; Note ;
 +------------+-----------------+-------------------------------------------------+------+
-; 101.03 MHz ; 101.03 MHz      ; pll|altpll_component|auto_generated|pll1|clk[0] ;      ;
-; 118.26 MHz ; 118.26 MHz      ; pll|altpll_component|auto_generated|pll1|clk[2] ;      ;
-; 124.01 MHz ; 124.01 MHz      ; pll|altpll_component|auto_generated|pll1|clk[1] ;      ;
+; 104.33 MHz ; 104.33 MHz      ; pll|altpll_component|auto_generated|pll1|clk[0] ;      ;
+; 118.74 MHz ; 118.74 MHz      ; pll|altpll_component|auto_generated|pll1|clk[1] ;      ;
 +------------+-----------------+-------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -203,10 +197,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------+--------+---------------+
 ; Clock                                           ; Slack  ; End Point TNS ;
 +-------------------------------------------------+--------+---------------+
-; pll|altpll_component|auto_generated|pll1|clk[2] ; -8.811 ; -1120.040     ;
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -6.793 ; -155.558      ;
-; pll|altpll_component|auto_generated|pll1|clk[1] ; 1.935  ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[0] ; 7.310  ; 0.000         ;
+; pll|altpll_component|auto_generated|pll1|clk[1] ; -8.477 ; -759.418      ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -5.974 ; -11.879       ;
+; pll|altpll_component|auto_generated|pll1|clk[0] ; 7.381  ; 0.000         ;
 +-------------------------------------------------+--------+---------------+
 
 
@@ -215,10 +208,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------+-------+---------------+
 ; Clock                                           ; Slack ; End Point TNS ;
 +-------------------------------------------------+-------+---------------+
-; pll|altpll_component|auto_generated|pll1|clk[0] ; 0.324 ; 0.000         ;
+; pll|altpll_component|auto_generated|pll1|clk[0] ; 0.323 ; 0.000         ;
 ; pll|altpll_component|auto_generated|pll1|clk[1] ; 0.324 ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; 0.324 ; 0.000         ;
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; 2.815 ; 0.000         ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; 3.055 ; 0.000         ;
 +-------------------------------------------------+-------+---------------+
 
 
@@ -239,9 +231,8 @@ No paths to report.
 +-------------------------------------------------+--------+---------------+
 ; Clock                                           ; Slack  ; End Point TNS ;
 +-------------------------------------------------+--------+---------------+
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -1.487 ; -41.636       ;
-; pll|altpll_component|auto_generated|pll1|clk[1] ; 4.720  ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; 5.706  ; 0.000         ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -1.487 ; -4.461        ;
+; pll|altpll_component|auto_generated|pll1|clk[1] ; 3.749  ; 0.000         ;
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; 9.722  ; 0.000         ;
 ; SYS_CLK_12MHz                                   ; 41.427 ; 0.000         ;
 +-------------------------------------------------+--------+---------------+
@@ -251,10 +242,10 @@ No paths to report.
 ; Slow 1200mV 0C Model Metastability Summary ;
 ----------------------------------------------
 The design MTBF is not calculated because there are no specified synchronizers in the design.
-Number of Synchronizer Chains Found: 171
+Number of Synchronizer Chains Found: 135
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 13.712 ns
+Worst Case Available Settling Time: 10.806 ns
 
 
 
@@ -264,10 +255,9 @@ Worst Case Available Settling Time: 13.712 ns
 +-------------------------------------------------+--------+---------------+
 ; Clock                                           ; Slack  ; End Point TNS ;
 +-------------------------------------------------+--------+---------------+
-; pll|altpll_component|auto_generated|pll1|clk[2] ; -4.314 ; -547.978      ;
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -2.884 ; -67.264       ;
-; pll|altpll_component|auto_generated|pll1|clk[1] ; 6.675  ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[0] ; 8.729  ; 0.000         ;
+; pll|altpll_component|auto_generated|pll1|clk[1] ; -4.227 ; -381.792      ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -2.568 ; -4.991        ;
+; pll|altpll_component|auto_generated|pll1|clk[0] ; 8.816  ; 0.000         ;
 +-------------------------------------------------+--------+---------------+
 
 
@@ -276,10 +266,9 @@ Worst Case Available Settling Time: 13.712 ns
 +-------------------------------------------------+-------+---------------+
 ; Clock                                           ; Slack ; End Point TNS ;
 +-------------------------------------------------+-------+---------------+
+; pll|altpll_component|auto_generated|pll1|clk[1] ; 0.111 ; 0.000         ;
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; 0.152 ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[1] ; 0.152 ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; 0.152 ; 0.000         ;
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; 0.955 ; 0.000         ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; 1.067 ; 0.000         ;
 +-------------------------------------------------+-------+---------------+
 
 
@@ -300,9 +289,8 @@ No paths to report.
 +-------------------------------------------------+--------+---------------+
 ; Clock                                           ; Slack  ; End Point TNS ;
 +-------------------------------------------------+--------+---------------+
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -1.000 ; -28.000       ;
-; pll|altpll_component|auto_generated|pll1|clk[1] ; 4.765  ; 0.000         ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; 5.819  ; 0.000         ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -1.000 ; -3.000        ;
+; pll|altpll_component|auto_generated|pll1|clk[1] ; 4.705  ; 0.000         ;
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; 9.766  ; 0.000         ;
 ; SYS_CLK_12MHz                                   ; 41.198 ; 0.000         ;
 +-------------------------------------------------+--------+---------------+
@@ -312,32 +300,30 @@ No paths to report.
 ; Fast 1200mV 0C Model Metastability Summary ;
 ----------------------------------------------
 The design MTBF is not calculated because there are no specified synchronizers in the design.
-Number of Synchronizer Chains Found: 171
+Number of Synchronizer Chains Found: 135
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 17.121 ns
+Worst Case Available Settling Time: 15.945 ns
 
 
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                             ;
-+--------------------------------------------------+-----------+-------+----------+---------+---------------------+
-; Clock                                            ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+--------------------------------------------------+-----------+-------+----------+---------+---------------------+
-; Worst-case Slack                                 ; -9.571    ; 0.152 ; N/A      ; N/A     ; -1.487              ;
-;  AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -7.055    ; 0.955 ; N/A      ; N/A     ; -1.487              ;
-;  SYS_CLK_12MHz                                   ; N/A       ; N/A   ; N/A      ; N/A     ; 41.198              ;
-;  pll|altpll_component|auto_generated|pll1|clk[0] ; 7.171     ; 0.152 ; N/A      ; N/A     ; 9.722               ;
-;  pll|altpll_component|auto_generated|pll1|clk[1] ; 1.549     ; 0.152 ; N/A      ; N/A     ; 4.720               ;
-;  pll|altpll_component|auto_generated|pll1|clk[2] ; -9.571    ; 0.152 ; N/A      ; N/A     ; 5.687               ;
-; Design-wide TNS                                  ; -1390.83  ; 0.0   ; 0.0      ; 0.0     ; -41.636             ;
-;  AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -159.036  ; 0.000 ; N/A      ; N/A     ; -41.636             ;
-;  SYS_CLK_12MHz                                   ; N/A       ; N/A   ; N/A      ; N/A     ; 0.000               ;
-;  pll|altpll_component|auto_generated|pll1|clk[0] ; 0.000     ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  pll|altpll_component|auto_generated|pll1|clk[1] ; 0.000     ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  pll|altpll_component|auto_generated|pll1|clk[2] ; -1231.794 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-+--------------------------------------------------+-----------+-------+----------+---------+---------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                            ;
++--------------------------------------------------+----------+-------+----------+---------+---------------------+
+; Clock                                            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------------------------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack                                 ; -9.218   ; 0.111 ; N/A      ; N/A     ; -1.487              ;
+;  AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -5.974   ; 1.067 ; N/A      ; N/A     ; -1.487              ;
+;  SYS_CLK_12MHz                                   ; N/A      ; N/A   ; N/A      ; N/A     ; 41.198              ;
+;  pll|altpll_component|auto_generated|pll1|clk[0] ; 7.263    ; 0.152 ; N/A      ; N/A     ; 9.722               ;
+;  pll|altpll_component|auto_generated|pll1|clk[1] ; -9.218   ; 0.111 ; N/A      ; N/A     ; 3.749               ;
+; Design-wide TNS                                  ; -838.856 ; 0.0   ; 0.0      ; 0.0     ; -4.461              ;
+;  AC_MOTOR_TRIANGLE:inst2|LOCK                    ; -11.888  ; 0.000 ; N/A      ; N/A     ; -4.461              ;
+;  SYS_CLK_12MHz                                   ; N/A      ; N/A   ; N/A      ; N/A     ; 0.000               ;
+;  pll|altpll_component|auto_generated|pll1|clk[0] ; 0.000    ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  pll|altpll_component|auto_generated|pll1|clk[1] ; -826.968 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
++--------------------------------------------------+----------+-------+----------+---------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -367,13 +353,13 @@ Worst Case Available Settling Time: 17.121 ns
 ; D26          ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; U4_IN        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; U5_IN        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; U6_IN        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; U9_IN        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; U8_IN        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; U7_IN        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; D23          ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; D24          ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; D25          ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; U6_IN        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_TDO~ ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
@@ -438,13 +424,13 @@ Worst Case Available Settling Time: 17.121 ns
 ; D26          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; U4_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; U5_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
-; U6_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; U9_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; U8_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; U7_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; D23          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; D24          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; D25          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
+; U6_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; ~ALTERA_TDO~ ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -476,13 +462,13 @@ Worst Case Available Settling Time: 17.121 ns
 ; D26          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; U4_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; U5_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
-; U6_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; U9_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; U8_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; U7_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; D23          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; D24          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; D25          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
+; U6_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; ~ALTERA_TDO~ ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -514,13 +500,13 @@ Worst Case Available Settling Time: 17.121 ns
 ; D26          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; U4_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; U5_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
-; U6_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; U9_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; U8_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; U7_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; D23          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; D24          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; D25          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
+; U6_IN        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_TDO~ ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -531,14 +517,11 @@ Worst Case Available Settling Time: 17.121 ns
 ; From Clock                                      ; To Clock                                        ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------+-------------------------------------------------+----------+----------+----------+----------+
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; 2        ; 0        ; 0        ; 0        ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; 91       ; 0        ; 0        ; 0        ;
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; pll|altpll_component|auto_generated|pll1|clk[0] ; 43446    ; 0        ; 0        ; 0        ;
 ; pll|altpll_component|auto_generated|pll1|clk[1] ; pll|altpll_component|auto_generated|pll1|clk[0] ; 90       ; 0        ; 0        ; 0        ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; pll|altpll_component|auto_generated|pll1|clk[1] ; 865      ; 0        ; 0        ; 0        ;
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; pll|altpll_component|auto_generated|pll1|clk[1] ; 1        ; 0        ; 0        ; 0        ;
-; pll|altpll_component|auto_generated|pll1|clk[1] ; pll|altpll_component|auto_generated|pll1|clk[1] ; 76177    ; 0        ; 0        ; 0        ;
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; pll|altpll_component|auto_generated|pll1|clk[2] ; 2905     ; 0        ; 0        ; 0        ;
-; pll|altpll_component|auto_generated|pll1|clk[0] ; pll|altpll_component|auto_generated|pll1|clk[2] ; 12       ; 0        ; 0        ; 0        ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; pll|altpll_component|auto_generated|pll1|clk[2] ; 5905     ; 0        ; 0        ; 0        ;
+; pll|altpll_component|auto_generated|pll1|clk[1] ; pll|altpll_component|auto_generated|pll1|clk[1] ; 79190    ; 0        ; 0        ; 0        ;
 +-------------------------------------------------+-------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -549,14 +532,11 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; From Clock                                      ; To Clock                                        ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------+-------------------------------------------------+----------+----------+----------+----------+
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; 2        ; 0        ; 0        ; 0        ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; 91       ; 0        ; 0        ; 0        ;
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; pll|altpll_component|auto_generated|pll1|clk[0] ; 43446    ; 0        ; 0        ; 0        ;
 ; pll|altpll_component|auto_generated|pll1|clk[1] ; pll|altpll_component|auto_generated|pll1|clk[0] ; 90       ; 0        ; 0        ; 0        ;
+; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; pll|altpll_component|auto_generated|pll1|clk[1] ; 865      ; 0        ; 0        ; 0        ;
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; pll|altpll_component|auto_generated|pll1|clk[1] ; 1        ; 0        ; 0        ; 0        ;
-; pll|altpll_component|auto_generated|pll1|clk[1] ; pll|altpll_component|auto_generated|pll1|clk[1] ; 76177    ; 0        ; 0        ; 0        ;
-; AC_MOTOR_TRIANGLE:inst2|LOCK                    ; pll|altpll_component|auto_generated|pll1|clk[2] ; 2905     ; 0        ; 0        ; 0        ;
-; pll|altpll_component|auto_generated|pll1|clk[0] ; pll|altpll_component|auto_generated|pll1|clk[2] ; 12       ; 0        ; 0        ; 0        ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; pll|altpll_component|auto_generated|pll1|clk[2] ; 5905     ; 0        ; 0        ; 0        ;
+; pll|altpll_component|auto_generated|pll1|clk[1] ; pll|altpll_component|auto_generated|pll1|clk[1] ; 79190    ; 0        ; 0        ; 0        ;
 +-------------------------------------------------+-------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -596,7 +576,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SYS_CLK_12MHz                                   ; SYS_CLK_12MHz                                   ; Base      ; Constrained ;
 ; pll|altpll_component|auto_generated|pll1|clk[0] ; pll|altpll_component|auto_generated|pll1|clk[0] ; Generated ; Constrained ;
 ; pll|altpll_component|auto_generated|pll1|clk[1] ; pll|altpll_component|auto_generated|pll1|clk[1] ; Generated ; Constrained ;
-; pll|altpll_component|auto_generated|pll1|clk[2] ; pll|altpll_component|auto_generated|pll1|clk[2] ; Generated ; Constrained ;
 +-------------------------------------------------+-------------------------------------------------+-----------+-------------+
 
 
@@ -632,8 +611,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; ADC_CLK     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; ADC_CONV    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; BDBUS2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; D23         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; D24         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DAC_1_SDO   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DAC_2_SDO   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DAC_3_SDO   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -645,6 +622,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SPI_MISO    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; U4_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; U5_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; U6_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; U7_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; U8_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; U9_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; U23_IN      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -683,8 +662,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; ADC_CLK     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; ADC_CONV    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; BDBUS2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; D23         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; D24         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DAC_1_SDO   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DAC_2_SDO   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DAC_3_SDO   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -696,6 +673,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SPI_MISO    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; U4_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; U5_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; U6_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; U7_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; U8_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; U9_IN       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; U23_IN      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -708,7 +687,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Wed Apr 17 16:53:46 2019
+    Info: Processing started: Tue May  7 12:26:24 2019
 Info: Command: quartus_sta MAX1000 -c MAX1000
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -721,7 +700,6 @@ Info (332110): Deriving PLL clocks
     Info (332110): create_clock -period 83.333 -waveform {0.000 41.666} -name SYS_CLK_12MHz SYS_CLK_12MHz
     Info (332110): create_generated_clock -source {pll|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 6 -multiply_by 25 -duty_cycle 50.00 -name {pll|altpll_component|auto_generated|pll1|clk[0]} {pll|altpll_component|auto_generated|pll1|clk[0]}
     Info (332110): create_generated_clock -source {pll|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 3 -multiply_by 25 -duty_cycle 50.00 -name {pll|altpll_component|auto_generated|pll1|clk[1]} {pll|altpll_component|auto_generated|pll1|clk[1]}
-    Info (332110): create_generated_clock -source {pll|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 11 -multiply_by 75 -duty_cycle 50.00 -name {pll|altpll_component|auto_generated|pll1|clk[2]} {pll|altpll_component|auto_generated|pll1|clk[2]}
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name AC_MOTOR_TRIANGLE:inst2|LOCK AC_MOTOR_TRIANGLE:inst2|LOCK
@@ -731,113 +709,104 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -9.571
+Info (332146): Worst-case setup slack is -9.218
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.571           -1231.794 pll|altpll_component|auto_generated|pll1|clk[2] 
-    Info (332119):    -7.055            -159.036 AC_MOTOR_TRIANGLE:inst2|LOCK 
-    Info (332119):     1.549               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     7.171               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    -9.218            -826.968 pll|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    -5.962             -11.888 AC_MOTOR_TRIANGLE:inst2|LOCK 
+    Info (332119):     7.263               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
 Info (332146): Worst-case hold slack is 0.361
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.361               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):     0.361               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     0.362               0.000 pll|altpll_component|auto_generated|pll1|clk[2] 
-    Info (332119):     2.986               0.000 AC_MOTOR_TRIANGLE:inst2|LOCK 
+    Info (332119):     0.362               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     3.436               0.000 AC_MOTOR_TRIANGLE:inst2|LOCK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.487
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.487             -41.636 AC_MOTOR_TRIANGLE:inst2|LOCK 
-    Info (332119):     4.729               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     5.687               0.000 pll|altpll_component|auto_generated|pll1|clk[2] 
-    Info (332119):     9.725               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    -1.487              -4.461 AC_MOTOR_TRIANGLE:inst2|LOCK 
+    Info (332119):     3.749               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     9.726               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):    41.561               0.000 SYS_CLK_12MHz 
-Info (332114): Report Metastability: Found 171 synchronizer chains.
+Info (332114): Report Metastability: Found 135 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
-    Info (332114): Number of Synchronizer Chains Found: 171
+    Info (332114): Number of Synchronizer Chains Found: 135
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 13.329 ns
+    Info (332114): Worst Case Available Settling Time: 10.138 ns
     Info (332114): 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -8.811
+Info (332146): Worst-case setup slack is -8.477
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.811           -1120.040 pll|altpll_component|auto_generated|pll1|clk[2] 
-    Info (332119):    -6.793            -155.558 AC_MOTOR_TRIANGLE:inst2|LOCK 
-    Info (332119):     1.935               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     7.310               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
-Info (332146): Worst-case hold slack is 0.324
+    Info (332119):    -8.477            -759.418 pll|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    -5.974             -11.879 AC_MOTOR_TRIANGLE:inst2|LOCK 
+    Info (332119):     7.381               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.323
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.324               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.323               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):     0.324               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     0.324               0.000 pll|altpll_component|auto_generated|pll1|clk[2] 
-    Info (332119):     2.815               0.000 AC_MOTOR_TRIANGLE:inst2|LOCK 
+    Info (332119):     3.055               0.000 AC_MOTOR_TRIANGLE:inst2|LOCK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.487
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.487             -41.636 AC_MOTOR_TRIANGLE:inst2|LOCK 
-    Info (332119):     4.720               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     5.706               0.000 pll|altpll_component|auto_generated|pll1|clk[2] 
+    Info (332119):    -1.487              -4.461 AC_MOTOR_TRIANGLE:inst2|LOCK 
+    Info (332119):     3.749               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
     Info (332119):     9.722               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):    41.427               0.000 SYS_CLK_12MHz 
-Info (332114): Report Metastability: Found 171 synchronizer chains.
+Info (332114): Report Metastability: Found 135 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
-    Info (332114): Number of Synchronizer Chains Found: 171
+    Info (332114): Number of Synchronizer Chains Found: 135
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 13.712 ns
+    Info (332114): Worst Case Available Settling Time: 10.806 ns
     Info (332114): 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.314
+Info (332146): Worst-case setup slack is -4.227
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.314            -547.978 pll|altpll_component|auto_generated|pll1|clk[2] 
-    Info (332119):    -2.884             -67.264 AC_MOTOR_TRIANGLE:inst2|LOCK 
-    Info (332119):     6.675               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     8.729               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
-Info (332146): Worst-case hold slack is 0.152
+    Info (332119):    -4.227            -381.792 pll|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    -2.568              -4.991 AC_MOTOR_TRIANGLE:inst2|LOCK 
+    Info (332119):     8.816               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.111
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+    Info (332119):     0.111               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
     Info (332119):     0.152               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):     0.152               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     0.152               0.000 pll|altpll_component|auto_generated|pll1|clk[2] 
-    Info (332119):     0.955               0.000 AC_MOTOR_TRIANGLE:inst2|LOCK 
+    Info (332119):     1.067               0.000 AC_MOTOR_TRIANGLE:inst2|LOCK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.000             -28.000 AC_MOTOR_TRIANGLE:inst2|LOCK 
-    Info (332119):     4.765               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     5.819               0.000 pll|altpll_component|auto_generated|pll1|clk[2] 
+    Info (332119):    -1.000              -3.000 AC_MOTOR_TRIANGLE:inst2|LOCK 
+    Info (332119):     4.705               0.000 pll|altpll_component|auto_generated|pll1|clk[1] 
     Info (332119):     9.766               0.000 pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):    41.198               0.000 SYS_CLK_12MHz 
-Info (332114): Report Metastability: Found 171 synchronizer chains.
+Info (332114): Report Metastability: Found 135 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
-    Info (332114): Number of Synchronizer Chains Found: 171
+    Info (332114): Number of Synchronizer Chains Found: 135
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 17.121 ns
+    Info (332114): Worst Case Available Settling Time: 15.945 ns
     Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1066 megabytes
-    Info: Processing ended: Wed Apr 17 16:53:53 2019
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 1067 megabytes
+    Info: Processing ended: Tue May  7 12:26:30 2019
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:08
 
 

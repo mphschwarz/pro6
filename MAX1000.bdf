@@ -661,23 +661,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 912 1560 1088 1576)
-	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "U6_IN" (rect 90 0 120 13)(font "Intel Clear" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 912 1656 1088 1672)
+	(rect 912 1672 1088 1688)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "U9_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -693,7 +677,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 912 1672 1088 1688)
+	(rect 912 1784 1088 1800)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "U8_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -709,7 +693,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 912 1688 1088 1704)
+	(rect 912 1800 1088 1816)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "U7_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -725,7 +709,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 912 1784 1088 1800)
+	(rect -808 1136 -632 1152)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "D23" (rect 90 0 111 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -741,7 +725,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 912 1800 1088 1816)
+	(rect -808 1160 -632 1176)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "D24" (rect 90 0 112 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -757,9 +741,25 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 912 1816 1088 1832)
+	(rect -808 1184 -632 1200)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "D25" (rect 90 0 111 13)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 912 1656 1088 1672)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "U6_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -2444,7 +2444,7 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 216 160))
 	)
-	(annotation_block (parameter)(rect 312 1368 526 1425))
+	(annotation_block (parameter)(rect 296 1368 512 1416))
 )
 (symbol
 	(rect -144 1104 32 1184)
@@ -4488,11 +4488,6 @@ refer to the applicable agreement for further details.
 	(pt 168 1616)
 )
 (connector
-	(text "motor_clk" (rect 136 1472 149 1523)(font "Intel Clear" )(vertical))
-	(pt 152 1536)
-	(pt 152 1472)
-)
-(connector
 	(pt 168 1536)
 	(pt 152 1536)
 )
@@ -4865,6 +4860,11 @@ refer to the applicable agreement for further details.
 	(text "CLK_100kHz" (rect 1370 1160 1434 1173)(font "Intel Clear" ))
 	(pt 1368 1176)
 	(pt 1464 1176)
+)
+(connector
+	(text "PLL_CLK_100MHz" (rect 136 1432 149 1525)(font "Intel Clear" )(vertical))
+	(pt 152 1440)
+	(pt 152 1536)
 )
 (junction (pt -672 -64))
 (junction (pt 464 64))

@@ -39,13 +39,13 @@ U25_IN <= <GND>
 D26 <= <GND>
 U4_IN <= AC_MOTOR_COMPARATOR:inst5.OUT1
 U5_IN <= AC_MOTOR_COMPARATOR:inst5.OUT2
-U6_IN <= AC_MOTOR_COMPARATOR:inst5.EN1
-U9_IN <= AC_MOTOR_COMPARATOR:inst6.OUT1
-U8_IN <= AC_MOTOR_COMPARATOR:inst6.OUT2
-U7_IN <= AC_MOTOR_COMPARATOR:inst6.EN1
-D23 <= AC_MOTOR_COMPARATOR:inst7.OUT1
-D24 <= AC_MOTOR_COMPARATOR:inst7.OUT2
-D25 <= AC_MOTOR_COMPARATOR:inst7.EN1
+U9_IN <= AC_MOTOR_COMPARATOR:inst6.OUT2
+U8_IN <= AC_MOTOR_COMPARATOR:inst7.OUT1
+U7_IN <= AC_MOTOR_COMPARATOR:inst7.OUT2
+D23 <= <GND>
+D24 <= <GND>
+D25 <= <GND>
+U6_IN <= AC_MOTOR_COMPARATOR:inst6.OUT1
 U28_OUT => ~NO_FANOUT~
 
 
@@ -1297,10 +1297,11 @@ OUT <= OUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MAX1000|PLL:pll
-inclk0 => sub_wire5[0].IN1
+inclk0 => sub_wire6[0].IN1
 c0 <= altpll:altpll_component.clk
 c1 <= altpll:altpll_component.clk
 c2 <= altpll:altpll_component.clk
+c3 <= altpll:altpll_component.clk
 
 
 |MAX1000|PLL:pll|altpll:altpll_component
@@ -4287,30 +4288,18 @@ CLK => AMPLITUDE[8]~reg0.CLK
 CLK => AMPLITUDE[9]~reg0.CLK
 CLK => AMPLITUDE[10]~reg0.CLK
 CLK => AMPLITUDE[11]~reg0.CLK
-CLK => power_int[0].CLK
-CLK => power_int[1].CLK
-CLK => power_int[2].CLK
-CLK => power_int[3].CLK
-CLK => power_int[4].CLK
-CLK => power_int[5].CLK
-CLK => power_int[6].CLK
-CLK => power_int[7].CLK
-CLK => power_int[8].CLK
-CLK => power_int[9].CLK
-CLK => power_int[10].CLK
-CLK => power_int[11].CLK
-POWER[0] => power_int[0].DATAIN
-POWER[1] => power_int[1].DATAIN
-POWER[2] => power_int[2].DATAIN
-POWER[3] => power_int[3].DATAIN
-POWER[4] => power_int[4].DATAIN
-POWER[5] => power_int[5].DATAIN
-POWER[6] => power_int[6].DATAIN
-POWER[7] => power_int[7].DATAIN
-POWER[8] => power_int[8].DATAIN
-POWER[9] => power_int[9].DATAIN
-POWER[10] => power_int[10].DATAIN
-POWER[11] => power_int[11].DATAIN
+POWER[0] => ~NO_FANOUT~
+POWER[1] => ~NO_FANOUT~
+POWER[2] => ~NO_FANOUT~
+POWER[3] => ~NO_FANOUT~
+POWER[4] => ~NO_FANOUT~
+POWER[5] => ~NO_FANOUT~
+POWER[6] => ~NO_FANOUT~
+POWER[7] => ~NO_FANOUT~
+POWER[8] => ~NO_FANOUT~
+POWER[9] => ~NO_FANOUT~
+POWER[10] => ~NO_FANOUT~
+POWER[11] => ~NO_FANOUT~
 FREQUENCY[0] <= FREQUENCY[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 FREQUENCY[1] <= FREQUENCY[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 FREQUENCY[2] <= FREQUENCY[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE

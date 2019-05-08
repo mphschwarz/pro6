@@ -8,18 +8,16 @@ module AC_MOTOR_COMPARATOR_TB;
 	integer file;
 	reg clk;
 	reg enable;
-	reg signed [12:0] amplitude;
-	reg [12:0] frequency;
+	reg signed [11:0] amplitude;
+	reg [11:0] frequency;
 	//
-	wire signed [24:0] triangle;
+	wire signed [23:0] triangle;
 	wire signed [23:0] sine1;
 	wire signed [23:0] sine2;
 	wire signed [23:0] sine3;
 
-	reg cw_in;
-	reg ccw_in;
-	wire cw_out;
-	wire ccw_out;
+	reg cw;
+	reg ccw;
 
 	wire lock;
 
@@ -30,25 +28,24 @@ module AC_MOTOR_COMPARATOR_TB;
 	//
 	initial begin
 		clk <= 1;
-		frequency <= 10;
-		amplitude <= 2**12 - 1;
-		cw_in <= 0;
-		ccw_in <= 1;
+		enable <= 1;
+		frequency <= 2**7 - 1;
+		amplitude <= 2**11 - 1;
+		cw <= 0;
+		ccw <= 1;
 
 		$dumpfile("vcd/ac_motor_comparator_tb.vcd"); 
 		$dumpvars(0, AC_MOTOR_COMPARATOR_TB); 
 		//#25000 $finish; 
 		//#124500 frequency <= 2**12 - 1;
-		#250000 $finish;
+		#2500 $finish;
 	end 
 	//
 	always #1 clk <= !clk;
 	
-	AC_MOTOR_COMPARATOR comparator(
+	AC_MOTOR_COMPARATOR comparator1(
 		clk,
 		enable,
-		cw_out,
-		ccw_out,
 		triangle,
 		sine1,
 		out1,
@@ -57,16 +54,14 @@ module AC_MOTOR_COMPARATOR_TB;
 		en2);
 	AC_MOTOR_TRIANGLE triangle_gen(
 		clk,
-		cw_in,
-		ccw_in,
-		cw_out,
-		ccw_out,
 		lock,
 		triangle);
 	AC_MOTOR_SINE sine_gen(
 		clk,
 		frequency,
 		amplitude,
+		cw,
+		ccw,
 		lock,
 		sine1,
 		sine2,

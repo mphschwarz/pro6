@@ -1,5 +1,5 @@
 Power Analyzer report for MAX1000
-Wed Apr 17 16:53:45 2019
+Tue May  7 12:26:23 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -52,29 +52,29 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.42        ;
+; Average used               ; 1.41        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  42.5%      ;
+;     Processor 2            ;  41.3%      ;
 +----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------+
 ; Power Analyzer Summary                                                                    ;
 +----------------------------------------+--------------------------------------------------+
-; Power Analyzer Status                  ; Successful - Wed Apr 17 16:53:45 2019            ;
+; Power Analyzer Status                  ; Successful - Tue May  7 12:26:23 2019            ;
 ; Quartus Prime Version                  ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition  ;
 ; Revision Name                          ; MAX1000                                          ;
 ; Top-level Entity Name                  ; MAX1000                                          ;
 ; Family                                 ; MAX 10                                           ;
 ; Device                                 ; 10M16SAU169C8G                                   ;
 ; Power Models                           ; Final                                            ;
-; Total Thermal Power Dissipation        ; 269.75 mW                                        ;
+; Total Thermal Power Dissipation        ; 269.76 mW                                        ;
 ; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
 ; Core Static Thermal Power Dissipation  ; 226.59 mW                                        ;
-; I/O Thermal Power Dissipation          ; 43.17 mW                                         ;
+; I/O Thermal Power Dissipation          ; 43.18 mW                                         ;
 ; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
 +----------------------------------------+--------------------------------------------------+
 
@@ -112,7 +112,6 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------------+-----------------------------+
 ; PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|wire_pll1_clk[0]         ; No valid clock domain found ;
 ; PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|wire_pll1_clk[1]         ; No valid clock domain found ;
-; PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|wire_pll1_clk[2]         ; No valid clock domain found ;
 ; U28_OUT                                                                             ; No valid clock domain found ;
 ; USER_BTN                                                                            ; No valid clock domain found ;
 ; SYS_CLK_12MHz                                                                       ; No valid clock domain found ;
@@ -134,7 +133,6 @@ refer to the applicable agreement for further details.
 ; AC_MOTOR_TRIANGLE:inst2|LOCK~clkctrl                                                ; No valid clock domain found ;
 ; PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|wire_pll1_clk[0]~clkctrl ; No valid clock domain found ;
 ; PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|wire_pll1_clk[1]~clkctrl ; No valid clock domain found ;
-; PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|wire_pll1_clk[2]~clkctrl ; No valid clock domain found ;
 +-------------------------------------------------------------------------------------+-----------------------------+
 
 
@@ -180,7 +178,7 @@ refer to the applicable agreement for further details.
 ; Combinational cell         ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
 ; Clock control block        ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
 ; Register cell              ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
-; I/O                        ; 2.47 mW                           ; 0.00 mW                     ; 2.47 mW                        ; 0.00 mW                       ;    0.000                                                  ;
+; I/O                        ; 2.48 mW                           ; 0.00 mW                     ; 2.48 mW                        ; 0.00 mW                       ;    0.000                                                  ;
 ; Voltage Regulator          ; 0.96 mW                           ; 0.00 mW                     ; 0.96 mW                        ; --                            ; --                                                        ;
 +----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
 (1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
@@ -191,7 +189,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-----------------------------------------------------------------------------------------------------+
 ; Compilation Hierarchy Node                       ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                 ;
 +--------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-----------------------------------------------------------------------------------------------------+
-; |MAX1000                                         ; 3.43 mW (3.43 mW)                    ; 0.00 mW (0.00 mW)               ; 3.43 mW (3.43 mW)                 ; 0.00 mW (0.00 mW)                 ; |MAX1000                                                                                            ;
+; |MAX1000                                         ; 3.44 mW (3.44 mW)                    ; 0.00 mW (0.00 mW)               ; 3.44 mW (3.44 mW)                 ; 0.00 mW (0.00 mW)                 ; |MAX1000                                                                                            ;
 ;     |ADC_LTC2313_12_MOV_AVG:adc1                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1                                                                ;
 ;         |ADC_LTC2313_12:adc_ltc2313_12           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12                                  ;
 ;     |ADC_LTC2313_12_MOV_AVG:adc2                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2                                                                ;
@@ -245,7 +243,6 @@ refer to the applicable agreement for further details.
 ;             |altsyncram_2hu:auto_generated       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:inst3|altsyncram:Mux23_rtl_0|altsyncram_2hu:auto_generated                   ;
 ;         |altsyncram:Mux35_rtl_0                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:inst3|altsyncram:Mux35_rtl_0                                                 ;
 ;             |altsyncram_1hu:auto_generated       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_SINE:inst3|altsyncram:Mux35_rtl_0|altsyncram_1hu:auto_generated                   ;
-;     |AC_MOTOR_CONTROL:inst4                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_CONTROL:inst4                                                                     ;
 ;     |AC_MOTOR_COMPARATOR:inst5                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_COMPARATOR:inst5                                                                  ;
 ;     |AC_MOTOR_COMPARATOR:inst6                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_COMPARATOR:inst6                                                                  ;
 ;     |AC_MOTOR_COMPARATOR:inst7                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |MAX1000|AC_MOTOR_COMPARATOR:inst7                                                                  ;
@@ -326,19 +323,19 @@ refer to the applicable agreement for further details.
 ;                                                                                        ;              ;            ;               ;               ;
 ; Node, entity or clock assignment                                                       ;              ;            ;               ;               ;
 ;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 4 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 4 (0.1%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 3 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 3 (0.1%)      ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Vectorless estimation                                                                  ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 8330 (99.7%) ; 30 (54.5%) ; 2585 (100.0%) ; 5715 (99.9%)  ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 8057 (99.7%) ; 30 (54.5%) ; 2464 (100.0%) ; 5563 (100.0%) ;
 ;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 80 (1.0%)    ; 12 (21.8%) ; 0 (0.0%)      ; 68 (1.2%)     ;
-;     -- Number of signals with Static Probability from Vectorless estimation            ; 8326 (99.6%) ; 30 (54.5%) ; 2585 (100.0%) ; 5711 (99.9%)  ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 8054 (99.6%) ; 30 (54.5%) ; 2464 (100.0%) ; 5560 (99.9%)  ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Default assignment                                                                     ;              ;            ;               ;               ;
 ;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Default assignment               ; 28 (0.3%)    ; 25 (45.5%) ; 0 (0.0%)      ; 3 (0.1%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 27 (0.3%)    ; 25 (45.5%) ; 0 (0.0%)      ; 2 (0.0%)      ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Assumed 0                                                                              ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate assumed 0                                    ; 28 (0.3%)    ; 25 (45.5%) ; 0 (0.0%)      ; 3 (0.1%)      ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 27 (0.3%)    ; 25 (45.5%) ; 0 (0.0%)      ; 2 (0.0%)      ;
 +----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
 
 
@@ -356,7 +353,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Power Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Wed Apr 17 16:53:38 2019
+    Info: Processing started: Tue May  7 12:26:17 2019
 Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off MAX1000 -c MAX1000
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (21077): Low junction temperature is 0 degrees C
@@ -370,7 +367,6 @@ Warning (332068): No clocks defined in design.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: pll|altpll_component|auto_generated|pll1|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 83.333
     Warning (332056): Node: pll|altpll_component|auto_generated|pll1|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 83.333
-    Warning (332056): Node: pll|altpll_component|auto_generated|pll1|clk[2] was found missing 1 generated clock that corresponds to a base clock with a period of: 83.333
 Info (223000): Starting Vectorless Power Activity Estimation
 Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
 Info (223001): Completed Vectorless Power Activity Estimation
@@ -378,11 +374,11 @@ Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specifi
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
-Info (215031): Total thermal power estimate for the design is 269.75 mW
-Info: Quartus Prime Power Analyzer was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 1430 megabytes
-    Info: Processing ended: Wed Apr 17 16:53:45 2019
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:09
+Info (215031): Total thermal power estimate for the design is 269.76 mW
+Info: Quartus Prime Power Analyzer was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 1427 megabytes
+    Info: Processing ended: Tue May  7 12:26:23 2019
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:08
 
 

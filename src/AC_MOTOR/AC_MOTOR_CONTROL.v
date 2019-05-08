@@ -15,9 +15,9 @@ module AC_MOTOR_CONTROL(
 		power_int <= 2**10 - 1;
 	end
 
-	always @(posedge CLK) begin
-		power_int <= POWER;
-	end
+	// always @(posedge CLK) begin
+	// 	power_int <= POWER;
+	// end
 
 	always @(posedge CLK) begin
 		AMPLITUDE <= power_int;
