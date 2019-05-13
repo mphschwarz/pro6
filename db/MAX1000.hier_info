@@ -39,9 +39,9 @@ U25_IN <= <GND>
 D26 <= <GND>
 U4_IN <= AC_MOTOR_COMPARATOR:inst5.OUT1
 U5_IN <= AC_MOTOR_COMPARATOR:inst5.OUT2
-U9_IN <= AC_MOTOR_COMPARATOR:inst6.OUT2
+U9_IN <= AC_MOTOR_COMPARATOR:inst7.OUT2
 U8_IN <= AC_MOTOR_COMPARATOR:inst7.OUT1
-U7_IN <= AC_MOTOR_COMPARATOR:inst7.OUT2
+U7_IN <= AC_MOTOR_COMPARATOR:inst6.OUT2
 D23 <= <GND>
 D24 <= <GND>
 D25 <= <GND>
@@ -1297,10 +1297,9 @@ OUT <= OUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MAX1000|PLL:pll
-inclk0 => sub_wire6[0].IN1
+inclk0 => sub_wire5[0].IN1
 c0 <= altpll:altpll_component.clk
 c1 <= altpll:altpll_component.clk
-c2 <= altpll:altpll_component.clk
 c3 <= altpll:altpll_component.clk
 
 
@@ -3880,18 +3879,18 @@ CLK => clock_div[9].CLK
 CLK => clock_div[10].CLK
 CLK => clock_div[11].CLK
 CLK => clock_div[12].CLK
-FREQUENCY[0] => freq_int[0].DATAIN
-FREQUENCY[1] => Add0.IN22
-FREQUENCY[2] => Add0.IN21
-FREQUENCY[3] => Add0.IN20
-FREQUENCY[4] => Add0.IN19
-FREQUENCY[5] => Add0.IN18
-FREQUENCY[6] => Add0.IN17
-FREQUENCY[7] => Add0.IN16
-FREQUENCY[8] => Add0.IN15
-FREQUENCY[9] => Add0.IN14
-FREQUENCY[10] => Add0.IN13
-FREQUENCY[11] => Add0.IN12
+FREQUENCY[0] => Add0.IN24
+FREQUENCY[1] => Add0.IN23
+FREQUENCY[2] => Add0.IN22
+FREQUENCY[3] => Add0.IN21
+FREQUENCY[4] => Add0.IN20
+FREQUENCY[5] => Add0.IN19
+FREQUENCY[6] => Add0.IN18
+FREQUENCY[7] => Add0.IN17
+FREQUENCY[8] => Add0.IN16
+FREQUENCY[9] => Add0.IN15
+FREQUENCY[10] => Add0.IN14
+FREQUENCY[11] => Add0.IN13
 AMPLITUDE[0] => ampl_int[0].DATAIN
 AMPLITUDE[1] => ampl_int[1].DATAIN
 AMPLITUDE[2] => ampl_int[2].DATAIN
@@ -3904,7 +3903,6 @@ AMPLITUDE[8] => ampl_int[8].DATAIN
 AMPLITUDE[9] => ampl_int[9].DATAIN
 AMPLITUDE[10] => ampl_int[10].DATAIN
 AMPLITUDE[11] => ampl_int[11].DATAIN
-AMPLITUDE[11] => ampl_int[12].DATAIN
 CW => cw_int.DATAIN
 CCW => ccw_int.DATAIN
 LOCK => ccw_int.CLK
@@ -4210,29 +4208,6 @@ CLK => triangle_int[9].CLK
 CLK => triangle_int[10].CLK
 CLK => triangle_int[11].CLK
 CLK => triangle_int[12].CLK
-CLK => triangle_int[13].CLK
-CLK => triangle_int[14].CLK
-CLK => triangle_int[15].CLK
-CLK => triangle_int[16].CLK
-CLK => triangle_int[17].CLK
-CLK => triangle_int[18].CLK
-CLK => triangle_int[19].CLK
-CLK => triangle_int[20].CLK
-CLK => triangle_int[21].CLK
-CLK => triangle_int[22].CLK
-CLK => triangle_int[23].CLK
-CLK => triangle_int[24].CLK
-CLK => triangle_int[25].CLK
-CLK => triangle_int[26].CLK
-CLK => triangle_int[27].CLK
-CLK => triangle_int[28].CLK
-CLK => triangle_int[29].CLK
-CLK => triangle_int[30].CLK
-CLK => triangle_int[31].CLK
-CLK => triangle_int[32].CLK
-CLK => triangle_int[33].CLK
-CLK => triangle_int[34].CLK
-CLK => triangle_int[35].CLK
 CLK => triangle_dir[0].CLK
 CLK => triangle_dir[1].CLK
 CLK => LOCK~reg0.CLK
@@ -4326,7 +4301,7 @@ AMPLITUDE[10] <= AMPLITUDE[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 AMPLITUDE[11] <= AMPLITUDE[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MAX1000|AC_MOTOR_COMPARATOR:inst6
+|MAX1000|AC_MOTOR_COMPARATOR:inst7
 CLK => out_count[0].CLK
 CLK => out_count[1].CLK
 CLK => out_count[2].CLK
@@ -4439,7 +4414,7 @@ EN1 <= <VCC>
 EN2 <= <VCC>
 
 
-|MAX1000|AC_MOTOR_COMPARATOR:inst7
+|MAX1000|AC_MOTOR_COMPARATOR:inst6
 CLK => out_count[0].CLK
 CLK => out_count[1].CLK
 CLK => out_count[2].CLK

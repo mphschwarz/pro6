@@ -1,4 +1,4 @@
 v1
 DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,AC_MOTOR_SINE:inst3|lpm_mult:Mult4|mult_lgs:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,AC_MOTOR_SINE:inst3|lpm_mult:Mult5|mult_lgs:auto_generated|mac_out2,
 DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,AC_MOTOR_SINE:inst3|lpm_mult:Mult3|mult_lgs:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,AC_MOTOR_SINE:inst3|lpm_mult:Mult5|mult_lgs:auto_generated|mac_out2,

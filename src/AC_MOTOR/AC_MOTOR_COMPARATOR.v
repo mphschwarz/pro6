@@ -26,6 +26,7 @@ module AC_MOTOR_COMPARATOR(
 
 	initial begin
 		sine_int <= 0;
+		triangle_int <= 0;
 		dead_time <= 1;
 		out_count <= 0;
 		out_count_dir <= 1;
@@ -49,25 +50,9 @@ module AC_MOTOR_COMPARATOR(
 		if (out_count == 0 && out_count_dir == -1) begin
 			OUT1 <= 1;
 			OUT2 <= 0;
-			//if (CW && !CCW) begin
-			//	OUT1 <= 1;
-			//	OUT2 <= 0;
-			//end
-			//if (!CW && CCW) begin
-			//	OUT1 <= 0;
-			//	OUT2 <= 1;
-			//end
 		end else if (out_count == dead_time && out_count_dir == 1) begin
 			OUT1 <= 0;
 			OUT2 <= 1;
-			// if (CW && !CCW) begin
-			// 	OUT1 <= 0;
-			// 	OUT2 <= 1;
-			// end
-			// if (!CW && CCW) begin
-			// 	OUT1 <= 1;
-			// 	OUT2 <= 0;
-			// end
 		end else begin
 			OUT1 <= 0;
 			OUT2 <= 0;

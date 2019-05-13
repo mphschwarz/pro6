@@ -661,7 +661,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 912 1672 1088 1688)
+	(rect 912 1800 1088 1816)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "U9_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -693,7 +693,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 912 1800 1088 1816)
+	(rect 912 1672 1088 1688)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "U7_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -813,7 +813,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 288 840 480 1048)
+	(rect 280 928 472 1136)
 	(text "CLOCK_GENERATOR" (rect 5 0 120 11)(font "Arial" ))
 	(text "clock_generator" (rect 8 192 88 203)(font "Arial" ))
 	(port
@@ -2953,190 +2953,6 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect -592 1632 -397 1670))
 )
 (symbol
-	(rect 288 528 576 704)
-	(text "PLL" (rect 132 0 161 16)(font "Arial" (font_size 10)))
-	(text "pll" (rect 8 161 20 172)(font "Arial" ))
-	(port
-		(pt 0 64)
-		(input)
-		(text "inclk0" (rect 0 0 34 13)(font "Arial" (font_size 8)))
-		(text "inclk0" (rect 4 51 38 64)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 40 64))
-	)
-	(port
-		(pt 288 64)
-		(output)
-		(text "c0" (rect 0 0 15 13)(font "Arial" (font_size 8)))
-		(text "c0" (rect 273 51 288 64)(font "Arial" (font_size 8)))
-	)
-	(port
-		(pt 288 80)
-		(output)
-		(text "c1" (rect 0 0 15 13)(font "Arial" (font_size 8)))
-		(text "c1" (rect 273 67 288 80)(font "Arial" (font_size 8)))
-	)
-	(port
-		(pt 288 96)
-		(output)
-		(text "c2" (rect 0 0 15 13)(font "Arial" (font_size 8)))
-		(text "c2" (rect 273 83 288 96)(font "Arial" (font_size 8)))
-	)
-	(drawing
-		(text "MAX 10" (rect 247 162 288 173)(font "Arial" ))
-		(text "inclk0 frequency: 12.000 MHz" (rect 50 60 196 71)(font "Arial" ))
-		(text "Operation Mode: Normal" (rect 50 72 172 83)(font "Arial" ))
-		(text "Clk " (rect 51 91 71 102)(font "Arial" ))
-		(text "Ratio" (rect 100 91 127 102)(font "Arial" ))
-		(text "Ph (dg)" (rect 155 91 192 102)(font "Arial" ))
-		(text "DC (%)" (rect 190 91 227 102)(font "Arial" ))
-		(text "c0" (rect 54 104 66 115)(font "Arial" ))
-		(text "25/6" (rect 102 104 125 115)(font "Arial" ))
-		(text "0.00" (rect 161 104 184 115)(font "Arial" ))
-		(text "50.00" (rect 194 104 223 115)(font "Arial" ))
-		(text "c1" (rect 54 117 66 128)(font "Arial" ))
-		(text "25/3" (rect 102 117 125 128)(font "Arial" ))
-		(text "0.00" (rect 161 117 184 128)(font "Arial" ))
-		(text "50.00" (rect 194 117 223 128)(font "Arial" ))
-		(text "c2" (rect 54 130 66 141)(font "Arial" ))
-		(text "40909091/6000000" (rect 71 130 167 141)(font "Arial" ))
-		(text "0.00" (rect 161 130 184 141)(font "Arial" ))
-		(text "50.00" (rect 194 130 223 141)(font "Arial" ))
-		(line (pt 0 0)(pt 289 0))
-		(line (pt 289 0)(pt 289 177))
-		(line (pt 0 177)(pt 289 177))
-		(line (pt 0 0)(pt 0 177))
-		(line (pt 48 89)(pt 222 89))
-		(line (pt 48 101)(pt 222 101))
-		(line (pt 48 114)(pt 222 114))
-		(line (pt 48 127)(pt 222 127))
-		(line (pt 48 140)(pt 222 140))
-		(line (pt 48 89)(pt 48 140))
-		(line (pt 68 89)(pt 68 140)(line_width 3))
-		(line (pt 152 89)(pt 152 140)(line_width 3))
-		(line (pt 187 89)(pt 187 140)(line_width 3))
-		(line (pt 221 89)(pt 221 140))
-		(line (pt 40 48)(pt 255 48))
-		(line (pt 255 48)(pt 255 159))
-		(line (pt 40 159)(pt 255 159))
-		(line (pt 40 48)(pt 40 159))
-		(line (pt 287 64)(pt 255 64))
-		(line (pt 287 80)(pt 255 80))
-		(line (pt 287 96)(pt 255 96))
-	)
-)
-(symbol
-	(rect 168 1504 456 1648)
-	(text "AC_MOTOR_SINE" (rect 5 0 100 11)(font "Arial" ))
-	(text "inst3" (rect 8 128 32 139)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 24 11)(font "Arial" ))
-		(text "CLK" (rect 21 27 45 38)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "FREQUENCY[bits-1..0]" (rect 0 0 114 11)(font "Arial" ))
-		(text "FREQUENCY[bits-1..0]" (rect 21 43 135 54)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "AMPLITUDE[bits-1..0]" (rect 0 0 108 11)(font "Arial" ))
-		(text "AMPLITUDE[bits-1..0]" (rect 21 59 129 70)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "CW" (rect 0 0 20 11)(font "Arial" ))
-		(text "CW" (rect 21 75 41 86)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "CCW" (rect 0 0 28 11)(font "Arial" ))
-		(text "CCW" (rect 21 91 49 102)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "LOCK" (rect 0 0 33 11)(font "Arial" ))
-		(text "LOCK" (rect 21 107 54 118)(font "Arial" ))
-		(line (pt 0 112)(pt 16 112))
-	)
-	(port
-		(pt 288 32)
-		(output)
-		(text "SINE_VAL_1[23..0]" (rect 0 0 95 11)(font "Arial" ))
-		(text "SINE_VAL_1[23..0]" (rect 187 27 282 38)(font "Arial" ))
-		(line (pt 288 32)(pt 272 32)(line_width 3))
-	)
-	(port
-		(pt 288 48)
-		(output)
-		(text "SINE_VAL_2[23..0]" (rect 0 0 95 11)(font "Arial" ))
-		(text "SINE_VAL_2[23..0]" (rect 187 43 282 54)(font "Arial" ))
-		(line (pt 288 48)(pt 272 48)(line_width 3))
-	)
-	(port
-		(pt 288 64)
-		(output)
-		(text "SINE_VAL_3[23..0]" (rect 0 0 95 11)(font "Arial" ))
-		(text "SINE_VAL_3[23..0]" (rect 187 59 282 70)(font "Arial" ))
-		(line (pt 288 64)(pt 272 64)(line_width 3))
-	)
-	(parameter
-		"starting_sample"
-		"0"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"sine_samples"
-		"2048"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"bits"
-		"12"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"f_clk"
-		"82000000"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"f_min"
-		"10"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"f_max"
-		"600"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"clock_div_min"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"clock_div_max"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 272 128))
-	)
-	(annotation_block (parameter)(rect 168 1704 392 1840))
-)
-(symbol
 	(rect 664 1504 912 1616)
 	(text "AC_MOTOR_COMPARATOR" (rect 5 0 153 11)(font "Arial" ))
 	(text "inst5" (rect 8 96 32 107)(font "Arial" ))
@@ -3421,6 +3237,102 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 288 528 528 704)
+	(text "PLL" (rect 108 0 137 16)(font "Arial" (font_size 10)))
+	(text "pll" (rect 8 161 20 172)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "inclk0" (rect 0 0 34 13)(font "Arial" (font_size 8)))
+		(text "inclk0" (rect 4 51 38 64)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 40 64))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "c0" (rect 0 0 15 13)(font "Arial" (font_size 8)))
+		(text "c0" (rect 225 51 240 64)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 240 80)
+		(output)
+		(text "c1" (rect 0 0 15 13)(font "Arial" (font_size 8)))
+		(text "c1" (rect 225 67 240 80)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 240 96)
+		(output)
+		(text "c3" (rect 0 0 15 13)(font "Arial" (font_size 8)))
+		(text "c3" (rect 225 83 240 96)(font "Arial" (font_size 8)))
+	)
+	(drawing
+		(text "MAX 10" (rect 199 162 240 173)(font "Arial" ))
+		(text "inclk0 frequency: 12.000 MHz" (rect 50 60 196 71)(font "Arial" ))
+		(text "Operation Mode: Normal" (rect 50 72 172 83)(font "Arial" ))
+		(text "Clk " (rect 51 91 71 102)(font "Arial" ))
+		(text "Ratio" (rect 71 91 98 102)(font "Arial" ))
+		(text "Ph (dg)" (rect 97 91 134 102)(font "Arial" ))
+		(text "DC (%)" (rect 132 91 169 102)(font "Arial" ))
+		(text "c0" (rect 54 104 66 115)(font "Arial" ))
+		(text "25/6" (rect 73 104 96 115)(font "Arial" ))
+		(text "0.00" (rect 103 104 126 115)(font "Arial" ))
+		(text "50.00" (rect 136 104 165 115)(font "Arial" ))
+		(text "c1" (rect 54 117 66 128)(font "Arial" ))
+		(text "25/3" (rect 73 117 96 128)(font "Arial" ))
+		(text "0.00" (rect 103 117 126 128)(font "Arial" ))
+		(text "50.00" (rect 136 117 165 128)(font "Arial" ))
+		(text "c3" (rect 54 130 66 141)(font "Arial" ))
+		(text "1/1" (rect 76 130 92 141)(font "Arial" ))
+		(text "0.00" (rect 103 130 126 141)(font "Arial" ))
+		(text "50.00" (rect 136 130 165 141)(font "Arial" ))
+		(line (pt 0 0)(pt 241 0))
+		(line (pt 241 0)(pt 241 177))
+		(line (pt 0 177)(pt 241 177))
+		(line (pt 0 0)(pt 0 177))
+		(line (pt 48 89)(pt 164 89))
+		(line (pt 48 101)(pt 164 101))
+		(line (pt 48 114)(pt 164 114))
+		(line (pt 48 127)(pt 164 127))
+		(line (pt 48 140)(pt 164 140))
+		(line (pt 48 89)(pt 48 140))
+		(line (pt 68 89)(pt 68 140)(line_width 3))
+		(line (pt 94 89)(pt 94 140)(line_width 3))
+		(line (pt 129 89)(pt 129 140)(line_width 3))
+		(line (pt 163 89)(pt 163 140))
+		(line (pt 40 48)(pt 207 48))
+		(line (pt 207 48)(pt 207 159))
+		(line (pt 40 159)(pt 207 159))
+		(line (pt 40 48)(pt 40 159))
+		(line (pt 239 64)(pt 207 64))
+		(line (pt 239 80)(pt 207 80))
+		(line (pt 239 96)(pt 207 96))
+	)
+)
+(symbol
+	(rect 376 784 424 816)
+	(text "WIRE" (rect 1 0 26 10)(font "Arial" (font_size 6)))
+	(text "wire_motor_clk" (rect 3 21 80 34)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 53 18)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16))
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 25)(pt 32 16))
+	)
+)
+(symbol
 	(rect -136 1648 104 1728)
 	(text "AC_MOTOR_TRIANGLE" (rect 5 0 130 11)(font "Arial" ))
 	(text "inst2" (rect 8 64 32 75)(font "Arial" ))
@@ -3452,7 +3364,7 @@ refer to the applicable agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"level_bits"
-		"12"
+		"13"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
@@ -3465,14 +3377,86 @@ refer to the applicable agreement for further details.
 		""
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 224 64))
+	)
+	(annotation_block (parameter)(rect -136 1744 48 1819))
+)
+(symbol
+	(rect 168 1504 456 1648)
+	(text "AC_MOTOR_SINE" (rect 5 0 100 11)(font "Arial" ))
+	(text "inst3" (rect 8 128 32 139)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 24 11)(font "Arial" ))
+		(text "CLK" (rect 21 27 45 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "FREQUENCY[bits-1..0]" (rect 0 0 114 11)(font "Arial" ))
+		(text "FREQUENCY[bits-1..0]" (rect 21 43 135 54)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "AMPLITUDE[bits-1..0]" (rect 0 0 108 11)(font "Arial" ))
+		(text "AMPLITUDE[bits-1..0]" (rect 21 59 129 70)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "CW" (rect 0 0 20 11)(font "Arial" ))
+		(text "CW" (rect 21 75 41 86)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "CCW" (rect 0 0 28 11)(font "Arial" ))
+		(text "CCW" (rect 21 91 49 102)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "LOCK" (rect 0 0 33 11)(font "Arial" ))
+		(text "LOCK" (rect 21 107 54 118)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "SINE_VAL_1[23..0]" (rect 0 0 95 11)(font "Arial" ))
+		(text "SINE_VAL_1[23..0]" (rect 187 27 282 38)(font "Arial" ))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(port
+		(pt 288 48)
+		(output)
+		(text "SINE_VAL_2[23..0]" (rect 0 0 95 11)(font "Arial" ))
+		(text "SINE_VAL_2[23..0]" (rect 187 43 282 54)(font "Arial" ))
+		(line (pt 288 48)(pt 272 48)(line_width 3))
+	)
+	(port
+		(pt 288 64)
+		(output)
+		(text "SINE_VAL_3[23..0]" (rect 0 0 95 11)(font "Arial" ))
+		(text "SINE_VAL_3[23..0]" (rect 187 59 282 70)(font "Arial" ))
+		(line (pt 288 64)(pt 272 64)(line_width 3))
+	)
 	(parameter
-		"starting_amplitude"
-		"2"
+		"starting_sample"
+		"0"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"levels"
-		"16"
+		"sine_samples"
+		"2048"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
@@ -3482,23 +3466,23 @@ refer to the applicable agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"f_clk"
-		"82000000"
+		"100000000"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"f_triangle"
-		"5000"
+		"f_min"
+		"10"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"triangle_scaler"
-		""
+		"f_max"
+		"600"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 224 64))
+		(rectangle (rect 16 16 272 128))
 	)
-	(annotation_block (parameter)(rect -136 1744 104 1896))
+	(annotation_block (parameter)(rect 168 1704 395 1809))
 )
 (connector
 	(text "SYS_CLK" (rect 90 72 137 85)(font "Intel Clear" ))
@@ -3773,61 +3757,6 @@ refer to the applicable agreement for further details.
 	(text "PLL_CLK_50MHz" (rect 282 736 368 749)(font "Intel Clear" ))
 	(pt 280 752)
 	(pt 376 752)
-)
-(connector
-	(text "CLK_1MHz" (rect 506 856 561 869)(font "Intel Clear" ))
-	(pt 480 872)
-	(pt 560 872)
-)
-(connector
-	(text "CLK_500kHz" (rect 506 872 570 885)(font "Intel Clear" ))
-	(pt 480 888)
-	(pt 560 888)
-)
-(connector
-	(text "CLK_100kHz" (rect 506 888 570 901)(font "Intel Clear" ))
-	(pt 480 904)
-	(pt 560 904)
-)
-(connector
-	(text "CLK_50kHz" (rect 506 904 565 917)(font "Intel Clear" ))
-	(pt 480 920)
-	(pt 560 920)
-)
-(connector
-	(text "CLK_10kHz" (rect 506 920 565 933)(font "Intel Clear" ))
-	(pt 480 936)
-	(pt 560 936)
-)
-(connector
-	(text "CLK_5kHz" (rect 506 936 557 949)(font "Intel Clear" ))
-	(pt 480 952)
-	(pt 560 952)
-)
-(connector
-	(text "CLK_1kHz" (rect 506 952 557 965)(font "Intel Clear" ))
-	(pt 480 968)
-	(pt 560 968)
-)
-(connector
-	(text "CLK_100Hz" (rect 506 968 566 981)(font "Intel Clear" ))
-	(pt 480 984)
-	(pt 560 984)
-)
-(connector
-	(text "CLK_10Hz" (rect 506 984 559 997)(font "Intel Clear" ))
-	(pt 480 1000)
-	(pt 560 1000)
-)
-(connector
-	(text "CLK_1Hz" (rect 514 1000 560 1013)(font "Intel Clear" ))
-	(pt 480 1016)
-	(pt 560 1016)
-)
-(connector
-	(text "SYS_CLK" (rect 234 856 281 869)(font "Intel Clear" ))
-	(pt 232 872)
-	(pt 288 872)
 )
 (connector
 	(text "PLL_CLK_100MHz" (rect 1218 128 1311 141)(font "Intel Clear" ))
@@ -4355,11 +4284,6 @@ refer to the applicable agreement for further details.
 	(pt 528 1288)
 )
 (connector
-	(text "ADC_LATCH" (rect 554 1280 616 1293)(font "Intel Clear" ))
-	(pt 528 1296)
-	(pt 608 1296)
-)
-(connector
 	(text "ANTRIEB_ADC_LIMIT[11..0]" (rect 162 1288 304 1299)(font "Arial" ))
 	(pt 160 1304)
 	(pt 288 1304)
@@ -4526,10 +4450,6 @@ refer to the applicable agreement for further details.
 	(pt -256 1552)
 )
 (connector
-	(pt -272 1552)
-	(pt -272 1680)
-)
-(connector
 	(pt 120 1616)
 	(pt -296 1616)
 )
@@ -4642,10 +4562,6 @@ refer to the applicable agreement for further details.
 	(pt 560 1568)
 	(pt 560 1840)
 	(bus)
-)
-(connector
-	(pt 656 1536)
-	(pt 656 1664)
 )
 (connector
 	(pt 656 1664)
@@ -4764,26 +4680,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "PLL_CLK_50MHz" (rect 594 576 680 589)(font "Intel Clear" ))
-	(pt 656 592)
-	(pt 576 592)
-)
-(connector
-	(text "PLL_CLK_100MHz" (rect 594 592 687 605)(font "Intel Clear" ))
-	(pt 576 608)
-	(pt 672 608)
-)
-(connector
-	(text "PLL_CLK_100MHz" (rect 640 1432 653 1525)(font "Intel Clear" )(vertical))
-	(pt 656 1440)
-	(pt 656 1536)
-)
-(connector
-	(text "PLL_CLK_100MHz" (rect -288 1448 -275 1541)(font "Intel Clear" )(vertical))
-	(pt -272 1464)
-	(pt -272 1552)
-)
-(connector
 	(text "SYS_CLK" (rect 1322 1352 1369 1365)(font "Intel Clear" ))
 	(pt 1312 1368)
 	(pt 1400 1368)
@@ -4862,9 +4758,102 @@ refer to the applicable agreement for further details.
 	(pt 1464 1176)
 )
 (connector
-	(text "PLL_CLK_100MHz" (rect 136 1432 149 1525)(font "Intel Clear" )(vertical))
-	(pt 152 1440)
+	(text "PLL_CLK_50MHz" (rect 546 576 632 589)(font "Intel Clear" ))
+	(pt 608 592)
+	(pt 528 592)
+)
+(connector
+	(text "PLL_CLK_100MHz" (rect 546 592 639 605)(font "Intel Clear" ))
+	(pt 528 608)
+	(pt 624 608)
+)
+(connector
+	(text "CLK_1MHz" (rect 498 944 553 957)(font "Intel Clear" ))
+	(pt 472 960)
+	(pt 552 960)
+)
+(connector
+	(text "CLK_500kHz" (rect 498 960 562 973)(font "Intel Clear" ))
+	(pt 472 976)
+	(pt 552 976)
+)
+(connector
+	(text "CLK_100kHz" (rect 498 976 562 989)(font "Intel Clear" ))
+	(pt 472 992)
+	(pt 552 992)
+)
+(connector
+	(text "CLK_50kHz" (rect 498 992 557 1005)(font "Intel Clear" ))
+	(pt 472 1008)
+	(pt 552 1008)
+)
+(connector
+	(text "CLK_10kHz" (rect 498 1008 557 1021)(font "Intel Clear" ))
+	(pt 472 1024)
+	(pt 552 1024)
+)
+(connector
+	(text "CLK_5kHz" (rect 498 1024 549 1037)(font "Intel Clear" ))
+	(pt 472 1040)
+	(pt 552 1040)
+)
+(connector
+	(text "CLK_1kHz" (rect 498 1040 549 1053)(font "Intel Clear" ))
+	(pt 472 1056)
+	(pt 552 1056)
+)
+(connector
+	(text "CLK_100Hz" (rect 498 1056 558 1069)(font "Intel Clear" ))
+	(pt 472 1072)
+	(pt 552 1072)
+)
+(connector
+	(text "CLK_10Hz" (rect 498 1072 551 1085)(font "Intel Clear" ))
+	(pt 472 1088)
+	(pt 552 1088)
+)
+(connector
+	(text "CLK_1Hz" (rect 506 1088 552 1101)(font "Intel Clear" ))
+	(pt 472 1104)
+	(pt 552 1104)
+)
+(connector
+	(text "SYS_CLK" (rect 226 944 273 957)(font "Intel Clear" ))
+	(pt 224 960)
+	(pt 280 960)
+)
+(connector
+	(text "PLL_CLK_100MHz" (rect 274 784 367 797)(font "Intel Clear" ))
+	(pt 280 800)
+	(pt 376 800)
+)
+(connector
+	(text "MOTOR_CLK" (rect 466 784 532 797)(font "Intel Clear" ))
+	(pt 424 800)
+	(pt 504 800)
+)
+(connector
+	(text "MOTOR_CLK" (rect 134 1442 147 1508)(font "Intel Clear" )(vertical))
 	(pt 152 1536)
+	(pt 152 1456)
+)
+(connector
+	(text "MOTOR_CLK" (rect 638 1458 651 1524)(font "Intel Clear" )(vertical))
+	(pt 656 1456)
+	(pt 656 1536)
+)
+(connector
+	(pt 656 1536)
+	(pt 656 1664)
+)
+(connector
+	(text "MOTOR_CLK" (rect -290 1458 -277 1524)(font "Intel Clear" )(vertical))
+	(pt -272 1472)
+	(pt -272 1552)
+)
+(connector
+	(pt -272 1552)
+	(pt -272 1680)
 )
 (junction (pt -672 -64))
 (junction (pt 464 64))
@@ -4878,13 +4867,13 @@ refer to the applicable agreement for further details.
 (junction (pt -896 1216))
 (junction (pt 712 1224))
 (junction (pt 712 1240))
-(junction (pt -272 1552))
 (junction (pt 656 1664))
 (junction (pt 632 1680))
-(junction (pt 656 1536))
 (junction (pt 632 1552))
 (junction (pt 608 1696))
 (junction (pt 280 1256))
+(junction (pt 656 1536))
+(junction (pt -272 1552))
 (text "FT2232_CS0" (rect -936 -72 -861 -57)(font "Intel Clear" (font_size 8)))
 (text "FT2232_MISO" (rect 728 -16 811 -1)(font "Intel Clear" (font_size 8)))
 (text "FT2232_SCLK" (rect -472 0 -390 15)(font "Intel Clear" (font_size 8)))
@@ -4893,7 +4882,7 @@ refer to the applicable agreement for further details.
 (text "FT2232_CS2" (rect -936 -152 -861 -137)(font "Intel Clear" (font_size 8)))
 (text "SPI-RPi-FT2232" (rect 200 -72 412 -40)(font "Intel Clear" (font_size 18)(bold)))
 (text "PLL" (rect 384 480 434 512)(font "Intel Clear" (font_size 18)(bold)))
-(text "CLOCK GENERATOR" (rect 272 792 542 824)(font "Intel Clear" (font_size 18)(bold)))
+(text "CLOCK GENERATOR" (rect 232 896 502 928)(font "Intel Clear" (font_size 18)(bold)))
 (text "BUTTON LED's" (rect -840 112 -645 144)(font "Intel Clear" (font_size 18)(bold)))
 (text "FPGA INPUT" (rect -840 448 -674 480)(font "Intel Clear" (font_size 18)(bold)))
 (text "FPGA OUTPUT" (rect -872 752 -675 784)(font "Intel Clear" (font_size 18)(bold)))

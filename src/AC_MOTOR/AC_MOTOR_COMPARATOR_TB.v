@@ -8,7 +8,7 @@ module AC_MOTOR_COMPARATOR_TB;
 	integer file;
 	reg clk;
 	reg enable;
-	reg signed [11:0] amplitude;
+	reg [11:0] amplitude;
 	reg [11:0] frequency;
 	//
 	wire signed [23:0] triangle;
@@ -38,7 +38,7 @@ module AC_MOTOR_COMPARATOR_TB;
 		$dumpvars(0, AC_MOTOR_COMPARATOR_TB); 
 		//#25000 $finish; 
 		//#124500 frequency <= 2**12 - 1;
-		#2500 $finish;
+		#250000 $finish;
 	end 
 	//
 	always #1 clk <= !clk;

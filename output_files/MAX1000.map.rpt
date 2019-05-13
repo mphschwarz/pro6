@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MAX1000
-Wed May  8 09:24:47 2019
+Fri May 10 11:28:35 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -51,18 +51,18 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
  43. Parameter Settings for User Entity Instance: DC_MOTOR_RAMPE:dc_motor_rampe_antrieb
  44. Parameter Settings for User Entity Instance: AC_MOTOR_TRIANGLE:inst2
  45. Parameter Settings for User Entity Instance: AC_MOTOR_CONTROL:inst4
- 46. Parameter Settings for User Entity Instance: AC_MOTOR_COMPARATOR:inst6
- 47. Parameter Settings for User Entity Instance: AC_MOTOR_COMPARATOR:inst7
+ 46. Parameter Settings for User Entity Instance: AC_MOTOR_COMPARATOR:inst7
+ 47. Parameter Settings for User Entity Instance: AC_MOTOR_COMPARATOR:inst6
  48. Parameter Settings for User Entity Instance: DC_MOTOR_ANTRIEB:dc_motor_antrieb
  49. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|altsyncram:Mux35_rtl_0
  50. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|altsyncram:Mux23_rtl_0
  51. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|altsyncram:Mux11_rtl_0
  52. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult4
- 53. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult5
- 54. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult3
+ 53. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult3
+ 54. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult5
  55. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult0
- 56. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult2
- 57. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult1
+ 56. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult1
+ 57. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult2
  58. altpll Parameter Settings by Entity Instance
  59. altsyncram Parameter Settings by Entity Instance
  60. lpm_mult Parameter Settings by Entity Instance
@@ -94,15 +94,15 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May  8 09:24:46 2019           ;
+; Analysis & Synthesis Status        ; Successful - Fri May 10 11:28:34 2019           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; MAX1000                                         ;
 ; Top-level Entity Name              ; MAX1000                                         ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 4,886                                           ;
-;     Total combinational functions  ; 3,502                                           ;
-;     Dedicated logic registers      ; 2,488                                           ;
-; Total registers                    ; 2488                                            ;
+; Total logic elements               ; 4,874                                           ;
+;     Total combinational functions  ; 3,484                                           ;
+;     Dedicated logic registers      ; 2,478                                           ;
+; Total registers                    ; 2478                                            ;
 ; Total pins                         ; 47                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 16,896                                          ;
@@ -285,20 +285,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                       ;
 +---------------------------------------------+-----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 4,886                                                                       ;
+; Estimated Total logic elements              ; 4,874                                                                       ;
 ;                                             ;                                                                             ;
-; Total combinational functions               ; 3502                                                                        ;
+; Total combinational functions               ; 3484                                                                        ;
 ; Logic element usage by number of LUT inputs ;                                                                             ;
-;     -- 4 input functions                    ; 1422                                                                        ;
-;     -- 3 input functions                    ; 1177                                                                        ;
-;     -- <=2 input functions                  ; 903                                                                         ;
+;     -- 4 input functions                    ; 1392                                                                        ;
+;     -- 3 input functions                    ; 1249                                                                        ;
+;     -- <=2 input functions                  ; 843                                                                         ;
 ;                                             ;                                                                             ;
 ; Logic elements by mode                      ;                                                                             ;
-;     -- normal mode                          ; 1991                                                                        ;
-;     -- arithmetic mode                      ; 1511                                                                        ;
+;     -- normal mode                          ; 1993                                                                        ;
+;     -- arithmetic mode                      ; 1491                                                                        ;
 ;                                             ;                                                                             ;
-; Total registers                             ; 2488                                                                        ;
-;     -- Dedicated logic registers            ; 2488                                                                        ;
+; Total registers                             ; 2478                                                                        ;
+;     -- Dedicated logic registers            ; 2478                                                                        ;
 ;     -- I/O registers                        ; 0                                                                           ;
 ;                                             ;                                                                             ;
 ; I/O pins                                    ; 47                                                                          ;
@@ -310,9 +310,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                                                           ;
 ;                                             ;                                                                             ;
 ; Maximum fan-out node                        ; PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 2519                                                                        ;
-; Total fan-out                               ; 18431                                                                       ;
-; Average fan-out                             ; 3.01                                                                        ;
+; Maximum fan-out                             ; 2508                                                                        ;
+; Total fan-out                               ; 18395                                                                       ;
+; Average fan-out                             ; 3.02                                                                        ;
 +---------------------------------------------+-----------------------------------------------------------------------------+
 
 
@@ -321,45 +321,46 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                        ; Entity Name            ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------+------------------------+--------------+
-; |MAX1000                                        ; 3502 (3)            ; 2488 (0)                  ; 16896       ; 0          ; 6            ; 0       ; 3         ; 47   ; 0            ; 0          ; |MAX1000                                                                                   ; MAX1000                ; work         ;
-;    |AC_MOTOR_COMPARATOR:inst5|                  ; 21 (21)             ; 19 (19)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_COMPARATOR:inst5                                                         ; AC_MOTOR_COMPARATOR    ; work         ;
-;    |AC_MOTOR_COMPARATOR:inst6|                  ; 21 (21)             ; 19 (19)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_COMPARATOR:inst6                                                         ; AC_MOTOR_COMPARATOR    ; work         ;
-;    |AC_MOTOR_COMPARATOR:inst7|                  ; 22 (22)             ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_COMPARATOR:inst7                                                         ; AC_MOTOR_COMPARATOR    ; work         ;
-;    |AC_MOTOR_SINE:inst3|                        ; 247 (184)           ; 160 (160)                 ; 16896       ; 0          ; 6            ; 0       ; 3         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3                                                               ; AC_MOTOR_SINE          ; work         ;
+; |MAX1000                                        ; 3484 (3)            ; 2478 (0)                  ; 16896       ; 0          ; 6            ; 0       ; 3         ; 47   ; 0            ; 0          ; |MAX1000                                                                                   ; MAX1000                ; work         ;
+;    |AC_MOTOR_COMPARATOR:inst5|                  ; 22 (22)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_COMPARATOR:inst5                                                         ; AC_MOTOR_COMPARATOR    ; work         ;
+;    |AC_MOTOR_COMPARATOR:inst6|                  ; 22 (22)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_COMPARATOR:inst6                                                         ; AC_MOTOR_COMPARATOR    ; work         ;
+;    |AC_MOTOR_COMPARATOR:inst7|                  ; 22 (22)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_COMPARATOR:inst7                                                         ; AC_MOTOR_COMPARATOR    ; work         ;
+;    |AC_MOTOR_CONTROL:inst4|                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_CONTROL:inst4                                                            ; AC_MOTOR_CONTROL       ; work         ;
+;    |AC_MOTOR_SINE:inst3|                        ; 260 (191)           ; 165 (165)                 ; 16896       ; 0          ; 6            ; 0       ; 3         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3                                                               ; AC_MOTOR_SINE          ; work         ;
 ;       |altsyncram:Mux11_rtl_0|                  ; 0 (0)               ; 0 (0)                     ; 5632        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|altsyncram:Mux11_rtl_0                                        ; altsyncram             ; work         ;
 ;          |altsyncram_3hu:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 5632        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|altsyncram:Mux11_rtl_0|altsyncram_3hu:auto_generated          ; altsyncram_3hu         ; work         ;
 ;       |altsyncram:Mux23_rtl_0|                  ; 0 (0)               ; 0 (0)                     ; 5632        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|altsyncram:Mux23_rtl_0                                        ; altsyncram             ; work         ;
 ;          |altsyncram_2hu:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 5632        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|altsyncram:Mux23_rtl_0|altsyncram_2hu:auto_generated          ; altsyncram_2hu         ; work         ;
 ;       |altsyncram:Mux35_rtl_0|                  ; 0 (0)               ; 0 (0)                     ; 5632        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|altsyncram:Mux35_rtl_0                                        ; altsyncram             ; work         ;
 ;          |altsyncram_1hu:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 5632        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|altsyncram:Mux35_rtl_0|altsyncram_1hu:auto_generated          ; altsyncram_1hu         ; work         ;
-;       |lpm_mult:Mult0|                          ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult0                                                ; lpm_mult               ; work         ;
-;          |multcore:mult_core|                   ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult0|multcore:mult_core                             ; multcore               ; work         ;
-;             |mul_lfrg:$00030|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult0|multcore:mult_core|mul_lfrg:$00030             ; mul_lfrg               ; work         ;
-;             |mul_lfrg:mul_lfrg_first_mod|       ; 20 (20)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult0|multcore:mult_core|mul_lfrg:mul_lfrg_first_mod ; mul_lfrg               ; work         ;
-;       |lpm_mult:Mult1|                          ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult1                                                ; lpm_mult               ; work         ;
-;          |multcore:mult_core|                   ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult1|multcore:mult_core                             ; multcore               ; work         ;
-;             |mul_lfrg:$00030|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult1|multcore:mult_core|mul_lfrg:$00030             ; mul_lfrg               ; work         ;
-;             |mul_lfrg:mul_lfrg_first_mod|       ; 20 (20)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult1|multcore:mult_core|mul_lfrg:mul_lfrg_first_mod ; mul_lfrg               ; work         ;
-;       |lpm_mult:Mult2|                          ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult2                                                ; lpm_mult               ; work         ;
-;          |multcore:mult_core|                   ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult2|multcore:mult_core                             ; multcore               ; work         ;
-;             |mul_lfrg:$00030|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult2|multcore:mult_core|mul_lfrg:$00030             ; mul_lfrg               ; work         ;
-;             |mul_lfrg:mul_lfrg_first_mod|       ; 20 (20)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult2|multcore:mult_core|mul_lfrg:mul_lfrg_first_mod ; mul_lfrg               ; work         ;
+;       |lpm_mult:Mult0|                          ; 23 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult0                                                ; lpm_mult               ; work         ;
+;          |multcore:mult_core|                   ; 23 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult0|multcore:mult_core                             ; multcore               ; work         ;
+;             |mul_lfrg:$00030|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult0|multcore:mult_core|mul_lfrg:$00030             ; mul_lfrg               ; work         ;
+;             |mul_lfrg:mul_lfrg_first_mod|       ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult0|multcore:mult_core|mul_lfrg:mul_lfrg_first_mod ; mul_lfrg               ; work         ;
+;       |lpm_mult:Mult1|                          ; 23 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult1                                                ; lpm_mult               ; work         ;
+;          |multcore:mult_core|                   ; 23 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult1|multcore:mult_core                             ; multcore               ; work         ;
+;             |mul_lfrg:$00030|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult1|multcore:mult_core|mul_lfrg:$00030             ; mul_lfrg               ; work         ;
+;             |mul_lfrg:mul_lfrg_first_mod|       ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult1|multcore:mult_core|mul_lfrg:mul_lfrg_first_mod ; mul_lfrg               ; work         ;
+;       |lpm_mult:Mult2|                          ; 23 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult2                                                ; lpm_mult               ; work         ;
+;          |multcore:mult_core|                   ; 23 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult2|multcore:mult_core                             ; multcore               ; work         ;
+;             |mul_lfrg:$00030|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult2|multcore:mult_core|mul_lfrg:$00030             ; mul_lfrg               ; work         ;
+;             |mul_lfrg:mul_lfrg_first_mod|       ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult2|multcore:mult_core|mul_lfrg:mul_lfrg_first_mod ; mul_lfrg               ; work         ;
 ;       |lpm_mult:Mult3|                          ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult3                                                ; lpm_mult               ; work         ;
 ;          |mult_lgs:auto_generated|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult3|mult_lgs:auto_generated                        ; mult_lgs               ; work         ;
 ;       |lpm_mult:Mult4|                          ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult4                                                ; lpm_mult               ; work         ;
 ;          |mult_lgs:auto_generated|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult4|mult_lgs:auto_generated                        ; mult_lgs               ; work         ;
 ;       |lpm_mult:Mult5|                          ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult5                                                ; lpm_mult               ; work         ;
 ;          |mult_lgs:auto_generated|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SINE:inst3|lpm_mult:Mult5|mult_lgs:auto_generated                        ; mult_lgs               ; work         ;
-;    |AC_MOTOR_TRIANGLE:inst2|                    ; 62 (62)             ; 48 (48)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_TRIANGLE:inst2                                                           ; AC_MOTOR_TRIANGLE      ; work         ;
+;    |AC_MOTOR_TRIANGLE:inst2|                    ; 23 (23)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_TRIANGLE:inst2                                                           ; AC_MOTOR_TRIANGLE      ; work         ;
 ;    |ADC_LTC2313_12_MOV_AVG:adc1|                ; 375 (261)           ; 232 (170)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1                                                       ; ADC_LTC2313_12_MOV_AVG ; work         ;
 ;       |ADC_LTC2313_12:adc_ltc2313_12|           ; 114 (114)           ; 62 (62)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12                         ; ADC_LTC2313_12         ; work         ;
-;    |ADC_LTC2313_12_MOV_AVG:adc2|                ; 207 (195)           ; 165 (141)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2                                                       ; ADC_LTC2313_12_MOV_AVG ; work         ;
+;    |ADC_LTC2313_12_MOV_AVG:adc2|                ; 209 (197)           ; 165 (141)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2                                                       ; ADC_LTC2313_12_MOV_AVG ; work         ;
 ;       |ADC_LTC2313_12:adc_ltc2313_12|           ; 12 (12)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12                         ; ADC_LTC2313_12         ; work         ;
 ;    |ADC_LTC2313_12_MOV_AVG:adc3|                ; 207 (195)           ; 165 (141)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3                                                       ; ADC_LTC2313_12_MOV_AVG ; work         ;
 ;       |ADC_LTC2313_12:adc_ltc2313_12|           ; 12 (12)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12                         ; ADC_LTC2313_12         ; work         ;
 ;    |ADC_LTC2313_12_MOV_AVG:adc4|                ; 207 (195)           ; 165 (141)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4                                                       ; ADC_LTC2313_12_MOV_AVG ; work         ;
 ;       |ADC_LTC2313_12:adc_ltc2313_12|           ; 12 (12)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12                         ; ADC_LTC2313_12         ; work         ;
-;    |ADC_LTC2313_12_MOV_AVG:adc5|                ; 207 (195)           ; 166 (142)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5                                                       ; ADC_LTC2313_12_MOV_AVG ; work         ;
+;    |ADC_LTC2313_12_MOV_AVG:adc5|                ; 212 (200)           ; 166 (142)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5                                                       ; ADC_LTC2313_12_MOV_AVG ; work         ;
 ;       |ADC_LTC2313_12:adc_ltc2313_12|           ; 12 (12)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12                         ; ADC_LTC2313_12         ; work         ;
 ;    |ADC_LTC2313_12_MOV_AVG:adc6|                ; 246 (219)           ; 166 (142)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6                                                       ; ADC_LTC2313_12_MOV_AVG ; work         ;
 ;       |ADC_LTC2313_12:adc_ltc2313_12|           ; 27 (27)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12                         ; ADC_LTC2313_12         ; work         ;
@@ -370,8 +371,8 @@ refer to the applicable agreement for further details.
 ;    |DC_MOTOR_LUEFTER:dc_motor_luefter|          ; 24 (24)             ; 25 (25)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|DC_MOTOR_LUEFTER:dc_motor_luefter                                                 ; DC_MOTOR_LUEFTER       ; work         ;
 ;    |DC_MOTOR_RAMPE:dc_motor_rampe_antrieb|      ; 90 (90)             ; 44 (44)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|DC_MOTOR_RAMPE:dc_motor_rampe_antrieb                                             ; DC_MOTOR_RAMPE         ; work         ;
 ;    |DIG_INP_FILTER:spi_cs_filter|               ; 26 (26)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|DIG_INP_FILTER:spi_cs_filter                                                      ; DIG_INP_FILTER         ; work         ;
-;    |DREHZAHLMESSUNG:drehzahlmessung|            ; 581 (527)           ; 399 (374)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung                                                   ; DREHZAHLMESSUNG        ; work         ;
-;       |INP_FILTER:inp_filter|                   ; 54 (54)             ; 25 (25)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|INP_FILTER:inp_filter                             ; INP_FILTER             ; work         ;
+;    |DREHZAHLMESSUNG:drehzahlmessung|            ; 580 (527)           ; 399 (374)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung                                                   ; DREHZAHLMESSUNG        ; work         ;
+;       |INP_FILTER:inp_filter|                   ; 53 (53)             ; 25 (25)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|INP_FILTER:inp_filter                             ; INP_FILTER             ; work         ;
 ;    |PLL:pll|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|PLL:pll                                                                           ; PLL                    ; work         ;
 ;       |altpll:altpll_component|                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|PLL:pll|altpll:altpll_component                                                   ; altpll                 ; work         ;
 ;          |PLL_altpll2:auto_generated|           ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated                        ; PLL_altpll2            ; work         ;
@@ -564,28 +565,20 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
 ; Register name                                                             ; Reason for Removal                                                                    ;
 +---------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
-; AC_MOTOR_COMPARATOR:inst7|out_count_dir[0]                                ; Stuck at VCC due to stuck port data_in                                                ;
 ; AC_MOTOR_COMPARATOR:inst6|out_count_dir[0]                                ; Stuck at VCC due to stuck port data_in                                                ;
-; AC_MOTOR_CONTROL:inst4|AMPLITUDE[0..7]                                    ; Stuck at VCC due to stuck port data_in                                                ;
-; AC_MOTOR_CONTROL:inst4|FREQUENCY[10,11]                                   ; Stuck at VCC due to stuck port data_in                                                ;
-; AC_MOTOR_CONTROL:inst4|FREQUENCY[0..9]                                    ; Stuck at GND due to stuck port data_in                                                ;
-; AC_MOTOR_CONTROL:inst4|AMPLITUDE[8,9]                                     ; Stuck at VCC due to stuck port data_in                                                ;
-; AC_MOTOR_CONTROL:inst4|AMPLITUDE[10,11]                                   ; Stuck at GND due to stuck port data_in                                                ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[0..11]                                   ; Stuck at GND due to stuck port data_in                                                ;
-; AC_MOTOR_SINE:inst3|sine_sign_3[0]                                        ; Stuck at VCC due to stuck port data_in                                                ;
-; AC_MOTOR_SINE:inst3|sine_sign_2[0]                                        ; Stuck at VCC due to stuck port data_in                                                ;
-; AC_MOTOR_SINE:inst3|sine_sign_1[0]                                        ; Stuck at VCC due to stuck port data_in                                                ;
-; AC_MOTOR_SINE:inst3|ampl_int[10,12]                                       ; Stuck at GND due to stuck port data_in                                                ;
-; AC_MOTOR_SINE:inst3|freq_int[0]                                           ; Stuck at GND due to stuck port data_in                                                ;
+; AC_MOTOR_COMPARATOR:inst7|out_count_dir[0]                                ; Stuck at VCC due to stuck port data_in                                                ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[10,11]                                   ; Stuck at GND due to stuck port data_in                                                ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[0..10]                                   ; Stuck at GND due to stuck port data_in                                                ;
+; AC_MOTOR_SINE:inst3|ampl_int[12]                                          ; Stuck at GND due to stuck port data_in                                                ;
 ; AC_MOTOR_COMPARATOR:inst5|triangle_int[0]                                 ; Stuck at GND due to stuck port data_in                                                ;
 ; AC_MOTOR_COMPARATOR:inst5|out_count_dir[0]                                ; Stuck at VCC due to stuck port data_in                                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[1..11]                             ; Stuck at GND due to stuck port data_in                                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[1..10]                             ; Stuck at GND due to stuck port data_in                                                ;
 ; DAC_AD5061:dac3|value_temp[16..23]                                        ; Stuck at GND due to stuck port data_in                                                ;
 ; DAC_AD5061:dac2|value_temp[16..23]                                        ; Stuck at GND due to stuck port data_in                                                ;
 ; DAC_AD5061:dac1|value_temp[16..23]                                        ; Stuck at GND due to stuck port data_in                                                ;
 ; DREHZAHLMESSUNG:drehzahlmessung|SPEED[29..31]                             ; Stuck at GND due to stuck port data_in                                                ;
-; AC_MOTOR_COMPARATOR:inst7|triangle_int[0..11]                             ; Stuck at GND due to stuck port data_in                                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[0..11]                             ; Stuck at GND due to stuck port data_in                                                ;
+; AC_MOTOR_COMPARATOR:inst6|triangle_int[0..10]                             ; Stuck at GND due to stuck port data_in                                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[0..10]                             ; Stuck at GND due to stuck port data_in                                                ;
 ; ADC_LTC2313_12_MOV_AVG:adc6|value_adc_8[0..3]                             ; Stuck at GND due to stuck port data_in                                                ;
 ; ADC_LTC2313_12_MOV_AVG:adc6|value_adc_7[0..3]                             ; Stuck at GND due to stuck port data_in                                                ;
 ; ADC_LTC2313_12_MOV_AVG:adc6|value_adc_6[0..3]                             ; Stuck at GND due to stuck port data_in                                                ;
@@ -635,48 +628,56 @@ Encoding Type:  One-Hot
 ; ADC_LTC2313_12_MOV_AVG:adc1|value_adc_2[0..3]                             ; Stuck at GND due to stuck port data_in                                                ;
 ; ADC_LTC2313_12_MOV_AVG:adc1|value_adc_1[0..3]                             ; Stuck at GND due to stuck port data_in                                                ;
 ; SPI_HOST:spi_host|data_in_temp[224..226]                                  ; Stuck at GND due to stuck port data_in                                                ;
-; AC_MOTOR_SINE:inst3|freq_int[1]                                           ; Stuck at VCC due to stuck port data_in                                                ;
-; AC_MOTOR_SINE:inst3|freq_int[2..5]                                        ; Stuck at GND due to stuck port data_in                                                ;
-; AC_MOTOR_SINE:inst3|freq_int[6]                                           ; Stuck at VCC due to stuck port data_in                                                ;
-; AC_MOTOR_SINE:inst3|freq_int[7..9,12]                                     ; Stuck at GND due to stuck port data_in                                                ;
-; AC_MOTOR_SINE:inst3|freq_int[11]                                          ; Merged with AC_MOTOR_SINE:inst3|freq_int[10]                                          ;
-; AC_MOTOR_SINE:inst3|freq_int[10]                                          ; Merged with AC_MOTOR_SINE:inst3|ampl_int[9]                                           ;
-; AC_MOTOR_SINE:inst3|ampl_int[9]                                           ; Merged with AC_MOTOR_SINE:inst3|ampl_int[8]                                           ;
-; AC_MOTOR_SINE:inst3|ampl_int[8]                                           ; Merged with AC_MOTOR_SINE:inst3|ampl_int[7]                                           ;
-; AC_MOTOR_SINE:inst3|ampl_int[7]                                           ; Merged with AC_MOTOR_SINE:inst3|ampl_int[6]                                           ;
-; AC_MOTOR_SINE:inst3|ampl_int[6]                                           ; Merged with AC_MOTOR_SINE:inst3|ampl_int[5]                                           ;
-; AC_MOTOR_SINE:inst3|ampl_int[5]                                           ; Merged with AC_MOTOR_SINE:inst3|ampl_int[4]                                           ;
-; AC_MOTOR_SINE:inst3|ampl_int[4]                                           ; Merged with AC_MOTOR_SINE:inst3|ampl_int[3]                                           ;
-; AC_MOTOR_SINE:inst3|ampl_int[3]                                           ; Merged with AC_MOTOR_SINE:inst3|ampl_int[2]                                           ;
-; AC_MOTOR_SINE:inst3|ampl_int[2]                                           ; Merged with AC_MOTOR_SINE:inst3|ampl_int[1]                                           ;
-; AC_MOTOR_SINE:inst3|ampl_int[1]                                           ; Merged with AC_MOTOR_SINE:inst3|ampl_int[0]                                           ;
-; AC_MOTOR_COMPARATOR:inst7|out_count_dir[2]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|out_count_dir[1]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[12]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[12]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[12]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[12]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[13]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[13]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[13]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[13]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[14]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[14]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[14]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[14]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[15]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[15]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[15]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[15]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[16]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[16]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[16]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[16]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[17]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[17]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[17]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[17]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[18]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[18]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[18]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[18]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[19]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[19]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[19]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[19]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[20]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[20]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[20]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[20]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[21]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[21]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[21]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[21]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[22]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[22]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[22]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[22]                                ;
-; AC_MOTOR_COMPARATOR:inst5|triangle_int[23]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[23]                                ;
-; AC_MOTOR_COMPARATOR:inst6|triangle_int[23]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[23]                                ;
+; AC_MOTOR_SINE:inst3|freq_int[11,12]                                       ; Stuck at GND due to stuck port data_in                                                ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[10]                                      ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[9]                                       ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[9]                                       ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[8]                                       ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[8]                                       ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[7]                                       ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[7]                                       ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[6]                                       ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[6]                                       ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[5]                                       ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[5]                                       ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[4]                                       ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[4]                                       ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[3]                                       ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[3]                                       ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[2]                                       ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[2]                                       ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[1]                                       ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[1]                                       ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[11]                                      ;
+; AC_MOTOR_CONTROL:inst4|AMPLITUDE[11]                                      ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[9]                                       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[9]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[8]                                       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[8]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[7]                                       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[7]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[6]                                       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[6]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[5]                                       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[5]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[4]                                       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[4]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[3]                                       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[3]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[2]                                       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[2]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[1]                                       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[1]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[0]                                       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[0]                                       ; Merged with AC_MOTOR_CONTROL:inst4|AMPLITUDE[0]                                       ;
 ; AC_MOTOR_COMPARATOR:inst6|out_count_dir[2]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|out_count_dir[1]                                ;
-; AC_MOTOR_SINE:inst3|ampl_int[11]                                          ; Merged with AC_MOTOR_SINE:inst3|ampl_int[0]                                           ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[11]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[11]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[11]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[11]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[12]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[12]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[12]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[12]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[13]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[13]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[13]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[13]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[14]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[14]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[14]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[14]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[15]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[15]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[15]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[15]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[16]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[16]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[16]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[16]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[17]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[17]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[17]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[17]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[18]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[18]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[18]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[18]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[19]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[19]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[19]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[19]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[20]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[20]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[20]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[20]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[21]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[21]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[21]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[21]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[22]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[22]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[22]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[22]                                ;
+; AC_MOTOR_COMPARATOR:inst5|triangle_int[23]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[23]                                ;
+; AC_MOTOR_COMPARATOR:inst7|triangle_int[23]                                ; Merged with AC_MOTOR_COMPARATOR:inst6|triangle_int[23]                                ;
+; AC_MOTOR_COMPARATOR:inst7|out_count_dir[2]                                ; Merged with AC_MOTOR_COMPARATOR:inst7|out_count_dir[1]                                ;
 ; AC_MOTOR_COMPARATOR:inst5|out_count_dir[2]                                ; Merged with AC_MOTOR_COMPARATOR:inst5|out_count_dir[1]                                ;
 ; DAC_AD5061:dac1|hri1                                                      ; Merged with DAC_AD5061:dac3|hri1                                                      ;
 ; DAC_AD5061:dac2|hri1                                                      ; Merged with DAC_AD5061:dac3|hri1                                                      ;
@@ -729,8 +730,16 @@ Encoding Type:  One-Hot
 ; SPI_HOST:spi_host|data_in_temp[33,49,65]                                  ; Merged with SPI_HOST:spi_host|data_in_temp[17]                                        ;
 ; SPI_HOST:spi_host|data_in_temp[32,48,64]                                  ; Merged with SPI_HOST:spi_host|data_in_temp[16]                                        ;
 ; AC_MOTOR_SINE:inst3|sine_sign_1[2]                                        ; Merged with AC_MOTOR_SINE:inst3|sine_sign_1[1]                                        ;
-; AC_MOTOR_SINE:inst3|sine_sign_3[2]                                        ; Merged with AC_MOTOR_SINE:inst3|sine_sign_3[1]                                        ;
+; AC_MOTOR_SINE:inst3|sine_sign_2[0]                                        ; Merged with AC_MOTOR_SINE:inst3|sine_sign_1[0]                                        ;
+; AC_MOTOR_SINE:inst3|sine_sign_3[0]                                        ; Merged with AC_MOTOR_SINE:inst3|sine_sign_1[0]                                        ;
+; AC_MOTOR_SINE:inst3|ampl_int[1..10]                                       ; Merged with AC_MOTOR_SINE:inst3|ampl_int[0]                                           ;
 ; AC_MOTOR_SINE:inst3|sine_sign_2[2]                                        ; Merged with AC_MOTOR_SINE:inst3|sine_sign_2[1]                                        ;
+; AC_MOTOR_SINE:inst3|sine_sign_3[2]                                        ; Merged with AC_MOTOR_SINE:inst3|sine_sign_3[1]                                        ;
+; AC_MOTOR_SINE:inst3|freq_int[1..3]                                        ; Stuck at GND due to stuck port data_in                                                ;
+; AC_MOTOR_SINE:inst3|freq_int[4]                                           ; Stuck at VCC due to stuck port data_in                                                ;
+; AC_MOTOR_SINE:inst3|freq_int[5]                                           ; Stuck at GND due to stuck port data_in                                                ;
+; AC_MOTOR_SINE:inst3|freq_int[6]                                           ; Stuck at VCC due to stuck port data_in                                                ;
+; AC_MOTOR_SINE:inst3|freq_int[7..9]                                        ; Stuck at GND due to stuck port data_in                                                ;
 ; AC_MOTOR_SINE:inst3|unsigned_sine_3[11]                                   ; Stuck at GND due to stuck port data_in                                                ;
 ; AC_MOTOR_SINE:inst3|unsigned_sine_2[11]                                   ; Stuck at GND due to stuck port data_in                                                ;
 ; AC_MOTOR_SINE:inst3|unsigned_sine_1[11]                                   ; Stuck at GND due to stuck port data_in                                                ;
@@ -753,12 +762,12 @@ Encoding Type:  One-Hot
 ; ADC_LTC2313_12_MOV_AVG:adc1|value_temp[0]                                 ; Stuck at GND due to stuck port data_in                                                ;
 ; ADC_LTC2313_12_MOV_AVG:adc1|VALUE_AVG[0]                                  ; Stuck at GND due to stuck port data_in                                                ;
 ; SPI_HOST:spi_host|data_in_temp[119,135,151,167,183,199]                   ; Stuck at GND due to stuck port data_in                                                ;
-; AC_MOTOR_COMPARATOR:inst5|sine_int[0..11]                                 ; Lost fanout                                                                           ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[0..11]                                 ; Lost fanout                                                                           ;
-; AC_MOTOR_COMPARATOR:inst7|sine_int[0..11]                                 ; Lost fanout                                                                           ;
-; AC_MOTOR_SINE:inst3|SINE_VAL_1[0..11]                                     ; Lost fanout                                                                           ;
-; AC_MOTOR_SINE:inst3|SINE_VAL_2[0..11]                                     ; Lost fanout                                                                           ;
-; AC_MOTOR_SINE:inst3|SINE_VAL_3[0..11]                                     ; Lost fanout                                                                           ;
+; AC_MOTOR_COMPARATOR:inst5|sine_int[0..10]                                 ; Lost fanout                                                                           ;
+; AC_MOTOR_COMPARATOR:inst7|sine_int[0..10]                                 ; Lost fanout                                                                           ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[0..10]                                 ; Lost fanout                                                                           ;
+; AC_MOTOR_SINE:inst3|SINE_VAL_1[0..10]                                     ; Lost fanout                                                                           ;
+; AC_MOTOR_SINE:inst3|SINE_VAL_3[0..10]                                     ; Lost fanout                                                                           ;
+; AC_MOTOR_SINE:inst3|SINE_VAL_2[0..10]                                     ; Lost fanout                                                                           ;
 ; AC_MOTOR_TRIANGLE:inst2|triangle_dir[0]                                   ; Stuck at VCC due to stuck port data_in                                                ;
 ; DAC_AD5061:dac3|state~7                                                   ; Lost fanout                                                                           ;
 ; DAC_AD5061:dac3|state~8                                                   ; Lost fanout                                                                           ;
@@ -954,6 +963,7 @@ Encoding Type:  One-Hot
 ; DAC_AD5061:dac3|index[1]                                                  ; Merged with DAC_AD5061:dac1|index[1]                                                  ;
 ; DAC_AD5061:dac2|index[0]                                                  ; Merged with DAC_AD5061:dac1|index[0]                                                  ;
 ; DAC_AD5061:dac3|index[0]                                                  ; Merged with DAC_AD5061:dac1|index[0]                                                  ;
+; AC_MOTOR_SINE:inst3|freq_int[0,10]                                        ; Merged with AC_MOTOR_SINE:inst3|ampl_int[11]                                          ;
 ; ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|state.00011     ; Merged with ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|state.00011     ;
 ; ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|state.00011     ; Merged with ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|state.00011     ;
 ; ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|state.00011     ; Merged with ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|state.00011     ;
@@ -1192,15 +1202,13 @@ Encoding Type:  One-Hot
 ; ADC_LTC2313_12_MOV_AVG:adc4|ctr_mov_avg[10]                               ; Merged with ADC_LTC2313_12_MOV_AVG:adc1|ctr_mov_avg[10]                               ;
 ; ADC_LTC2313_12_MOV_AVG:adc5|ctr_mov_avg[10]                               ; Merged with ADC_LTC2313_12_MOV_AVG:adc1|ctr_mov_avg[10]                               ;
 ; ADC_LTC2313_12_MOV_AVG:adc6|ctr_mov_avg[10]                               ; Merged with ADC_LTC2313_12_MOV_AVG:adc1|ctr_mov_avg[10]                               ;
-; AC_MOTOR_TRIANGLE:inst2|triangle_int[0]                                   ; Merged with AC_MOTOR_TRIANGLE:inst2|TRIANGLE[12]                                      ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[12]                                      ; Merged with AC_MOTOR_COMPARATOR:inst7|triangle_int[12]                                ;
 ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[19..31]                         ; Lost fanout                                                                           ;
 ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[19..31]                         ; Lost fanout                                                                           ;
 ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[19..31]                         ; Lost fanout                                                                           ;
 ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[19..31]                         ; Lost fanout                                                                           ;
 ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[19..31]                         ; Lost fanout                                                                           ;
 ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[19..31]                         ; Lost fanout                                                                           ;
-; Total Number of Removed Registers = 1098                                  ;                                                                                       ;
+; Total Number of Removed Registers = 1085                                  ;                                                                                       ;
 +---------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
 
 
@@ -1209,122 +1217,110 @@ Encoding Type:  One-Hot
 +----------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 ; Register name                                ; Reason for Removal        ; Registers Removed due to This Register                                        ;
 +----------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
-; AC_MOTOR_CONTROL:inst4|FREQUENCY[11]         ; Stuck at VCC              ; AC_MOTOR_SINE:inst3|freq_int[3], AC_MOTOR_SINE:inst3|freq_int[4],             ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_SINE:inst3|freq_int[5], AC_MOTOR_SINE:inst3|freq_int[6],             ;
-;                                              ;                           ; AC_MOTOR_SINE:inst3|freq_int[7], AC_MOTOR_SINE:inst3|freq_int[8],             ;
-;                                              ;                           ; AC_MOTOR_SINE:inst3|freq_int[9]                                               ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[11]         ; Stuck at GND              ; AC_MOTOR_SINE:inst3|freq_int[11], AC_MOTOR_SINE:inst3|freq_int[3],            ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_SINE:inst3|freq_int[4], AC_MOTOR_SINE:inst3|freq_int[5],             ;
+;                                              ;                           ; AC_MOTOR_SINE:inst3|freq_int[6], AC_MOTOR_SINE:inst3|freq_int[7],             ;
+;                                              ;                           ; AC_MOTOR_SINE:inst3|freq_int[8], AC_MOTOR_SINE:inst3|freq_int[9]              ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[10]         ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[10],                                   ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[10],                                   ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[10]                                    ;
 ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[3] ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc1|value_temp[0],                                    ;
 ;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc1|VALUE_AVG[0], SPI_HOST:spi_host|data_in_temp[119] ;
-; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[3] ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc6|value_temp[0],                                    ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc6|VALUE_AVG[0], SPI_HOST:spi_host|data_in_temp[199] ;
-; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[3] ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc5|value_temp[0],                                    ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc5|VALUE_AVG[0], SPI_HOST:spi_host|data_in_temp[183] ;
-; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[3] ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc4|value_temp[0],                                    ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc4|VALUE_AVG[0], SPI_HOST:spi_host|data_in_temp[167] ;
-; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[3] ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc3|value_temp[0],                                    ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc3|VALUE_AVG[0], SPI_HOST:spi_host|data_in_temp[151] ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[0]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[0],                                    ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[0],                                    ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[0]                                     ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[1]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[1],                                    ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[1],                                    ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[1]                                     ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[2]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[2],                                    ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[2],                                    ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[2]                                     ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[3]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[3],                                    ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[3],                                    ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[3]                                     ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[4]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[4],                                    ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[4],                                    ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[4]                                     ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[6]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[6],                                    ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[6],                                    ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[6]                                     ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[7]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[7],                                    ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[7],                                    ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[7]                                     ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[8]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[8],                                    ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[8],                                    ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[8]                                     ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[9]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[9],                                    ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[9],                                    ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[9]                                     ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[10]         ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[10],                                   ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[10],                                   ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[10]                                    ;
-; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[11]         ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[11],                                   ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[11],                                   ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[11]                                    ;
 ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[3] ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc2|value_temp[0],                                    ;
 ;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc2|VALUE_AVG[0], SPI_HOST:spi_host|data_in_temp[135] ;
+; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[3] ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc3|value_temp[0],                                    ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc3|VALUE_AVG[0], SPI_HOST:spi_host|data_in_temp[151] ;
+; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[3] ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc4|value_temp[0],                                    ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc4|VALUE_AVG[0], SPI_HOST:spi_host|data_in_temp[167] ;
+; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[3] ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc5|value_temp[0],                                    ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc5|VALUE_AVG[0], SPI_HOST:spi_host|data_in_temp[183] ;
+; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[3] ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc6|value_temp[0],                                    ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc6|VALUE_AVG[0], SPI_HOST:spi_host|data_in_temp[199] ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[0]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[0],                                    ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[0],                                    ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[0]                                     ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[1]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[1],                                    ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[1],                                    ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[1]                                     ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[3]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[3],                                    ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[3],                                    ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[3]                                     ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[9]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[9],                                    ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[9],                                    ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[9]                                     ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[2]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[2],                                    ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[2],                                    ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[2]                                     ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[8]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[8],                                    ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[8],                                    ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[8]                                     ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[7]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[7],                                    ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[7],                                    ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[7]                                     ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[6]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[6],                                    ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[6],                                    ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[6]                                     ;
 ; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[5]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[5],                                    ;
-;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst7|triangle_int[5],                                    ;
-;                                              ;                           ; AC_MOTOR_COMPARATOR:inst6|triangle_int[5]                                     ;
-; ADC_LTC2313_12_MOV_AVG:adc3|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[25],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[30]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc3|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[26],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[29]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc2|value_adc_3[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[27],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[28]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc2|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[26],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[29]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc2|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[25],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[30]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc1|value_adc_3[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[27],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[28]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc1|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[26],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[29]                                 ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[5],                                    ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[5]                                     ;
+; AC_MOTOR_TRIANGLE:inst2|TRIANGLE[4]          ; Stuck at GND              ; AC_MOTOR_COMPARATOR:inst5|triangle_int[4],                                    ;
+;                                              ; due to stuck port data_in ; AC_MOTOR_COMPARATOR:inst6|triangle_int[4],                                    ;
+;                                              ;                           ; AC_MOTOR_COMPARATOR:inst7|triangle_int[4]                                     ;
 ; ADC_LTC2313_12_MOV_AVG:adc1|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[25],                                ;
 ;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[30]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc6|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[25],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[30]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc1|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[26],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[29]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc1|value_adc_3[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[27],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[28]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc2|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[25],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[30]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc2|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[26],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[29]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc2|value_adc_3[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[27],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[28]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc3|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[25],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[30]                                 ;
 ; ADC_LTC2313_12_MOV_AVG:adc3|value_adc_3[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[27],                                ;
 ;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[28]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc4|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[25],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[30]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc4|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[26],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[29]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc4|value_adc_3[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[27],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[28]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc5|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[25],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[30]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc5|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[26],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[29]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc5|value_adc_3[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[27],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[28]                                 ;
-; ADC_LTC2313_12_MOV_AVG:adc6|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[26],                                ;
-;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[29]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc3|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[26],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[29]                                 ;
 ; ADC_LTC2313_12_MOV_AVG:adc6|value_adc_3[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[27],                                ;
 ;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[28]                                 ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[11]       ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[11]                                            ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[8]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[8]                                             ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[9]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[9]                                             ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[10]       ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[10]                                            ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[4]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[4]                                             ;
-; AC_MOTOR_COMPARATOR:inst7|sine_int[0]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[0]                                             ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[7]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[7]                                             ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[6]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[6]                                             ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[5]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[5]                                             ;
-; AC_MOTOR_COMPARATOR:inst7|sine_int[10]       ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[10]                                            ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[3]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[3]                                             ;
-; AC_MOTOR_COMPARATOR:inst7|sine_int[1]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[1]                                             ;
-; AC_MOTOR_COMPARATOR:inst7|sine_int[2]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[2]                                             ;
-; AC_MOTOR_COMPARATOR:inst7|sine_int[3]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[3]                                             ;
+; ADC_LTC2313_12_MOV_AVG:adc6|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[26],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[29]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc6|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[25],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[30]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc5|value_adc_3[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[27],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[28]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc5|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[26],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[29]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc5|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[25],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[30]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc4|value_adc_3[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[27],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[28]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc4|value_adc_2[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[26],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[29]                                 ;
+; ADC_LTC2313_12_MOV_AVG:adc4|value_adc_1[0]   ; Stuck at GND              ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[25],                                ;
+;                                              ; due to stuck port data_in ; ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[30]                                 ;
 ; AC_MOTOR_COMPARATOR:inst7|sine_int[4]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[4]                                             ;
 ; AC_MOTOR_COMPARATOR:inst7|sine_int[5]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[5]                                             ;
 ; AC_MOTOR_COMPARATOR:inst7|sine_int[6]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[6]                                             ;
 ; AC_MOTOR_COMPARATOR:inst7|sine_int[7]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[7]                                             ;
 ; AC_MOTOR_COMPARATOR:inst7|sine_int[8]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[8]                                             ;
 ; AC_MOTOR_COMPARATOR:inst7|sine_int[9]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[9]                                             ;
-; AC_MOTOR_COMPARATOR:inst7|sine_int[11]       ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[11]                                            ;
-; AC_MOTOR_COMPARATOR:inst5|sine_int[4]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[4]                                             ;
-; AC_MOTOR_CONTROL:inst4|FREQUENCY[0]          ; Stuck at GND              ; AC_MOTOR_SINE:inst3|freq_int[0]                                               ;
-;                                              ; due to stuck port data_in ;                                                                               ;
-; AC_MOTOR_CONTROL:inst4|AMPLITUDE[10]         ; Stuck at GND              ; AC_MOTOR_SINE:inst3|ampl_int[10]                                              ;
-;                                              ; due to stuck port data_in ;                                                                               ;
-; AC_MOTOR_CONTROL:inst4|AMPLITUDE[11]         ; Stuck at GND              ; AC_MOTOR_SINE:inst3|ampl_int[12]                                              ;
-;                                              ; due to stuck port data_in ;                                                                               ;
+; AC_MOTOR_COMPARATOR:inst7|sine_int[10]       ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[10]                                            ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[0]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[0]                                             ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[1]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[1]                                             ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[2]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[2]                                             ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[3]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[3]                                             ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[4]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[4]                                             ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[5]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[5]                                             ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[6]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[6]                                             ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[7]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[7]                                             ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[10]       ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[10]                                            ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[8]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[8]                                             ;
+; AC_MOTOR_COMPARATOR:inst6|sine_int[9]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[9]                                             ;
+; AC_MOTOR_COMPARATOR:inst5|sine_int[5]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[5]                                             ;
 ; DREHZAHLMESSUNG:drehzahlmessung|SPEED[31]    ; Stuck at GND              ; SPI_HOST:spi_host|data_in_temp[224]                                           ;
 ;                                              ; due to stuck port data_in ;                                                                               ;
 ; DREHZAHLMESSUNG:drehzahlmessung|SPEED[30]    ; Stuck at GND              ; SPI_HOST:spi_host|data_in_temp[225]                                           ;
@@ -1335,16 +1331,16 @@ Encoding Type:  One-Hot
 ; AC_MOTOR_COMPARATOR:inst5|sine_int[1]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[1]                                             ;
 ; AC_MOTOR_COMPARATOR:inst5|sine_int[2]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[2]                                             ;
 ; AC_MOTOR_COMPARATOR:inst5|sine_int[3]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[3]                                             ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[2]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[2]                                             ;
-; AC_MOTOR_COMPARATOR:inst5|sine_int[5]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[5]                                             ;
+; AC_MOTOR_COMPARATOR:inst5|sine_int[4]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[4]                                             ;
+; AC_MOTOR_COMPARATOR:inst7|sine_int[3]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[3]                                             ;
 ; AC_MOTOR_COMPARATOR:inst5|sine_int[6]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[6]                                             ;
 ; AC_MOTOR_COMPARATOR:inst5|sine_int[7]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[7]                                             ;
 ; AC_MOTOR_COMPARATOR:inst5|sine_int[8]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[8]                                             ;
 ; AC_MOTOR_COMPARATOR:inst5|sine_int[9]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[9]                                             ;
 ; AC_MOTOR_COMPARATOR:inst5|sine_int[10]       ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[10]                                            ;
-; AC_MOTOR_COMPARATOR:inst5|sine_int[11]       ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_1[11]                                            ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[0]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[0]                                             ;
-; AC_MOTOR_COMPARATOR:inst6|sine_int[1]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_2[1]                                             ;
+; AC_MOTOR_COMPARATOR:inst7|sine_int[0]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[0]                                             ;
+; AC_MOTOR_COMPARATOR:inst7|sine_int[1]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[1]                                             ;
+; AC_MOTOR_COMPARATOR:inst7|sine_int[2]        ; Lost Fanouts              ; AC_MOTOR_SINE:inst3|SINE_VAL_3[2]                                             ;
 +----------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 
 
@@ -1353,12 +1349,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2488  ;
+; Total registers                              ; 2478  ;
 ; Number of registers using Synchronous Clear  ; 125   ;
 ; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1938  ;
+; Number of registers using Clock Enable       ; 1942  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1380,20 +1376,22 @@ Encoding Type:  One-Hot
 ; ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[1]       ; 2       ;
 ; ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[2]       ; 2       ;
 ; ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[3]       ; 2       ;
+; AC_MOTOR_SINE:inst3|ccw_int                                              ; 27      ;
 ; DREHZAHLMESSUNG:drehzahlmessung|ctr_mov_avg[0]                           ; 9       ;
 ; ADC_LTC2313_12_MOV_AVG:adc1|ctr_mov_avg[0]                               ; 9       ;
+; AC_MOTOR_SINE:inst3|ampl_int[0]                                          ; 33      ;
 ; DC_MOTOR_RAMPE:dc_motor_rampe_antrieb|ctr[0]                             ; 2       ;
 ; AC_MOTOR_SINE:inst3|sine_index_3[10]                                     ; 3       ;
-; AC_MOTOR_SINE:inst3|sine_index_3[2]                                      ; 3       ;
-; AC_MOTOR_SINE:inst3|sine_index_3[4]                                      ; 3       ;
-; AC_MOTOR_SINE:inst3|sine_index_3[6]                                      ; 3       ;
-; AC_MOTOR_SINE:inst3|sine_index_3[8]                                      ; 3       ;
 ; AC_MOTOR_SINE:inst3|sine_index_2[9]                                      ; 11      ;
-; AC_MOTOR_SINE:inst3|sine_index_2[1]                                      ; 3       ;
-; AC_MOTOR_SINE:inst3|sine_index_2[3]                                      ; 3       ;
-; AC_MOTOR_SINE:inst3|sine_index_2[5]                                      ; 3       ;
 ; AC_MOTOR_SINE:inst3|sine_index_2[7]                                      ; 3       ;
-; Total number of inverted registers = 25                                  ;         ;
+; AC_MOTOR_SINE:inst3|sine_index_2[5]                                      ; 3       ;
+; AC_MOTOR_SINE:inst3|sine_index_2[3]                                      ; 3       ;
+; AC_MOTOR_SINE:inst3|sine_index_2[1]                                      ; 3       ;
+; AC_MOTOR_SINE:inst3|sine_index_3[8]                                      ; 3       ;
+; AC_MOTOR_SINE:inst3|sine_index_3[6]                                      ; 3       ;
+; AC_MOTOR_SINE:inst3|sine_index_3[4]                                      ; 3       ;
+; AC_MOTOR_SINE:inst3|sine_index_3[2]                                      ; 3       ;
+; Total number of inverted registers = 27                                  ;         ;
 +--------------------------------------------------------------------------+---------+
 
 
@@ -1417,70 +1415,70 @@ Encoding Type:  One-Hot
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac2|index[5]                                                  ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac1|index[11]                                                 ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12|index[4]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|index[9]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|index[7]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|index[6]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|index[4]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[7]        ;
-; 3:1                ; 93 bits   ; 186 LEs       ; 93 LEs               ; 93 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|DATA_OUT[138]                                           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|index[4]        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|index[8]        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|index[11]       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|index[5]        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[8]        ;
+; 3:1                ; 93 bits   ; 186 LEs       ; 93 LEs               ; 93 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|DATA_OUT[139]                                           ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|WDT:wdt|counter[3]                                                        ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|SEL_SPI_INPUT:sel_spi_input|counter[1]                                    ;
 ; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_data_mosi[11]                                         ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|SPI_HOST:spi_host|spi_cmd_write                                           ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|spi_clk_ctr[8]                                          ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_data_miso[3]                                          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|spi_clk_ctr[0]                                          ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_data_miso[6]                                          ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|SPI_HOST:spi_host|cmd[5]                                                  ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_cmd[2]                                                ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|state[3]                                  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|state[3]                                      ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|state[0]                                      ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|state[15]                                     ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|state[6]                                      ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|state[5]                                      ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_cmd[5]                                                ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|state[5]                                  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|state[0]                                      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|state[7]                                      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|state[4]                                      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|state[1]                                      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|state[11]                                     ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|state[6]                                      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|counter[0]                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|speed_temp[15]                            ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|counter[3]                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|speed_temp[16]                            ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |MAX1000|DC_MOTOR_RAMPE:dc_motor_rampe_antrieb|CCW                                 ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|SINE_VAL_2[20]                                        ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_1[1]                                        ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_2[0]                                        ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_3[1]                                        ;
-; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac3|ctr_clk_delay[3]                                          ;
-; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac2|ctr_clk_delay[1]                                          ;
-; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac1|ctr_clk_delay[10]                                         ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[13] ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[2]  ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[2]  ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[14] ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[3]  ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[11] ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:spi_cs_filter|ctr1[2]                                      ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:spi_cs_filter|ctr0[4]                                      ;
-; 18:1               ; 32 bits   ; 384 LEs       ; 192 LEs              ; 192 LEs                ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|summe_mov_avg[16]                         ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr1[0]           ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr0[4]           ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr1[4]         ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr0[0]         ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr1[2]          ;
+; 3:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|SINE_VAL_2[16]                                        ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_1[7]                                        ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_3[5]                                        ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_2[6]                                        ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac3|ctr_clk_delay[14]                                         ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac2|ctr_clk_delay[14]                                         ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac1|ctr_clk_delay[1]                                          ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[5]  ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[12] ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[15] ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[9]  ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[7]  ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[4]  ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:spi_cs_filter|ctr1[0]                                      ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:spi_cs_filter|ctr0[2]                                      ;
+; 18:1               ; 32 bits   ; 384 LEs       ; 192 LEs              ; 192 LEs                ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|summe_mov_avg[15]                         ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr1[2]           ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr0[0]           ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr1[3]         ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr0[4]         ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr1[3]          ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr0[1]          ;
-; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|INP_FILTER:inp_filter|ctr1[11]            ;
-; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|INP_FILTER:inp_filter|ctr0[11]            ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[5]                              ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[29]                             ;
+; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|INP_FILTER:inp_filter|ctr1[3]             ;
+; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|INP_FILTER:inp_filter|ctr0[3]             ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[22]                             ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[18]                             ;
 ; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[22]                             ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[4]                              ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[8]                              ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[19]                             ;
-; 9:1                ; 12 bits   ; 72 LEs        ; 24 LEs               ; 48 LEs                 ; Yes        ; |MAX1000|DC_MOTOR_RAMPE:dc_motor_rampe_antrieb|VALUE_OUT[10]                       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac3|index[4]                                                  ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[25]                             ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[11]                             ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[5]                              ;
+; 9:1                ; 12 bits   ; 72 LEs        ; 24 LEs               ; 48 LEs                 ; Yes        ; |MAX1000|DC_MOTOR_RAMPE:dc_motor_rampe_antrieb|VALUE_OUT[11]                       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac3|index[0]                                                  ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac2|index[0]                                                  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac1|index[4]                                                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac1|index[0]                                                  ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12|index[1]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|index[2]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|index[3]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|index[3]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|index[1]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[3]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|index[0]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|index[1]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|index[1]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|index[0]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[0]        ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MAX1000|DAC_AD5061:dac3|state                                                     ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MAX1000|DAC_AD5061:dac2|state                                                     ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MAX1000|DAC_AD5061:dac1|state                                                     ;
@@ -1601,7 +1599,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CLK5_MULTIPLY_BY              ; 1                     ; Untyped              ;
 ; CLK4_MULTIPLY_BY              ; 1                     ; Untyped              ;
 ; CLK3_MULTIPLY_BY              ; 1                     ; Signed Integer       ;
-; CLK2_MULTIPLY_BY              ; 40909091              ; Signed Integer       ;
+; CLK2_MULTIPLY_BY              ; 1                     ; Untyped              ;
 ; CLK1_MULTIPLY_BY              ; 25                    ; Signed Integer       ;
 ; CLK0_MULTIPLY_BY              ; 25                    ; Signed Integer       ;
 ; CLK9_DIVIDE_BY                ; 0                     ; Untyped              ;
@@ -1611,7 +1609,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CLK5_DIVIDE_BY                ; 1                     ; Untyped              ;
 ; CLK4_DIVIDE_BY                ; 1                     ; Untyped              ;
 ; CLK3_DIVIDE_BY                ; 1                     ; Signed Integer       ;
-; CLK2_DIVIDE_BY                ; 6000000               ; Signed Integer       ;
+; CLK2_DIVIDE_BY                ; 1                     ; Untyped              ;
 ; CLK1_DIVIDE_BY                ; 3                     ; Signed Integer       ;
 ; CLK0_DIVIDE_BY                ; 6                     ; Signed Integer       ;
 ; CLK9_PHASE_SHIFT              ; 0                     ; Untyped              ;
@@ -1637,7 +1635,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CLK5_DUTY_CYCLE               ; 50                    ; Untyped              ;
 ; CLK4_DUTY_CYCLE               ; 50                    ; Untyped              ;
 ; CLK3_DUTY_CYCLE               ; 50                    ; Signed Integer       ;
-; CLK2_DUTY_CYCLE               ; 50                    ; Signed Integer       ;
+; CLK2_DUTY_CYCLE               ; 50                    ; Untyped              ;
 ; CLK1_DUTY_CYCLE               ; 50                    ; Signed Integer       ;
 ; CLK0_DUTY_CYCLE               ; 50                    ; Signed Integer       ;
 ; CLK9_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped              ;
@@ -1869,7 +1867,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; PORT_CLKBAD1                  ; PORT_UNUSED           ; Untyped              ;
 ; PORT_CLK0                     ; PORT_USED             ; Untyped              ;
 ; PORT_CLK1                     ; PORT_USED             ; Untyped              ;
-; PORT_CLK2                     ; PORT_USED             ; Untyped              ;
+; PORT_CLK2                     ; PORT_UNUSED           ; Untyped              ;
 ; PORT_CLK3                     ; PORT_USED             ; Untyped              ;
 ; PORT_CLK4                     ; PORT_UNUSED           ; Untyped              ;
 ; PORT_CLK5                     ; PORT_UNUSED           ; Untyped              ;
@@ -2000,18 +1998,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: AC_MOTOR_SINE:inst3 ;
-+-----------------+----------+-------------------------------------+
-; Parameter Name  ; Value    ; Type                                ;
-+-----------------+----------+-------------------------------------+
-; starting_sample ; 0        ; Signed Integer                      ;
-; sine_samples    ; 2048     ; Signed Integer                      ;
-; bits            ; 12       ; Signed Integer                      ;
-; f_clk           ; 82000000 ; Signed Integer                      ;
-; f_min           ; 10       ; Signed Integer                      ;
-; f_max           ; 600      ; Signed Integer                      ;
-; clock_div_min   ; 4003     ; Signed Integer                      ;
-; clock_div_max   ; 66       ; Signed Integer                      ;
-+-----------------+----------+-------------------------------------+
++-----------------+-----------+------------------------------------+
+; Parameter Name  ; Value     ; Type                               ;
++-----------------+-----------+------------------------------------+
+; starting_sample ; 0         ; Signed Integer                     ;
+; sine_samples    ; 2048      ; Signed Integer                     ;
+; bits            ; 12        ; Signed Integer                     ;
+; f_clk           ; 100000000 ; Signed Integer                     ;
+; f_min           ; 10        ; Signed Integer                     ;
+; f_max           ; 600       ; Signed Integer                     ;
+; clock_div_min   ; 4882      ; Signed Integer                     ;
+; clock_div_max   ; 81        ; Signed Integer                     ;
++-----------------+-----------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2027,14 +2025,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +----------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: AC_MOTOR_TRIANGLE:inst2 ;
-+----------------+----------------------------------+------------------+
-; Parameter Name ; Value                            ; Type             ;
-+----------------+----------------------------------+------------------+
-; output_bits    ; 24                               ; Signed Integer   ;
-; level_bits     ; 12                               ; Signed Integer   ;
-; triangle_max   ; 2046                             ; Signed Integer   ;
-; triangle_min   ; 11111111111111111111100000000010 ; Signed Integer   ;
-+----------------+----------------------------------+------------------+
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; output_bits    ; 24    ; Signed Integer                              ;
+; level_bits     ; 13    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2049,7 +2045,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: AC_MOTOR_COMPARATOR:inst6 ;
+; Parameter Settings for User Entity Instance: AC_MOTOR_COMPARATOR:inst7 ;
 +----------------+-------+-----------------------------------------------+
 ; Parameter Name ; Value ; Type                                          ;
 +----------------+-------+-----------------------------------------------+
@@ -2060,7 +2056,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: AC_MOTOR_COMPARATOR:inst7 ;
+; Parameter Settings for User Entity Instance: AC_MOTOR_COMPARATOR:inst6 ;
 +----------------+-------+-----------------------------------------------+
 ; Parameter Name ; Value ; Type                                          ;
 +----------------+-------+-----------------------------------------------+
@@ -2300,7 +2296,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult5 ;
+; Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult3 ;
 +------------------------------------------------+----------+-------------------------+
 ; Parameter Name                                 ; Value    ; Type                    ;
 +------------------------------------------------+----------+-------------------------+
@@ -2335,7 +2331,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult3 ;
+; Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult5 ;
 +------------------------------------------------+----------+-------------------------+
 ; Parameter Name                                 ; Value    ; Type                    ;
 +------------------------------------------------+----------+-------------------------+
@@ -2405,7 +2401,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult2 ;
+; Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult1 ;
 +------------------------------------------------+---------+--------------------------+
 ; Parameter Name                                 ; Value   ; Type                     ;
 +------------------------------------------------+---------+--------------------------+
@@ -2440,7 +2436,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult1 ;
+; Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult2 ;
 +------------------------------------------------+---------+--------------------------+
 ; Parameter Name                                 ; Value   ; Type                     ;
 +------------------------------------------------+---------+--------------------------+
@@ -2550,7 +2546,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                               ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                 ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                 ;
-; Entity Instance                       ; AC_MOTOR_SINE:inst3|lpm_mult:Mult5 ;
+; Entity Instance                       ; AC_MOTOR_SINE:inst3|lpm_mult:Mult3 ;
 ;     -- LPM_WIDTHA                     ; 12                                 ;
 ;     -- LPM_WIDTHB                     ; 13                                 ;
 ;     -- LPM_WIDTHP                     ; 25                                 ;
@@ -2561,7 +2557,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                               ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                 ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                 ;
-; Entity Instance                       ; AC_MOTOR_SINE:inst3|lpm_mult:Mult3 ;
+; Entity Instance                       ; AC_MOTOR_SINE:inst3|lpm_mult:Mult5 ;
 ;     -- LPM_WIDTHA                     ; 12                                 ;
 ;     -- LPM_WIDTHB                     ; 13                                 ;
 ;     -- LPM_WIDTHP                     ; 25                                 ;
@@ -2583,7 +2579,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                               ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                 ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                 ;
-; Entity Instance                       ; AC_MOTOR_SINE:inst3|lpm_mult:Mult2 ;
+; Entity Instance                       ; AC_MOTOR_SINE:inst3|lpm_mult:Mult1 ;
 ;     -- LPM_WIDTHA                     ; 12                                 ;
 ;     -- LPM_WIDTHB                     ; 2                                  ;
 ;     -- LPM_WIDTHP                     ; 14                                 ;
@@ -2594,7 +2590,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                               ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                 ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                 ;
-; Entity Instance                       ; AC_MOTOR_SINE:inst3|lpm_mult:Mult1 ;
+; Entity Instance                       ; AC_MOTOR_SINE:inst3|lpm_mult:Mult2 ;
 ;     -- LPM_WIDTHA                     ; 12                                 ;
 ;     -- LPM_WIDTHB                     ; 2                                  ;
 ;     -- LPM_WIDTHP                     ; 14                                 ;
@@ -2614,30 +2610,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 47                          ;
-; cycloneiii_ff         ; 2488                        ;
-;     ENA               ; 1810                        ;
+; cycloneiii_ff         ; 2478                        ;
+;     ENA               ; 1814                        ;
 ;     ENA SCLR          ; 112                         ;
 ;     ENA SLD           ; 16                          ;
 ;     SCLR              ; 13                          ;
-;     plain             ; 537                         ;
+;     plain             ; 523                         ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 3505                        ;
-;     arith             ; 1511                        ;
+; cycloneiii_lcell_comb ; 3487                        ;
+;     arith             ; 1491                        ;
 ;         2 data inputs ; 526                         ;
-;         3 data inputs ; 985                         ;
-;     normal            ; 1994                        ;
+;         3 data inputs ; 965                         ;
+;     normal            ; 1996                        ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 103                         ;
-;         2 data inputs ; 275                         ;
-;         3 data inputs ; 192                         ;
-;         4 data inputs ; 1422                        ;
+;         1 data inputs ; 101                         ;
+;         2 data inputs ; 217                         ;
+;         3 data inputs ; 284                         ;
+;         4 data inputs ; 1392                        ;
 ; cycloneiii_mac_mult   ; 3                           ;
 ; cycloneiii_mac_out    ; 3                           ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 33                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 11.00                       ;
-; Average LUT depth     ; 4.59                        ;
+; Average LUT depth     ; 4.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2646,7 +2642,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -2656,7 +2652,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Wed May  8 09:24:22 2019
+    Info: Processing started: Fri May 10 11:28:11 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MAX1000 -c MAX1000
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -2715,9 +2711,9 @@ Info (12128): Elaborating entity "SPI_INP_FILTER_HOST" for hierarchy "SPI_HOST:s
 Warning (10230): Verilog HDL assignment warning at SPI_HOST.v(246): truncated value with size 32 to match size of target (5) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/SPI/HOST/SPI_HOST.v Line: 246
 Warning (10230): Verilog HDL assignment warning at SPI_HOST.v(251): truncated value with size 32 to match size of target (5) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/SPI/HOST/SPI_HOST.v Line: 251
 Info (12128): Elaborating entity "PLL" for hierarchy "PLL:pll"
-Info (12128): Elaborating entity "altpll" for hierarchy "PLL:pll|altpll:altpll_component" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/PLL/PLL.v Line: 102
-Info (12130): Elaborated megafunction instantiation "PLL:pll|altpll:altpll_component" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/PLL/PLL.v Line: 102
-Info (12133): Instantiated megafunction "PLL:pll|altpll:altpll_component" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/PLL/PLL.v Line: 102
+Info (12128): Elaborating entity "altpll" for hierarchy "PLL:pll|altpll:altpll_component" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/PLL/PLL.v Line: 98
+Info (12130): Elaborated megafunction instantiation "PLL:pll|altpll:altpll_component" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/PLL/PLL.v Line: 98
+Info (12133): Instantiated megafunction "PLL:pll|altpll:altpll_component" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/PLL/PLL.v Line: 98
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "6"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -2727,10 +2723,6 @@ Info (12133): Instantiated megafunction "PLL:pll|altpll:altpll_component" with t
     Info (12134): Parameter "clk1_duty_cycle" = "50"
     Info (12134): Parameter "clk1_multiply_by" = "25"
     Info (12134): Parameter "clk1_phase_shift" = "0"
-    Info (12134): Parameter "clk2_divide_by" = "6000000"
-    Info (12134): Parameter "clk2_duty_cycle" = "50"
-    Info (12134): Parameter "clk2_multiply_by" = "40909091"
-    Info (12134): Parameter "clk2_phase_shift" = "0"
     Info (12134): Parameter "clk3_divide_by" = "1"
     Info (12134): Parameter "clk3_duty_cycle" = "50"
     Info (12134): Parameter "clk3_multiply_by" = "1"
@@ -2769,7 +2761,7 @@ Info (12133): Instantiated megafunction "PLL:pll|altpll:altpll_component" with t
     Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
     Info (12134): Parameter "port_clk0" = "PORT_USED"
     Info (12134): Parameter "port_clk1" = "PORT_USED"
-    Info (12134): Parameter "port_clk2" = "PORT_USED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_clk3" = "PORT_USED"
     Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
     Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
@@ -2832,33 +2824,33 @@ Info (12128): Elaborating entity "DC_MOTOR_LUEFTER" for hierarchy "DC_MOTOR_LUEF
 Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(245): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/DC_MOTOR/DC_MOTOR.v Line: 245
 Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(248): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/DC_MOTOR/DC_MOTOR.v Line: 248
 Info (12128): Elaborating entity "AC_MOTOR_COMPARATOR" for hierarchy "AC_MOTOR_COMPARATOR:inst5"
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_COMPARATOR.v(44): truncated value with size 32 to match size of target (3) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_COMPARATOR.v Line: 44
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_COMPARATOR.v(45): truncated value with size 32 to match size of target (3) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_COMPARATOR.v Line: 45
 Info (12128): Elaborating entity "AC_MOTOR_SINE" for hierarchy "AC_MOTOR_SINE:inst3"
-Warning (10999): Verilog HDL warning at AC_MOTOR_SINE.v(44): can't infer memory for variable 'sine' with attribute '"M9K"'. File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 44
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(47): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 47
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(56): truncated value with size 14 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 56
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(57): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 57
+Warning (10999): Verilog HDL warning at AC_MOTOR_SINE.v(45): can't infer memory for variable 'sine' with attribute '"M9K"'. File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 45
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(48): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 48
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(57): truncated value with size 14 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 57
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(58): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 58
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(59): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 59
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(61): truncated value with size 14 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 61
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(62): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 62
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(60): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 60
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(62): truncated value with size 14 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 62
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(63): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 63
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(64): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 64
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(66): truncated value with size 14 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 66
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(67): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 67
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(65): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 65
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(67): truncated value with size 14 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 67
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(68): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 68
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(69): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 69
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(72): truncated value with size 32 to match size of target (3) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 72
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(75): truncated value with size 32 to match size of target (3) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 75
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(78): truncated value with size 32 to match size of target (3) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 78
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(84): truncated value with size 32 to match size of target (14) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 84
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(86): truncated value with size 32 to match size of target (14) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 86
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(88): truncated value with size 32 to match size of target (14) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 88
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(92): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 92
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(123): truncated value with size 32 to match size of target (14) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 123
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(70): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 70
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(73): truncated value with size 32 to match size of target (3) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 73
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(76): truncated value with size 32 to match size of target (3) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 76
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(79): truncated value with size 32 to match size of target (3) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 79
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(85): truncated value with size 32 to match size of target (14) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 85
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(87): truncated value with size 32 to match size of target (14) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 87
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(89): truncated value with size 32 to match size of target (14) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 89
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(93): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 93
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(124): truncated value with size 32 to match size of target (14) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 124
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(125): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 125
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(126): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 126
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(125): truncated value with size 32 to match size of target (14) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 125
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(127): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 127
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE.v(128): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 128
 Info (12128): Elaborating entity "DC_MOTOR_RAMPE" for hierarchy "DC_MOTOR_RAMPE:dc_motor_rampe_antrieb"
 Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(158): truncated value with size 32 to match size of target (16) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/DC_MOTOR/DC_MOTOR.v Line: 158
 Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(163): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/DC_MOTOR/DC_MOTOR.v Line: 163
@@ -2869,12 +2861,13 @@ Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(203): truncated va
 Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(204): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/DC_MOTOR/DC_MOTOR.v Line: 204
 Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(208): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/DC_MOTOR/DC_MOTOR.v Line: 208
 Info (12128): Elaborating entity "AC_MOTOR_TRIANGLE" for hierarchy "AC_MOTOR_TRIANGLE:inst2"
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_TRIANGLE.v(31): truncated value with size 32 to match size of target (2) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_TRIANGLE.v Line: 31
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_TRIANGLE.v(41): truncated value with size 36 to match size of target (24) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_TRIANGLE.v Line: 41
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_TRIANGLE.v(33): truncated value with size 32 to match size of target (2) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_TRIANGLE.v Line: 33
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_TRIANGLE.v(43): truncated value with size 32 to match size of target (24) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_TRIANGLE.v Line: 43
 Info (12128): Elaborating entity "AC_MOTOR_CONTROL" for hierarchy "AC_MOTOR_CONTROL:inst4"
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(15): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 15
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(23): truncated value with size 13 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 23
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(24): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 24
+Warning (10036): Verilog HDL or VHDL warning at AC_MOTOR_CONTROL.v(12): object "power_int" assigned a value but never read File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 12
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(15): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 15
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(27): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 27
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(28): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 28
 Info (12128): Elaborating entity "DC_MOTOR_ANTRIEB" for hierarchy "DC_MOTOR_ANTRIEB:dc_motor_antrieb"
 Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(67): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/DC_MOTOR/DC_MOTOR.v Line: 67
 Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(70): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/DC_MOTOR/DC_MOTOR.v Line: 70
@@ -2908,12 +2901,12 @@ Info (19000): Inferred 3 megafunctions from design logic
         Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
         Info (286033): Parameter INIT_FILE set to MAX1000.MAX10002.rtl.mif
 Info (278001): Inferred 6 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult4" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 114
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult5" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 116
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult3" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 111
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 103
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult2" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 105
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult1" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 104
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult4" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 115
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult3" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 112
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult5" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 117
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 104
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult1" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 105
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult2" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 106
 Info (12130): Elaborated megafunction instantiation "AC_MOTOR_SINE:inst3|altsyncram:Mux35_rtl_0"
 Info (12133): Instantiated megafunction "AC_MOTOR_SINE:inst3|altsyncram:Mux35_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -2947,8 +2940,8 @@ Info (12133): Instantiated megafunction "AC_MOTOR_SINE:inst3|altsyncram:Mux11_rt
     Info (12134): Parameter "INIT_FILE" = "MAX1000.MAX10002.rtl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3hu.tdf
     Info (12023): Found entity 1: altsyncram_3hu File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/altsyncram_3hu.tdf Line: 27
-Info (12130): Elaborated megafunction instantiation "AC_MOTOR_SINE:inst3|lpm_mult:Mult4" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 114
-Info (12133): Instantiated megafunction "AC_MOTOR_SINE:inst3|lpm_mult:Mult4" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 114
+Info (12130): Elaborated megafunction instantiation "AC_MOTOR_SINE:inst3|lpm_mult:Mult4" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 115
+Info (12133): Instantiated megafunction "AC_MOTOR_SINE:inst3|lpm_mult:Mult4" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 115
     Info (12134): Parameter "LPM_WIDTHA" = "12"
     Info (12134): Parameter "LPM_WIDTHB" = "13"
     Info (12134): Parameter "LPM_WIDTHP" = "25"
@@ -2960,8 +2953,8 @@ Info (12133): Instantiated megafunction "AC_MOTOR_SINE:inst3|lpm_mult:Mult4" wit
     Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_lgs.tdf
     Info (12023): Found entity 1: mult_lgs File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/mult_lgs.tdf Line: 28
-Info (12130): Elaborated megafunction instantiation "AC_MOTOR_SINE:inst3|lpm_mult:Mult0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 103
-Info (12133): Instantiated megafunction "AC_MOTOR_SINE:inst3|lpm_mult:Mult0" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 103
+Info (12130): Elaborated megafunction instantiation "AC_MOTOR_SINE:inst3|lpm_mult:Mult0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 104
+Info (12133): Instantiated megafunction "AC_MOTOR_SINE:inst3|lpm_mult:Mult0" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_SINE.v Line: 104
     Info (12134): Parameter "LPM_WIDTHA" = "12"
     Info (12134): Parameter "LPM_WIDTHB" = "2"
     Info (12134): Parameter "LPM_WIDTHP" = "14"
@@ -2992,23 +2985,23 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "D24" is stuck at GND
     Warning (13410): Pin "D25" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 189 registers lost all their fanouts during netlist optimizations.
+Info (17049): 183 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15899): PLL "PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|pll1" has parameters clk2_multiply_by and clk2_divide_by specified but port CLK[2] is not connected File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/PLL_altpll2.v Line: 43
+Warning (15899): PLL "PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|pll1" has parameters clk3_multiply_by and clk3_divide_by specified but port CLK[3] is not connected File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/PLL_altpll2.v Line: 43
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "U28_OUT"
-Info (21057): Implemented 4975 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4963 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 4888 logic cells
+    Info (21061): Implemented 4876 logic cells
     Info (21064): Implemented 33 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 6 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 103 warnings
-    Info: Peak virtual memory: 1231 megabytes
-    Info: Processing ended: Wed May  8 09:24:47 2019
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:41
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 104 warnings
+    Info: Peak virtual memory: 1232 megabytes
+    Info: Processing ended: Fri May 10 11:28:35 2019
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:39
 
 

@@ -1,7 +1,7 @@
 module AC_MOTOR_SINE(
 	input CLK,
 	input [bits - 1:0] FREQUENCY,
-	input signed [bits - 1:0] AMPLITUDE,
+	input [bits - 1:0] AMPLITUDE,
 	input CW,
 	input CCW,
 	input LOCK,
@@ -14,7 +14,8 @@ module AC_MOTOR_SINE(
 	parameter sine_samples = 512 * 4;
 	parameter bits = 12;
 
-	parameter f_clk = 82000000;
+	//parameter f_clk = 82000000;
+	parameter f_clk = 100000000;
 	parameter f_min = 10;
 	parameter f_max = 600;
 	parameter clock_div_min =  f_clk / (f_min * sine_samples);
@@ -122,8 +123,27 @@ module AC_MOTOR_SINE(
 		sine_index_1 <= 0;
 		sine_index_2 <= sine_samples / 3;
 		sine_index_3 <= sine_samples / 3 * 2;
+
 		freq_int <= clock_div_max;
-		ampl_int <= 2**11;
+		ampl_int <= 2**11- 1;
+		ccw_int <= 1;
+		cw_int <= 0;
+		mem_index_1 <= 0;
+		mem_index_2 <= 0;
+		mem_index_3 <= 0;
+		unsigned_sine_1 <= 0;
+		unsigned_sine_2 <= 0;
+		unsigned_sine_3 <= 0;
+		signed_sine_1 <= 0;
+		signed_sine_2 <= 0;
+		signed_sine_3 <= 0;
+		sine_sign_1 <= 0;
+		sine_sign_2 <= 0;
+		sine_sign_3 <= 0;
+		SINE_VAL_1 <= 0;
+		SINE_VAL_2 <= 0;
+		SINE_VAL_3 <= 0;
+
 		sine[0] = 12'b000000000000; sine[1] = 12'b000000000110; /*12'b000000000000*/
 		sine[2] = 12'b000000001100; sine[3] = 12'b000000010010;
 		sine[4] = 12'b000000011001; sine[5] = 12'b000000011111;
