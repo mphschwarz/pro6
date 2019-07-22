@@ -1,51 +1,51 @@
-`include "AC_MOTOR_SINE.v"
+`include "AC_MOTOR_SINE_SECTOR.v"
+`include "AC_MOTOR_SWITCH_TIME.v"
 `timescale 10ns/1ns
 
 
-module AC_MOTOR_SINE_TB;
+module AC_MOTOR_SWITCH_TIME_TB;
 	integer file;
 	reg clk;
-	reg lock;
-	reg cw;
-	reg ccw;
 	reg [11:0] frequency;
-	reg signed [11:0] amplitude;
-	//
-	wire signed [24-1:0] sine1;
-	wire signed [24-1:0] sine2;
-	wire signed [24-1:0] sine3;
-	//
+	reg [11:0] u_str;
+	wire [2:0] sector;
+	wire [12-1:0] sine_pos;
+	wire [12-1:0] sine_neg;
+	wire [14:0] t1;
+	wire [14:0] t2;
+	wire [14:0] t3;
+
 	initial begin
-		$dumpfile("vcd/ac_motor_sine_tb.vcd"); 
-		$dumpvars(0, AC_MOTOR_SINE_TB); 
+		$dumpfile("vcd/ac_motor_switch_time_tb.vcd"); 
+		$dumpvars(0, AC_MOTOR_SWITCH_TIME_TB); 
 
 		clk <= 1;
-		cw <= 0;
-		ccw <= 1;
-		frequency <= 2**12;
-		amplitude <= 2**11;
-		lock <= 0;
-		#1 lock <= 0;
-		#2 lock <= 1;
-		#3 lock <= 0;
-
+		//frequency <= 2**12-1;
+		frequency <= 0;
+		u_str <= 2**12 - 1;
 		#250000 $finish; 
 	end 
-	//
 
 	always #1 clk <= !clk;
 
-	AC_MOTOR_SINE sine(
+	AC_MOTOR_SINE_SECTOR sine_sector(
 		clk,
 		frequency,
-		amplitude,
-		cw,
-		ccw,
-		lock,
-		sine1,
-		sine2,
-		sine3);
-	//
+		sector,
+		sine_pos,
+		sine_neg
+	);
+
+	AC_MOTOR_SWITCH_TIME switch_time(
+		clk,
+		u_str,
+		sine_pos,
+		sine_neg,
+		t1,
+		t2
+	);
+		
+
 endmodule
 //
 

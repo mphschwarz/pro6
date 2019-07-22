@@ -18,6 +18,8 @@ module AC_MOTOR_COMPARATOR_TB;
 
 	reg cw;
 	reg ccw;
+	
+	reg [10:0] dead_time;
 
 	wire lock;
 
@@ -29,7 +31,8 @@ module AC_MOTOR_COMPARATOR_TB;
 	initial begin
 		clk <= 1;
 		enable <= 1;
-		frequency <= 2**7 - 1;
+		dead_time <= 1000;
+		frequency <= 0;
 		amplitude <= 2**11 - 1;
 		cw <= 0;
 		ccw <= 1;
@@ -46,6 +49,7 @@ module AC_MOTOR_COMPARATOR_TB;
 	AC_MOTOR_COMPARATOR comparator1(
 		clk,
 		enable,
+		dead_time,
 		triangle,
 		sine1,
 		out1,
