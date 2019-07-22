@@ -1,9 +1,9 @@
 `include "AC_MOTOR_SINE_SECTOR.v"
-`include "AC_MOTOR_SWITCH_TIME.v"
+`include "AC_MOTOR_VECTOR_TIME.v"
 `timescale 10ns/1ns
 
 
-module AC_MOTOR_SWITCH_TIME_TB;
+module AC_MOTOR_VECTOR_TIME_TB;
 	integer file;
 	reg clk;
 	reg [11:0] frequency;
@@ -13,11 +13,10 @@ module AC_MOTOR_SWITCH_TIME_TB;
 	wire [12-1:0] sine_neg;
 	wire [14:0] t1;
 	wire [14:0] t2;
-	wire [14:0] t3;
 
 	initial begin
-		$dumpfile("vcd/ac_motor_switch_time_tb.vcd"); 
-		$dumpvars(0, AC_MOTOR_SWITCH_TIME_TB); 
+		$dumpfile("vcd/ac_motor_vector_time_tb.vcd"); 
+		$dumpvars(0, AC_MOTOR_VECTOR_TIME_TB); 
 
 		clk <= 1;
 		//frequency <= 2**12-1;
@@ -36,7 +35,7 @@ module AC_MOTOR_SWITCH_TIME_TB;
 		sine_neg
 	);
 
-	AC_MOTOR_SWITCH_TIME switch_time(
+	AC_MOTOR_VECTOR_TIME vector_time(
 		clk,
 		u_str,
 		sine_pos,

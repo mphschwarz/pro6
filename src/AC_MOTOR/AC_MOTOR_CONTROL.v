@@ -21,7 +21,7 @@ module AC_MOTOR_CONTROL(
 		power <= 0;
 		AMPLITUDE <= 0;
 		FREQUENCY <= 0;
-		modulation <= 1;
+		modulation <= 1; //set to Vector modulation (default)
 		MODULATION <= 1; //set to Vector modulation (default)
 		delay <= 2**19 - 1;
 		DELAY <= 2**19 - 1; //set to max value for safety
@@ -36,13 +36,18 @@ module AC_MOTOR_CONTROL(
 	end
 
 	always @(posedge CLK) begin
-		//Amplitude forced to minimal Value if below
-		if (power < u_min) AMPLITUDE <= u_min;
-		else AMPLITUDE <= power;
-		FREQUENCY <= 2**12 - 1 - power;
+		//if (power < u_min) AMPLITUDE <= u_min; //Amplitude forced to minimal Value if below
+		//else AMPLITUDE <= power;
+		AMPLITUDE <= 2**12 - 1; // maximal frequency for testing
 
-		DELAY <= delay_min + delay;
-		MODULATION <= modulation;
+		//FREQUENCY <= 2**12 - 1 - power;
+		FREQUENCY <= 2**12 - 1; // minimal frequency for testing
+
+		//DELAY <= delay_min + delay;
+		DELAY <= delay_min; //minimal delay for testing
+
+		//MODULATION <= modulation;
+		MODULATION <= 0; //forced triangle modulation
 	end
 
 endmodule

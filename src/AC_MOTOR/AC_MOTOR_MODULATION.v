@@ -11,7 +11,7 @@ initial begin
 end
 
 always @(posedge CLK) begin
-	if (MODULATION) begin
+	if (MODULATION == 1) begin
 		S_OUT <= S_VECTOR;
 	end else begin
 		S_OUT <= S_TRIANGLE;

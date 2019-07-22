@@ -1,7 +1,7 @@
-`include "AC_MOTOR_SINE_SECTOR.v"
-`include "AC_MOTOR_VECTOR_TIME.v"
-`include "AC_MOTOR_VECTOR_CONTROL.v"
-`include "AC_MOTOR_SWITCH_CONTROL.v"
+`include "../AC_MOTOR_VECTOR/AC_MOTOR_SINE_SECTOR.v"
+`include "../AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v"
+`include "../AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v"
+`include "../AC_MOTOR_VECTOR/AC_MOTOR_SWITCH_CONTROL.v"
 `include "AC_MOTOR_SWITCH_DELAY.v"
 `timescale 10ns/1ns
 
@@ -11,7 +11,7 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 	reg clk;
 	reg [11:0] frequency;
 	reg [11:0] u_str;
-	reg [11:0] delay;
+	reg [10:0] delay;
 	wire [2:0] sector;
 	wire [12-1:0] sine_pos;
 	wire [12-1:0] sine_neg;
@@ -84,6 +84,7 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 
 	AC_MOTOR_SWITCH_DELAY switch_delay_1(
 		clk,
+		enable,
 		delay,
 		s1,
 		s1_high,
@@ -91,6 +92,7 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 	);
 	AC_MOTOR_SWITCH_DELAY switch_delay_2(
 		clk,
+		enable,
 		delay,
 		s2,
 		s2_high,
@@ -98,6 +100,7 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 	);
 	AC_MOTOR_SWITCH_DELAY switch_delay_3(
 		clk,
+		enable,
 		delay,
 		s3,
 		s3_high,

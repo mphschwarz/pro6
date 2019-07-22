@@ -1,10 +1,10 @@
 module AC_MOTOR_VECTOR_CONTROL(
 	input CLK,
-	input [14:0] T_1,
-	input [14:0] T_2,
+	input [14:0] T_LOW,
+	input [14:0] T_HIGH,
 	output reg U_0,
-	output reg U_1,
-	output reg U_2
+	output reg U_LOW,
+	output reg U_HIGH
 );
 
 parameter f_clk = 100*10**6;
@@ -13,38 +13,38 @@ parameter tast_period = f_clk / f_tast;
 
 
 reg [14:0] tast_index;
-reg [14:0] t1;
-reg [14:0] t2;
+reg [14:0] t_low;
+reg [14:0] t_high;
 
 initial begin
 	tast_index <= 0;
 	U_0 <= 0;
-	U_1 <= 0;
-	U_2 <= 0;
+	U_LOW <= 0;
+	U_HIGH <= 0;
 end
 
 always @(posedge CLK) begin
 	if (tast_index >= tast_period) begin
-		t1 <= T_1;
-		t2 <= T_2;
+		t_low <= T_LOW;
+		t_high <= T_HIGH;
 		tast_index <= 0;
 	end else begin
 		tast_index <= tast_index + 1;
 
-		if (t1 != 0) begin
+		if (t_low != 0) begin
 			U_0 <= 0;
-			U_1 <= 1;
-			U_2 <= 0;
-			t1 <= t1 - 1;
-		end else if (t2 != 0) begin
+			U_LOW <= 1;
+			U_HIGH <= 0;
+			t_low <= t_low - 1;
+		end else if (t_high != 0) begin
 			U_0 <= 0;
-			U_1 <= 0;
-			U_2 <= 1;
-			t2 <= t2 - 1;
+			U_LOW <= 0;
+			U_HIGH <= 1;
+			t_high <= t_high - 1;
 		end else begin
 			U_0 <= 1;
-			U_1 <= 0;
-			U_2 <= 0;
+			U_LOW <= 0;
+			U_HIGH <= 0;
 		end
 	end
 end

@@ -13,12 +13,11 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 	wire [2:0] sector;
 	wire [12-1:0] sine_pos;
 	wire [12-1:0] sine_neg;
-	wire [14:0] t1;
-	wire [14:0] t2;
-	wire [14:0] t3;
-	wire u0;
-	wire u1;
-	wire u2;
+	wire [14:0] t_low;
+	wire [14:0] t_high;
+	wire u_0;
+	wire u_low;
+	wire u_high;
 	wire s1;
 	wire s2;
 	wire s3;
@@ -28,9 +27,10 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 		$dumpvars(0, AC_MOTOR_SWITCH_CONTROL_TB); 
 
 		clk <= 1;
+		//frequency <= 2**12-1;
 		frequency <= 0;
 		u_str <= 2**12 - 1;
-		#2500000 $finish; 
+		#5000000 $finish; 
 	end 
 
 	always #1 clk <= !clk;
@@ -48,25 +48,25 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 		u_str,
 		sine_pos,
 		sine_neg,
-		t1,
-		t2
+		t_low,
+		t_high
 	);
 
 	AC_MOTOR_VECTOR_CONTROL vector_control(
 		clk,
-		t1,
-		t2,
-		u0,
-		u1,
-		u2
+		t_low,
+		t_high,
+		u_0,
+		u_low,
+		u_high
 	);
 
 	AC_MOTOR_SWITCH_CONTROL switch_control(
 		clk,
 		sector,
-		u0,
-		u1,
-		u2,
+		u_0,
+		u_low,
+		u_high,
 		s1,
 		s2,
 		s3

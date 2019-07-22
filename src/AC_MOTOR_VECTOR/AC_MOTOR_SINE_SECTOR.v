@@ -37,7 +37,7 @@ always @(posedge CLK) begin
 end
 
 always @(posedge CLK) begin
-	if(memory_pos == 4 && clock_div == freq_int) begin
+	if(memory_pos == 9 && clock_div == 0) begin
 		if (SECTOR == 5) begin
 			SECTOR <= 0;
 		end else begin 

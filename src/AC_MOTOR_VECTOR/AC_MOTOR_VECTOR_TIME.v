@@ -25,18 +25,18 @@ initial begin
 end
 
 always @(U_STR) begin
-	constant <= sq * t_tast * U_STR;
+	constant <= t_tast * U_STR;
 end
 
 always @(posedge CLK) begin
-	t_1 <= constant * SIN_POSITIVE;
+	t_1 <= constant * SIN_NEGATIVE;
 end
 always @(posedge CLK) begin
 	T_1 <= t_1 / (2**24 - 1);
 end
 
 always @(posedge CLK) begin
-	t_2 <= constant * SIN_NEGATIVE;
+	t_2 <= constant * SIN_POSITIVE;
 end
 always @(posedge CLK) begin
 	T_2 <= t_2 / (2**24 - 1);
