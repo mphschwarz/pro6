@@ -20,7 +20,9 @@ module AC_MOTOR_COMPARATOR_TB;
 
 	wire lock;
 
-	wire out;
+	wire out1;
+	wire out2;
+	wire out3;
 	
 	initial begin
 		clk <= 1;
@@ -30,7 +32,9 @@ module AC_MOTOR_COMPARATOR_TB;
 
 		$dumpfile("vcd/ac_motor_comparator_tb.vcd"); 
 		$dumpvars(0, AC_MOTOR_COMPARATOR_TB); 
-		#500000 $finish;
+		//#2500000 amplitude <= 2**11 - 1;
+		#2500000 frequency <= 2**11 - 1;
+		#2500000 $finish;
 	end 
 
 	always #1 clk <= !clk;
@@ -39,7 +43,18 @@ module AC_MOTOR_COMPARATOR_TB;
 		clk,
 		triangle,
 		sine1,
-		out);
+		out1);
+	AC_MOTOR_COMPARATOR comparator2(
+		clk,
+		triangle,
+		sine2,
+		out2);
+	AC_MOTOR_COMPARATOR comparator3(
+		clk,
+		triangle,
+		sine3,
+		out3);
+
 	AC_MOTOR_TRIANGLE triangle_gen(
 		clk,
 		lock,

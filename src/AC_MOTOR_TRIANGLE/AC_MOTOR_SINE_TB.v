@@ -6,8 +6,6 @@ module AC_MOTOR_SINE_TB;
 	integer file;
 	reg clk;
 	reg lock;
-	reg cw;
-	reg ccw;
 	reg [11:0] frequency;
 	reg signed [11:0] amplitude;
 	
@@ -20,8 +18,6 @@ module AC_MOTOR_SINE_TB;
 		$dumpvars(0, AC_MOTOR_SINE_TB); 
 
 		clk <= 1;
-		cw <= 0;
-		ccw <= 1;
 		frequency <= 2**12;
 		amplitude <= 2**11;
 		lock <= 0;
@@ -38,8 +34,6 @@ module AC_MOTOR_SINE_TB;
 		clk,
 		frequency,
 		amplitude,
-		cw,
-		ccw,
 		lock,
 		sine1,
 		sine2,

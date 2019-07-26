@@ -3,16 +3,21 @@
 `include "../AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v"
 `include "../AC_MOTOR_VECTOR/AC_MOTOR_SWITCH_CONTROL.v"
 `include "AC_MOTOR_SWITCH_DELAY.v"
-`timescale 10ns/1ns
+`include "AC_MOTOR_CONTROL.v"
+`timescale 1ns/100ps
 
 
 module AC_MOTOR_SWITCH_DELAY_TB;
 	integer file;
 	reg clk;
-	reg [11:0] frequency;
-	reg [11:0] u_str;
-	reg [10:0] delay;
-	wire [2:0] sector;
+	reg [11:0] power;
+	reg [15:0] mod_delay_umin;
+	reg enable;
+	wire [11:0] frequency;
+	wire [11:0] u_str;
+	wire [10:0] delay;
+	wire [2:0] sector_unsynced;
+	wire [2:0] sector_synced;
 	wire [12-1:0] sine_pos;
 	wire [12-1:0] sine_neg;
 	wire [14:0] t1;
@@ -36,22 +41,40 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 		$dumpvars(0, AC_MOTOR_SWITCH_DELAY_TB); 
 
 		clk <= 1;
+		power <= 2**12 - 1;
+		mod_delay_umin <= 16'b1000000000000000;
+		enable <= 1;
 		//frequency <= 2**12-1;
-		frequency <= 0;
-		u_str <= 2**12 - 1;
-		delay <= 4;
-		#2500000 $finish; 
+		//frequency <= 0;
+		// u_str <= 2**12 - 1;
+		// delay <= 500;
+		//#625000 delay <= 1000;
+		//#625000 delay <= 2000;
+		//#1250000 $finish; 
+		//#62500000 $finish; 
+		//#6250000 mod_delay_umin <= 16'b1011111100000000;
+		#5787630 mod_delay_umin <= 16'b1011111100000000;
+		#500000 $finish;
+		
 	end 
 
-	always #1 clk <= !clk;
+	always #5 clk <= !clk;
+
+	AC_MOTOR_CONTROL control(
+		clk,
+		power,
+		mod_delay_umin,
+		modulation,
+		delay,
+		frequency,
+		u_str);
 
 	AC_MOTOR_SINE_SECTOR sine_sector(
 		clk,
 		frequency,
-		sector,
+		sector_unsynced,
 		sine_pos,
-		sine_neg
-	);
+		sine_neg);
 
 	AC_MOTOR_VECTOR_TIME vector_time(
 		clk,
@@ -64,8 +87,10 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 
 	AC_MOTOR_VECTOR_CONTROL vector_control(
 		clk,
+		sector_unsynced,
 		t1,
 		t2,
+		sector_synced,
 		u0,
 		u1,
 		u2
@@ -73,7 +98,7 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 
 	AC_MOTOR_SWITCH_CONTROL switch_control(
 		clk,
-		sector,
+		sector_synced,
 		u0,
 		u1,
 		u2,

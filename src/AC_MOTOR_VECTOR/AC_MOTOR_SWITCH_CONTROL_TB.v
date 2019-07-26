@@ -11,6 +11,7 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 	reg [11:0] frequency;
 	reg [11:0] u_str;
 	wire [2:0] sector;
+	wire [2:0] sector_synced;
 	wire [12-1:0] sine_pos;
 	wire [12-1:0] sine_neg;
 	wire [14:0] t_low;
@@ -30,6 +31,8 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 		//frequency <= 2**12-1;
 		frequency <= 0;
 		u_str <= 2**12 - 1;
+		#3611111 u_str <= 2**11 - 1;
+		//#3611111 frequency <= 2**11 - 1;
 		#5000000 $finish; 
 	end 
 
@@ -54,8 +57,10 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 
 	AC_MOTOR_VECTOR_CONTROL vector_control(
 		clk,
+		sector,
 		t_low,
 		t_high,
+		sector_synced,
 		u_0,
 		u_low,
 		u_high
@@ -63,7 +68,7 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 
 	AC_MOTOR_SWITCH_CONTROL switch_control(
 		clk,
-		sector,
+		sector_synced,
 		u_0,
 		u_low,
 		u_high,

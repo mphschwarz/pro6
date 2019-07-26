@@ -1,5 +1,5 @@
 Flow report for MAX1000
-Fri May 10 11:29:21 2019
+Mon Jul 22 15:13:15 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -40,21 +40,21 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri May 10 11:29:15 2019           ;
+; Flow Status                        ; Successful - Mon Jul 22 15:13:05 2019           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; MAX1000                                         ;
 ; Top-level Entity Name              ; MAX1000                                         ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M16SAU169C8G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 4,037 / 15,840 ( 25 % )                         ;
-;     Total combinational functions  ; 3,486 / 15,840 ( 22 % )                         ;
-;     Dedicated logic registers      ; 2,441 / 15,840 ( 15 % )                         ;
-; Total registers                    ; 2441                                            ;
+; Total logic elements               ; 6,006 / 15,840 ( 38 % )                         ;
+;     Total combinational functions  ; 5,398 / 15,840 ( 34 % )                         ;
+;     Dedicated logic registers      ; 2,571 / 15,840 ( 16 % )                         ;
+; Total registers                    ; 2571                                            ;
 ; Total pins                         ; 47 / 130 ( 36 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 16,896 / 562,176 ( 3 % )                        ;
-; Embedded Multiplier 9-bit elements ; 6 / 90 ( 7 % )                                  ;
+; Total memory bits                  ; 23,040 / 562,176 ( 4 % )                        ;
+; Embedded Multiplier 9-bit elements ; 14 / 90 ( 16 % )                                ;
 ; Total PLLs                         ; 1 / 1 ( 100 % )                                 ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                                   ;
 ; ADC blocks                         ; 0 / 1 ( 0 % )                                   ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/10/2019 11:28:12 ;
+; Start date & time ; 07/22/2019 15:11:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MAX1000             ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 105927188768142.155748049125946        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 115410744367553.156380108404462        ; --            ; --          ; --         ;
 ; FLOW_ENABLE_POWER_ANALYZER          ; On                                     ; Off           ; --          ; --         ;
 ; IOBANK_VCCIO                        ; 3.3V                                   ; --            ; --          ; 1A         ;
 ; IOBANK_VCCIO                        ; 3.3V                                   ; --            ; --          ; 1B         ;
@@ -111,12 +111,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 1185 MB             ; 00:00:39                           ;
-; Fitter                    ; 00:00:28     ; 1.2                     ; 1566 MB             ; 00:00:39                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 1028 MB             ; 00:00:02                           ;
-; Power Analyzer            ; 00:00:07     ; 1.4                     ; 1427 MB             ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.5                     ; 1064 MB             ; 00:00:08                           ;
-; Total                     ; 00:01:06     ; --                      ; --                  ; 00:01:36                           ;
+; Analysis & Synthesis      ; 00:00:32     ; 1.0                     ; 1221 MB             ; 00:00:49                           ;
+; Fitter                    ; 00:00:48     ; 1.2                     ; 1589 MB             ; 00:01:12                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 1025 MB             ; 00:00:02                           ;
+; Power Analyzer            ; 00:00:08     ; 1.4                     ; 1435 MB             ; 00:00:12                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.5                     ; 1082 MB             ; 00:00:13                           ;
+; Total                     ; 00:01:44     ; --                      ; --                  ; 00:02:28                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

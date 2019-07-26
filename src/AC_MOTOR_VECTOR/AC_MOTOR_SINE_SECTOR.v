@@ -6,7 +6,7 @@ module AC_MOTOR_SINE_SECTOR(
 	output reg [bits - 1:0] SINE_NEGATIVE
 );
 
-parameter sine_samples = 512 * 4;
+parameter sine_samples = 512 * 6;
 parameter bits = 12;
 
 parameter f_clk = 100 * 10**6;
@@ -20,14 +20,14 @@ reg [8:0] memory_pos;
 reg [8:0] memory_neg;
 reg [12:0] freq_int;
 
-(* ramstyle = "M9K" *) reg [bits-1:0] sine [(sine_samples / 4) - 1:0];
+(* ramstyle = "M9K" *) reg [bits-1:0] sine [(sine_samples / 6) - 1:0];
 
 always @(posedge CLK) begin
 	freq_int <= FREQUENCY + clock_div_max;
 end
 
 always @(posedge CLK) begin
-	if (clock_div >= freq_int) begin
+	if (clock_div >= freq_int) begin // increment RAM-pointers
 		clock_div <= 0;
 		memory_pos <= memory_pos + 1;
 		memory_neg <= memory_neg - 1;
@@ -37,7 +37,8 @@ always @(posedge CLK) begin
 end
 
 always @(posedge CLK) begin
-	if(memory_pos == 9 && clock_div == 0) begin
+	// increment sector at last clock cycle
+	if(memory_pos == sine_samples / 6 - 1 && clock_div == freq_int) begin
 		if (SECTOR == 5) begin
 			SECTOR <= 0;
 		end else begin 
