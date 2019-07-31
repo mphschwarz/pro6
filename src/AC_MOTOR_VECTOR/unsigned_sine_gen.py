@@ -6,7 +6,7 @@ bits = 12
 samples = np.power(2,9)
 variable_name = 'sine'
 
-sine = np.sin(np.linspace(0, np.pi / 3, 2 * samples + 1)) * (np.power(2, bits) - 1) / np.sin(np.pi / 3)
+sine = np.sin(np.linspace(0, np.pi / 3, 2 * samples + 1)) * (np.power(2, bits) - 1)
 sine = [int(x) for x in sine]
 sine = sine[1:-1][0::2]
 index = np.linspace(0, samples - 1, samples)

@@ -4,7 +4,8 @@
 `include "../AC_MOTOR_VECTOR/AC_MOTOR_SWITCH_CONTROL.v"
 `include "AC_MOTOR_SWITCH_DELAY.v"
 `include "AC_MOTOR_CONTROL.v"
-`timescale 1ns/100ps
+`timescale 10ns/1ns // for testing with python (Memory issues)
+//`timescale 5ns/500ps // for accurate timing testing (actual frequency)
 
 
 module AC_MOTOR_SWITCH_DELAY_TB;
@@ -20,12 +21,14 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 	wire [2:0] sector_synced;
 	wire [12-1:0] sine_pos;
 	wire [12-1:0] sine_neg;
+	wire [14:0] t0;
 	wire [14:0] t1;
 	wire [14:0] t2;
-	wire [14:0] t3;
+	wire [14:0] t7;
 	wire u0;
 	wire u1;
 	wire u2;
+	wire u7;
 	wire s1;
 	wire s2;
 	wire s3;
@@ -53,12 +56,12 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 		//#1250000 $finish; 
 		//#62500000 $finish; 
 		//#6250000 mod_delay_umin <= 16'b1011111100000000;
-		#5787630 mod_delay_umin <= 16'b1011111100000000;
-		#500000 $finish;
-		
+		//#5787630 mod_delay_umin <= 16'b1011111100000000;
+		#5000000 $finish; 
 	end 
 
-	always #5 clk <= !clk;
+	always #1 clk <= !clk; // for testing with python (Memory issues)
+	//always #5 clk <= !clk; // for accurate timing testing (actual frequency)
 
 	AC_MOTOR_CONTROL control(
 		clk,
@@ -81,19 +84,24 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 		u_str,
 		sine_pos,
 		sine_neg,
+		t0,
 		t1,
-		t2
+		t2,
+		t7
 	);
 
 	AC_MOTOR_VECTOR_CONTROL vector_control(
 		clk,
 		sector_unsynced,
+		t0,
 		t1,
 		t2,
+		t7,
 		sector_synced,
 		u0,
 		u1,
-		u2
+		u2,
+		u7
 	);
 
 	AC_MOTOR_SWITCH_CONTROL switch_control(
@@ -102,6 +110,7 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 		u0,
 		u1,
 		u2,
+		u7,
 		s1,
 		s2,
 		s3

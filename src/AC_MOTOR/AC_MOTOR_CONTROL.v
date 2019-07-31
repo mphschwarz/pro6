@@ -23,7 +23,7 @@ module AC_MOTOR_CONTROL(
 	initial begin
 		power <= 0;
 		AMPLITUDE <= 0;
-		FREQUENCY <= 0;
+		FREQUENCY <= 2**12 - 1;
 		modulation <= 1; //set to Vector modulation (default)
 		MODULATION <= 1; //set to Vector modulation (default)
 		delay <= 2**19 - 1;

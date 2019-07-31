@@ -11,8 +11,10 @@ module AC_MOTOR_VECTOR_TIME_TB;
 	wire [2:0] sector;
 	wire [12-1:0] sine_pos;
 	wire [12-1:0] sine_neg;
+	wire [14:0] t0;
 	wire [14:0] t1;
 	wire [14:0] t2;
+	wire [14:0] t7;
 
 	initial begin
 		$dumpfile("vcd/ac_motor_vector_time_tb.vcd"); 
@@ -22,7 +24,7 @@ module AC_MOTOR_VECTOR_TIME_TB;
 		//frequency <= 2**12-1;
 		frequency <= 0;
 		u_str <= 2**12 - 1;
-		#250000 $finish; 
+		#2500000 $finish; 
 	end 
 
 	always #1 clk <= !clk;
@@ -40,8 +42,10 @@ module AC_MOTOR_VECTOR_TIME_TB;
 		u_str,
 		sine_pos,
 		sine_neg,
+		t0,
 		t1,
-		t2
+		t2,
+		t7
 	);
 		
 
