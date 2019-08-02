@@ -16,6 +16,8 @@ module AC_MOTOR_VECTOR_TIME_TB;
 	wire [14:0] t2;
 	wire [14:0] t7;
 
+	reg error;
+
 	initial begin
 		$dumpfile("vcd/ac_motor_vector_time_tb.vcd"); 
 		$dumpvars(0, AC_MOTOR_VECTOR_TIME_TB); 
@@ -27,6 +29,10 @@ module AC_MOTOR_VECTOR_TIME_TB;
 		#2500000 $finish; 
 	end 
 
+	always @(posedge clk) begin
+		if ((t0 + t1 + t2 + t7 == 2 + 100*10**6 / (5*10**3) || t0 + t1 + t2 + t7 == 100*10**6 / (5*10**3) - 2)) error <= 1;
+		else error <= 0;
+	end
 	always #1 clk <= !clk;
 
 	AC_MOTOR_SINE_SECTOR sine_sector(

@@ -12,7 +12,7 @@ module AC_MOTOR_VECTOR_CONTROL(
 	output reg U_7);
 
 parameter f_clk = 100*10**6;
-parameter f_tast = 5*10**3;
+parameter f_tast = 10*10**3;
 parameter tast_period = f_clk / f_tast;
 
 
@@ -38,52 +38,11 @@ end
 
 always @(posedge CLK) SECTOR_OUT <= sector;
 
+always @(posedge CLK) begin
+	if (tast_index == 1) sector <= SECTOR_IN;
+end
 
 always @(posedge CLK) begin
-	//if (!sector[0] && tast_index >= tast_period) begin ;
-	//if (tast_index == tast_period / 2 && sector != SECTOR_IN) begin
-
-	// if ((t_7_counter == 0 || t_0_counter == 0) && sector != SECTOR_IN) begin 
-	// 	tast_index <= 0; 
-	// 	sector <= SECTOR_IN; 
-	// 	
-	// 	t_0 <= T_0;
-	// 	t_1 <= T_1 / 2;
-	// 	t_2 <= T_2 / 2;
-	// 	t_7 <= T_7; // T_7 ist nur während einer Tastperiode aktiv, es wird nicht heruntergezählt
-
-	// 	t_0_counter <= 0;
-	// 	t_1_counter <= 0;
-	// 	t_2_counter <= 0;
-	// 	t_7_counter <= 0;
-	// end
-
-
-	// if ((t_7_counter < t_7 || t_0_counter < t_0) && sector != SECTOR_IN) begin
-	// 	// t_0 <= T_0 / 2;
-	// 	t_0 <= T_0;
-	// 	t_1 <= T_1 / 2;
-	// 	t_2 <= T_2 / 2;
-	// 	t_7 <= T_7; // T_7 ist nur während einer Tastperiode aktiv, es wird nicht heruntergezählt
-
-	// 	t_0_counter <= 0;
-	// 	t_1_counter <= 0;
-	// 	t_2_counter <= 0;
-	// 	t_7_counter <= 0;
-	// 	//sector <= SECTOR_IN;
-	// 	tast_index <= 0;
-	// end else if (tast_index >= tast_period) begin
-	// 	t_0 <= T_0 / 2;
-	// 	t_1 <= T_1 / 2;
-	// 	t_2 <= T_2 / 2;
-	// 	t_7 <= T_7; // T_7 ist nur während einer Tastperiode aktiv, es wird nicht heruntergezählt
-
-	// 	t_0_counter <= 0;
-	// 	t_1_counter <= 0;
-	// 	t_2_counter <= 0;
-	// 	t_7_counter <= 0;
-	// 	//sector <= SECTOR_IN;
-	// 	tast_index <= 0;
 	if (tast_index >= tast_period) begin
 		t_0 <= T_0 / 2;
 		t_1 <= T_1 / 2;
@@ -95,23 +54,36 @@ always @(posedge CLK) begin
 		t_2_counter <= 0;
 		t_7_counter <= 0;
 		tast_index <= 0;
-		sector <= SECTOR_IN;
-	end else begin
-		tast_index <= tast_index + 1;
-		if (t_0_counter != t_0 && t_1_counter ==   0 && t_2_counter ==   0 && t_7_counter ==   0) t_0_counter <= t_0_counter + 1;
-		if (t_0_counter == t_0 && t_1_counter != t_1 && t_2_counter ==   0 && t_7_counter ==   0) t_1_counter <= t_1_counter + 1;
-		if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter != t_2 && t_7_counter ==   0) t_2_counter <= t_2_counter + 1;
-		if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter == t_2 && t_7_counter != t_7) t_7_counter <= t_7_counter + 1;
-		if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter !=   0 && t_7_counter == t_7) t_2_counter <= t_2_counter - 1;
-		if (t_0_counter == t_0 && t_1_counter !=   0 && t_2_counter ==   0 && t_7_counter == t_7) t_1_counter <= t_1_counter - 1;
-		//if (t_0_counter !=   0 && t_1_counter ==   0 && t_2_counter ==   0 && t_7_counter == t_7) t_0_counter <= t_0_counter - 1;
-	end
+	end else begin tast_index <= tast_index + 1; end
+		if (sector[0]) begin // reverse vector sequence in odd sectors
+			if (t_0_counter != t_0 && t_1_counter ==   0 && t_2_counter ==   0 && t_7_counter ==   0) t_0_counter <= t_0_counter + 1;
+			if (t_0_counter == t_0 && t_2_counter != t_2 && t_1_counter ==   0 && t_7_counter ==   0) t_2_counter <= t_2_counter + 1;
+			if (t_0_counter == t_0 && t_2_counter == t_2 && t_1_counter != t_1 && t_7_counter ==   0) t_1_counter <= t_1_counter + 1;
+
+			if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter == t_2 && t_7_counter != t_7) t_7_counter <= t_7_counter + 1;
+
+			if (t_0_counter == t_0 && t_2_counter == t_2 && t_1_counter !=   0 && t_7_counter == t_7) t_1_counter <= t_1_counter - 1;
+			if (t_0_counter == t_0 && t_2_counter !=   0 && t_1_counter ==   0 && t_7_counter == t_7) t_2_counter <= t_2_counter - 1;
+		end else begin
+			if (t_0_counter != t_0 && t_1_counter ==   0 && t_2_counter ==   0 && t_7_counter ==   0) t_0_counter <= t_0_counter + 1;
+			if (t_0_counter == t_0 && t_1_counter != t_1 && t_2_counter ==   0 && t_7_counter ==   0) t_1_counter <= t_1_counter + 1;
+			if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter != t_2 && t_7_counter ==   0) t_2_counter <= t_2_counter + 1;
+			if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter == t_2 && t_7_counter != t_7) t_7_counter <= t_7_counter + 1;
+			if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter !=   0 && t_7_counter == t_7) t_2_counter <= t_2_counter - 1;
+			if (t_0_counter == t_0 && t_1_counter !=   0 && t_2_counter ==   0 && t_7_counter == t_7) t_1_counter <= t_1_counter - 1;
+		end
+	//if (t_0_counter !=   0 && t_1_counter ==   0 && t_2_counter ==   0 && t_7_counter == t_7) t_0_counter <= t_0_counter - 1;
+
 end
 
 always @(posedge CLK) begin
 	if (t_0_counter != 0 && t_0_counter != t_0) begin U_0 <= 1; U_1 <= 0; U_2 <= 0; U_7 <= 0; end
-	if (t_1_counter != 0 && t_1_counter != t_1) begin U_0 <= 0; U_1 <= 1; U_2 <= 0; U_7 <= 0; end
-	if (t_2_counter != 0 && t_2_counter != t_2) begin U_0 <= 0; U_1 <= 0; U_2 <= 1; U_7 <= 0; end
+	// if (t_1_counter != 0 && t_1_counter != t_1) begin U_0 <= 0; U_1 <= 1; U_2 <= 0; U_7 <= 0; end
+	// if (t_2_counter != 0 && t_2_counter != t_2) begin U_0 <= 0; U_1 <= 0; U_2 <= 1; U_7 <= 0; end
+	if (t_1_counter != 0 && t_1_counter != t_1 && !sector[0]) begin U_0 <= 0; U_1 <= 1; U_2 <= 0; U_7 <= 0; end
+	if (t_1_counter != 0 && t_1_counter != t_1 &&  sector[0]) begin U_0 <= 0; U_1 <= 0; U_2 <= 1; U_7 <= 0; end
+	if (t_2_counter != 0 && t_2_counter != t_2 && !sector[0]) begin U_0 <= 0; U_1 <= 0; U_2 <= 1; U_7 <= 0; end
+	if (t_2_counter != 0 && t_2_counter != t_2 &&  sector[0]) begin U_0 <= 0; U_1 <= 1; U_2 <= 0; U_7 <= 0; end
 	if (t_7_counter != 0 && t_7_counter != t_7) begin U_0 <= 0; U_1 <= 0; U_2 <= 0; U_7 <= 1; end
 end
 

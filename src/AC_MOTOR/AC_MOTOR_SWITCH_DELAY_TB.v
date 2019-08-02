@@ -4,7 +4,7 @@
 `include "../AC_MOTOR_VECTOR/AC_MOTOR_SWITCH_CONTROL.v"
 `include "AC_MOTOR_SWITCH_DELAY.v"
 `include "AC_MOTOR_CONTROL.v"
-`timescale 10ns/1ns // for testing with python (Memory issues)
+//`timescale 10ns/1ns // for testing with python (Memory issues)
 //`timescale 5ns/500ps // for accurate timing testing (actual frequency)
 
 
@@ -39,6 +39,15 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 	wire s3_high;
 	wire s3_low;
 
+	reg last_s_1_high;
+	reg last_s_1_low;
+	reg last_s_2_high;
+	reg last_s_2_low;
+	reg last_s_3_high;
+	reg last_s_3_low;
+
+	reg short_error;
+
 	initial begin
 		$dumpfile("vcd/ac_motor_switch_delay_tb.vcd"); 
 		$dumpvars(0, AC_MOTOR_SWITCH_DELAY_TB); 
@@ -59,6 +68,13 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 		//#5787630 mod_delay_umin <= 16'b1011111100000000;
 		#5000000 $finish; 
 	end 
+
+	always @(posedge clk) begin
+		if (s1_high && s1_low ||
+			s2_high && s2_low ||
+			s3_high && s3_low) short_error <= 1;
+		else short_error <= 0;
+	end
 
 	always #1 clk <= !clk; // for testing with python (Memory issues)
 	//always #5 clk <= !clk; // for accurate timing testing (actual frequency)

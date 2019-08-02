@@ -27,8 +27,14 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 	wire s2;
 	wire s3;
 
+	reg s1_temp;
+	reg s2_temp;
+	reg s3_temp;
+	reg error;
+
 	reg [3:0] u_active;
 	reg [3:0] i_active;
+	reg [3:0] last_i_active;
 
 	initial begin
 		$dumpfile("vcd/ac_motor_switch_control_tb.vcd"); 
@@ -37,12 +43,29 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 		clk <= 1;
 		//frequency <= 2**12-1;
 		frequency <= 0;
-		u_str <= 2**11 - 1;
+		u_str <= 2**12 - 1;
 		#5000000 $finish; 
 	end 
 
 	always #1 clk <= !clk; // for testing with python (Memory issues)
 	//always #5 clk <= !clk; // for accurate timing testing (actual frequency)
+	
+	always @(posedge clk) last_i_active <= i_active;
+
+	always @(posedge clk) begin
+		if ((last_i_active == 0 && (i_active == 0 || i_active == 1 || i_active == 3 || i_active == 5)) ||
+		    (last_i_active == 1 && (i_active == 1 || i_active == 0 || i_active == 2 || i_active == 6)) ||
+		    (last_i_active == 2 && (i_active == 2 || i_active == 7 || i_active == 1 || i_active == 3)) ||
+		    (last_i_active == 3 && (i_active == 3 || i_active == 0 || i_active == 2 || i_active == 4)) ||
+		    (last_i_active == 4 && (i_active == 4 || i_active == 7 || i_active == 3 || i_active == 5)) ||
+		    (last_i_active == 5 && (i_active == 5 || i_active == 0 || i_active == 4 || i_active == 6)) ||
+		    (last_i_active == 6 && (i_active == 6 || i_active == 7 || i_active == 1 || i_active == 5)) ||
+		    (last_i_active == 7 && (i_active == 7 || i_active == 2 || i_active == 4 || i_active == 6))) begin
+			error <= 0;
+		end else begin
+			error <= 1;
+		end
+	end
 
 	always @(posedge clk) begin
 		if (u_0 == 1) u_active <= 0;

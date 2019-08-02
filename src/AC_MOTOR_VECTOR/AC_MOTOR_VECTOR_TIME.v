@@ -10,11 +10,10 @@ module AC_MOTOR_VECTOR_TIME(
 
 parameter bits = 12;
 parameter f_clk = 100*10**6;
-parameter f_tast = 5*10**3;
+parameter f_tast = 10*10**3;
 parameter t_tast = f_clk / f_tast;
 
 parameter u_d = 2**bits - 1;
-parameter sq = 7093;
 
 reg [26:0] constant;
 reg [38:0] t_0;

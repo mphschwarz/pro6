@@ -38,7 +38,7 @@ end
 
 always @(posedge CLK) begin
 	// increment sector at last clock cycle
-	if(memory_pos == sine_samples / 6 - 1 && clock_div == freq_int) begin
+	if(memory_pos == 0/*sine_samples / 6 - 1*/ && clock_div == 0 /*freq_int*/) begin
 		if (SECTOR == 5) begin
 			SECTOR <= 0;
 		end else begin 

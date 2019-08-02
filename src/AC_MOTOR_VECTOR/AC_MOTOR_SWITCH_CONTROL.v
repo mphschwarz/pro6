@@ -19,25 +19,25 @@ end
 
 always @(posedge CLK) begin
 	
-	// if ((SECTOR == 5 || SECTOR == 1) && U_1) begin S_1 <= 1; S_2 <= 0; S_3 <= 0; end
-	// if ((SECTOR == 0 || SECTOR == 2) && U_2) begin S_1 <= 1; S_2 <= 1; S_3 <= 0; end
-	// if ((SECTOR == 1 || SECTOR == 3) && U_1) begin S_1 <= 0; S_2 <= 1; S_3 <= 0; end
-	// if ((SECTOR == 2 || SECTOR == 4) && U_2) begin S_1 <= 0; S_2 <= 1; S_3 <= 1; end
-	// if ((SECTOR == 3 || SECTOR == 5) && U_1) begin S_1 <= 0; S_2 <= 0; S_3 <= 1; end
-	// if ((SECTOR == 4 || SECTOR == 0) && U_2) begin S_1 <= 1; S_2 <= 0; S_3 <= 1; end
+	if ((SECTOR == 5 || SECTOR == 0) && U_1) begin S_1 <= 1; S_2 <= 0; S_3 <= 0; end
+	if ((SECTOR == 0 || SECTOR == 1) && U_2) begin S_1 <= 1; S_2 <= 1; S_3 <= 0; end
+	if ((SECTOR == 1 || SECTOR == 2) && U_1) begin S_1 <= 0; S_2 <= 1; S_3 <= 0; end
+	if ((SECTOR == 2 || SECTOR == 3) && U_2) begin S_1 <= 0; S_2 <= 1; S_3 <= 1; end
+	if ((SECTOR == 3 || SECTOR == 4) && U_1) begin S_1 <= 0; S_2 <= 0; S_3 <= 1; end
+	if ((SECTOR == 4 || SECTOR == 5) && U_2) begin S_1 <= 1; S_2 <= 0; S_3 <= 1; end
 	
-	// if (U_0) begin S_1 <= 0; S_2 <= 0; S_3 <= 0; end
-	// if (U_7) begin S_1 <= 1; S_2 <= 1; S_3 <= 1; end
+	if (U_0) begin S_1 <= 0; S_2 <= 0; S_3 <= 0; end
+	if (U_7) begin S_1 <= 1; S_2 <= 1; S_3 <= 1; end
 
-	if      ((U_0 && !SECTOR[0]) || (U_7 &&  SECTOR[0])) begin S_1 <= 0; S_2 <= 0; S_3 <= 0; end 
-	else if ((U_0 &&  SECTOR[0]) || (U_7 && !SECTOR[0])) begin S_1 <= 1; S_2 <= 1; S_3 <= 1; end	
+	// if      ((U_0 && !SECTOR[0]) || (U_7 &&  SECTOR[0])) begin S_1 <= 0; S_2 <= 0; S_3 <= 0; end 
+	// else if ((U_0 &&  SECTOR[0]) || (U_7 && !SECTOR[0])) begin S_1 <= 1; S_2 <= 1; S_3 <= 1; end	
 
-	if ((SECTOR == 0 && U_2) || (SECTOR == 1 && U_1)) begin S_1 <= 1; S_2 <= 1; S_3 <= 0; end
-    if ((SECTOR == 1 && U_2) || (SECTOR == 2 && U_1)) begin S_1 <= 0; S_2 <= 1; S_3 <= 0; end
-    if ((SECTOR == 2 && U_2) || (SECTOR == 3 && U_1)) begin S_1 <= 0; S_2 <= 1; S_3 <= 1; end
-    if ((SECTOR == 3 && U_2) || (SECTOR == 4 && U_1)) begin S_1 <= 0; S_2 <= 0; S_3 <= 1; end
-    if ((SECTOR == 4 && U_2) || (SECTOR == 5 && U_1)) begin S_1 <= 1; S_2 <= 0; S_3 <= 1; end
-    if ((SECTOR == 5 && U_2) || (SECTOR == 0 && U_1)) begin S_1 <= 1; S_2 <= 0; S_3 <= 0; end
+	// if ((SECTOR == 0 && U_2) || (SECTOR == 1 && U_1)) begin S_1 <= 1; S_2 <= 1; S_3 <= 0; end
+    // if ((SECTOR == 1 && U_2) || (SECTOR == 2 && U_1)) begin S_1 <= 0; S_2 <= 1; S_3 <= 0; end
+    // if ((SECTOR == 2 && U_2) || (SECTOR == 3 && U_1)) begin S_1 <= 0; S_2 <= 1; S_3 <= 1; end
+    // if ((SECTOR == 3 && U_2) || (SECTOR == 4 && U_1)) begin S_1 <= 0; S_2 <= 0; S_3 <= 1; end
+    // if ((SECTOR == 4 && U_2) || (SECTOR == 5 && U_1)) begin S_1 <= 1; S_2 <= 0; S_3 <= 1; end
+    // if ((SECTOR == 5 && U_2) || (SECTOR == 0 && U_1)) begin S_1 <= 1; S_2 <= 0; S_3 <= 0; end
 end
 	
 endmodule
