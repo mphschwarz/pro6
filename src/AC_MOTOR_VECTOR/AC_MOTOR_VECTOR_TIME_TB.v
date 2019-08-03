@@ -1,6 +1,6 @@
 `include "AC_MOTOR_SINE_SECTOR.v"
 `include "AC_MOTOR_VECTOR_TIME.v"
-`timescale 10ns/1ns
+`timescale 1ns/100ps
 
 
 module AC_MOTOR_VECTOR_TIME_TB;
@@ -26,14 +26,14 @@ module AC_MOTOR_VECTOR_TIME_TB;
 		//frequency <= 2**12-1;
 		frequency <= 0;
 		u_str <= 2**12 - 1;
-		#2500000 $finish; 
+		#25000000 $finish; 
 	end 
 
 	always @(posedge clk) begin
 		if ((t0 + t1 + t2 + t7 == 2 + 100*10**6 / (5*10**3) || t0 + t1 + t2 + t7 == 100*10**6 / (5*10**3) - 2)) error <= 1;
 		else error <= 0;
 	end
-	always #1 clk <= !clk;
+	always #5 clk <= !clk;
 
 	AC_MOTOR_SINE_SECTOR sine_sector(
 		clk,

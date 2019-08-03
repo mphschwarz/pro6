@@ -3,7 +3,7 @@
 `include "AC_MOTOR_VECTOR_CONTROL.v"
 `include "AC_MOTOR_SWITCH_CONTROL.v"
 `timescale 10ns/1ns // for testing with python (Memory issues)
-//`timescale 5ns/500ps // for accurate timing testing (actual frequency)
+//`timescale 1ns/100ps // for accurate timing testing (actual frequency)
 
 
 module AC_MOTOR_SWITCH_CONTROL_TB;

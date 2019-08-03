@@ -4,8 +4,8 @@
 `include "../AC_MOTOR_VECTOR/AC_MOTOR_SWITCH_CONTROL.v"
 `include "AC_MOTOR_SWITCH_DELAY.v"
 `include "AC_MOTOR_CONTROL.v"
-//`timescale 10ns/1ns // for testing with python (Memory issues)
-//`timescale 5ns/500ps // for accurate timing testing (actual frequency)
+`timescale 10ns/1ns // for testing with python (Memory issues)
+//`timescale 1ns/100ps // for accurate timing testing (actual frequency)
 
 
 module AC_MOTOR_SWITCH_DELAY_TB;
@@ -79,82 +79,26 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 	always #1 clk <= !clk; // for testing with python (Memory issues)
 	//always #5 clk <= !clk; // for accurate timing testing (actual frequency)
 
-	AC_MOTOR_CONTROL control(
-		clk,
-		power,
-		mod_delay_umin,
-		modulation,
-		delay,
-		frequency,
-		u_str);
+	AC_MOTOR_CONTROL control(clk, power, mod_delay_umin, 
+		modulation, delay, frequency, u_str);
 
-	AC_MOTOR_SINE_SECTOR sine_sector(
-		clk,
-		frequency,
-		sector_unsynced,
-		sine_pos,
-		sine_neg);
+	AC_MOTOR_SINE_SECTOR sine_sector(clk, frequency, 
+		sector_unsynced, sine_pos, sine_neg);
 
-	AC_MOTOR_VECTOR_TIME vector_time(
-		clk,
-		u_str,
-		sine_pos,
-		sine_neg,
-		t0,
-		t1,
-		t2,
-		t7
-	);
+	AC_MOTOR_VECTOR_TIME vector_time(clk, u_str, sine_pos, sine_neg, 
+		t0, t1, t2, t7);
 
-	AC_MOTOR_VECTOR_CONTROL vector_control(
-		clk,
-		sector_unsynced,
-		t0,
-		t1,
-		t2,
-		t7,
-		sector_synced,
-		u0,
-		u1,
-		u2,
-		u7
-	);
+	AC_MOTOR_VECTOR_CONTROL vector_control(clk, sector_unsynced, t0, t1, t2, t7, 
+		sector_synced, u0, u1, u2, u7);
 
-	AC_MOTOR_SWITCH_CONTROL switch_control(
-		clk,
-		sector_synced,
-		u0,
-		u1,
-		u2,
-		u7,
-		s1,
-		s2,
-		s3
-	);
+	AC_MOTOR_SWITCH_CONTROL switch_control(clk, sector_synced, u0, u1, u2, u7, 
+		s1, s2, s3);
 
-	AC_MOTOR_SWITCH_DELAY switch_delay_1(
-		clk,
-		enable,
-		delay,
-		s1,
-		s1_high,
-		s1_low
-	);
-	AC_MOTOR_SWITCH_DELAY switch_delay_2(
-		clk,
-		enable,
-		delay,
-		s2,
-		s2_high,
-		s2_low
-	);
-	AC_MOTOR_SWITCH_DELAY switch_delay_3(
-		clk,
-		enable,
-		delay,
-		s3,
-		s3_high,
-		s3_low
-	);
+	AC_MOTOR_SWITCH_DELAY switch_delay_1(clk, enable, delay, s1, 
+		s1_high, s1_low);
+	AC_MOTOR_SWITCH_DELAY switch_delay_2(clk, enable, delay, s2, 
+		s2_high, s2_low);
+	AC_MOTOR_SWITCH_DELAY switch_delay_3(clk, enable, delay, s3, 
+		s3_high, s3_low);
 endmodule
 

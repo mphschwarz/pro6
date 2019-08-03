@@ -19,9 +19,9 @@ initial begin
 	delay <= 15;
 	enable <= 1;
 	
-	#1010 delay <= 10;
-	#1150 delay <= 20;
-	#25000 $finish; 
+	#10000 delay <= 10;
+	#10000 delay <= 20;
+	#10000 $finish; 
 
 end
 

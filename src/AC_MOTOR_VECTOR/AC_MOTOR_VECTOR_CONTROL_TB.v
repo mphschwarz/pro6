@@ -1,8 +1,8 @@
 `include "AC_MOTOR_SINE_SECTOR.v"
 `include "AC_MOTOR_VECTOR_TIME.v"
 `include "AC_MOTOR_VECTOR_CONTROL.v"
-`timescale 10ns/1ns // for testing with python (Memory issues)
-//`timescale 5ns/500ps // for accurate timing testing (actual frequency)
+//`timescale 10ns/1ns // for testing with python (Memory issues)
+`timescale 1ns/100ps // for accurate timing testing (actual frequency)
 
 module AC_MOTOR_VECTOR_CONTROL_TB;
 	integer file;
@@ -31,11 +31,11 @@ module AC_MOTOR_VECTOR_CONTROL_TB;
 		//frequency <= 2**12-1;
 		frequency <= 0;
 		u_str <= 2**12 - 1;
-		#250000 $finish; 
+		#1250000 $finish; 
 	end 
 
 	always #1 clk <= !clk; // for testing with python (Memory issues)
-	//always #5 clk <= !clk; // for accurate timing testing (actual frequency)
+	always #5 clk <= !clk; // for accurate timing testing (actual frequency)
 
 	AC_MOTOR_SINE_SECTOR sine_sector(
 		clk,
