@@ -54,16 +54,6 @@ refer to the applicable agreement for further details.
 		"13"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"triangle_max"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"triangle_min"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
 		(rectangle (rect 16 16 224 64)(line_width 1))
 	)
