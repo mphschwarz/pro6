@@ -31,10 +31,10 @@ module AC_MOTOR_VECTOR_CONTROL_TB;
 		//frequency <= 2**12-1;
 		frequency <= 0;
 		u_str <= 2**12 - 1;
-		#1250000 $finish; 
+		#25000000 $finish; 
 	end 
 
-	always #1 clk <= !clk; // for testing with python (Memory issues)
+	//always #1 clk <= !clk; // for testing with python (Memory issues)
 	always #5 clk <= !clk; // for accurate timing testing (actual frequency)
 
 	AC_MOTOR_SINE_SECTOR sine_sector(

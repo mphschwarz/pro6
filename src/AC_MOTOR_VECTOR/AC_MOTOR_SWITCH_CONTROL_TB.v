@@ -2,7 +2,7 @@
 `include "AC_MOTOR_VECTOR_TIME.v"
 `include "AC_MOTOR_VECTOR_CONTROL.v"
 `include "AC_MOTOR_SWITCH_CONTROL.v"
-`timescale 10ns/1ns // for testing with python (Memory issues)
+//`timescale 10ns/1ns // for testing with python (Memory issues)
 //`timescale 1ns/100ps // for accurate timing testing (actual frequency)
 
 
@@ -44,7 +44,8 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 		//frequency <= 2**12-1;
 		frequency <= 0;
 		u_str <= 2**12 - 1;
-		#5000000 $finish; 
+		#5000000 $finish;
+		//#25000000 $finish; 
 	end 
 
 	always #1 clk <= !clk; // for testing with python (Memory issues)

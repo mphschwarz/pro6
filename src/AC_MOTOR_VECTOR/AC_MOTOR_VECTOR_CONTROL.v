@@ -47,33 +47,31 @@ always @(posedge CLK) begin
 		t_0 <= T_0 / 2;
 		t_1 <= T_1 / 2;
 		t_2 <= T_2 / 2;
-		t_7 <= T_7 / 2; // T_7 ist nur während einer Tastperiode aktiv, es wird nicht heruntergezählt
+		t_7 <= T_7 / 2;
 
 		t_0_counter <= 0;
 		t_1_counter <= 0;
 		t_2_counter <= 0;
 		t_7_counter <= 0;
+
 		tast_index <= 0;
 	end else begin tast_index <= tast_index + 1; end
-		if (sector[0]) begin // reverse vector sequence in odd sectors
-			if (t_0_counter != t_0 && t_1_counter ==   0 && t_2_counter ==   0 && t_7_counter ==   0) t_0_counter <= t_0_counter + 1;
-			if (t_0_counter == t_0 && t_2_counter != t_2 && t_1_counter ==   0 && t_7_counter ==   0) t_2_counter <= t_2_counter + 1;
-			if (t_0_counter == t_0 && t_2_counter == t_2 && t_1_counter != t_1 && t_7_counter ==   0) t_1_counter <= t_1_counter + 1;
 
-			if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter == t_2 && t_7_counter != t_7) t_7_counter <= t_7_counter + 1;
-
-			if (t_0_counter == t_0 && t_2_counter == t_2 && t_1_counter !=   0 && t_7_counter == t_7) t_1_counter <= t_1_counter - 1;
-			if (t_0_counter == t_0 && t_2_counter !=   0 && t_1_counter ==   0 && t_7_counter == t_7) t_2_counter <= t_2_counter - 1;
-		end else begin
-			if (t_0_counter != t_0 && t_1_counter ==   0 && t_2_counter ==   0 && t_7_counter ==   0) t_0_counter <= t_0_counter + 1;
-			if (t_0_counter == t_0 && t_1_counter != t_1 && t_2_counter ==   0 && t_7_counter ==   0) t_1_counter <= t_1_counter + 1;
-			if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter != t_2 && t_7_counter ==   0) t_2_counter <= t_2_counter + 1;
-			if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter == t_2 && t_7_counter != t_7) t_7_counter <= t_7_counter + 1;
-			if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter !=   0 && t_7_counter == t_7) t_2_counter <= t_2_counter - 1;
-			if (t_0_counter == t_0 && t_1_counter !=   0 && t_2_counter ==   0 && t_7_counter == t_7) t_1_counter <= t_1_counter - 1;
-		end
-	//if (t_0_counter !=   0 && t_1_counter ==   0 && t_2_counter ==   0 && t_7_counter == t_7) t_0_counter <= t_0_counter - 1;
-
+	if (sector[0]) begin // reverse vector sequence in odd sectors
+		if (t_0_counter != t_0 && t_1_counter ==   0 && t_2_counter ==   0 && t_7_counter ==   0) t_0_counter <= t_0_counter + 1;
+		if (t_0_counter == t_0 && t_2_counter != t_2 && t_1_counter ==   0 && t_7_counter ==   0) t_2_counter <= t_2_counter + 1;
+		if (t_0_counter == t_0 && t_2_counter == t_2 && t_1_counter != t_1 && t_7_counter ==   0) t_1_counter <= t_1_counter + 1;
+		if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter == t_2 && t_7_counter != t_7) t_7_counter <= t_7_counter + 1;
+		if (t_0_counter == t_0 && t_2_counter == t_2 && t_1_counter !=   0 && t_7_counter == t_7) t_1_counter <= t_1_counter - 1;
+		if (t_0_counter == t_0 && t_2_counter !=   0 && t_1_counter ==   0 && t_7_counter == t_7) t_2_counter <= t_2_counter - 1;
+	end else begin
+		if (t_0_counter != t_0 && t_1_counter ==   0 && t_2_counter ==   0 && t_7_counter ==   0) t_0_counter <= t_0_counter + 1;
+		if (t_0_counter == t_0 && t_1_counter != t_1 && t_2_counter ==   0 && t_7_counter ==   0) t_1_counter <= t_1_counter + 1;
+		if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter != t_2 && t_7_counter ==   0) t_2_counter <= t_2_counter + 1;
+		if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter == t_2 && t_7_counter != t_7) t_7_counter <= t_7_counter + 1;
+		if (t_0_counter == t_0 && t_1_counter == t_1 && t_2_counter !=   0 && t_7_counter == t_7) t_2_counter <= t_2_counter - 1;
+		if (t_0_counter == t_0 && t_1_counter !=   0 && t_2_counter ==   0 && t_7_counter == t_7) t_1_counter <= t_1_counter - 1;
+	end
 end
 
 always @(posedge CLK) begin

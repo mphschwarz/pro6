@@ -15,7 +15,7 @@ initial begin
 end
 
 always @(posedge CLK) begin
-	if (SINE > TRIANGLE) OUT <= 1;
+	if (SINE < TRIANGLE) OUT <= 1;
 	else OUT <= 0;
 end
 

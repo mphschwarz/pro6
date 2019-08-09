@@ -1,4 +1,5 @@
 `include "AC_MOTOR_SINE_SECTOR.v"
+//`timescale 10ns/1ns
 `timescale 1ns/100ps
 
 
@@ -20,6 +21,7 @@ module AC_MOTOR_SINE_SECTOR_TB;
 		#25000000 $finish; 
 	end 
 
+	//always #1 clk <= !clk;
 	always #5 clk <= !clk;
 
 	AC_MOTOR_SINE_SECTOR sine(
