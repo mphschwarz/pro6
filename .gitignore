@@ -3,8 +3,16 @@ motor_control_pcb/
 
 _toolchain/
 
-src/AC_MOTOR/vcd/
+src/AC_MOTOR/vcd/*
 
-src/AC_MOTOR_VECTOR/vcd/
+src/AC_MOTOR_VECTOR/vcd/*
 
-incremental_db/
+src/AC_MOTOR_TRIANGLE/vcd/*
+
+incremental_db/*
+
+*.vcd
+
+*.swp
+
+output_files/
