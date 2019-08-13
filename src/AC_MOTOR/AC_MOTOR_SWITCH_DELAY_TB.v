@@ -4,7 +4,7 @@
 `include "../AC_MOTOR_VECTOR/AC_MOTOR_SWITCH_CONTROL.v"
 `include "AC_MOTOR_SWITCH_DELAY.v"
 `include "AC_MOTOR_CONTROL.v"
-`timescale 10ns/1ns // for testing with python (Memory issues)
+//`timescale 10ns/1ns // for testing with python (Memory issues)
 //`timescale 1ns/100ps // for accurate timing testing (actual frequency)
 
 
@@ -16,7 +16,7 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 	reg enable;
 	wire [11:0] frequency;
 	wire [11:0] u_str;
-	wire [10:0] delay;
+	wire [7:0] delay;
 	wire [2:0] sector_unsynced;
 	wire [2:0] sector_synced;
 	wire [12-1:0] sine_pos;

@@ -3,7 +3,7 @@
 `include "../AC_MOTOR_TRIANGLE/AC_MOTOR_COMPARATOR.v"
 `include "AC_MOTOR_SWITCH_DELAY.v"
 `include "AC_MOTOR_CONTROL.v"
-`timescale 10ns/1ns
+//`timescale 10ns/1ns
 
 module AC_MOTOR_SWITCH_DELAY_TRIANGLE_TB;
 	integer file;
@@ -16,7 +16,7 @@ module AC_MOTOR_SWITCH_DELAY_TRIANGLE_TB;
 	
 	wire [11:0] frequency;
 	wire [11:0] amplitude;
-	wire [10:0] delay;
+	wire [7:0] delay;
 
 	wire [23:0] sine_val_1;
 	wire [23:0] sine_val_2;
