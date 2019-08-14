@@ -1,5 +1,6 @@
 module AC_MOTOR_VECTOR_TIME(
 	input CLK,
+	input [2:0] SECTOR,
 	input [bits - 1:0] U_STR,
 	input [bits - 1:0] SIN_POSITIVE,
 	input [bits - 1:0] SIN_NEGATIVE,
@@ -45,8 +46,14 @@ always @(U_STR) begin
 end
 
 always @(posedge CLK) begin
-	t_1_temp_1 <= constant * SIN_NEGATIVE;
-	t_2_temp_1 <= constant * SIN_POSITIVE;
+	// in odd sectors, t_1 and t_2 are switched
+	if (SECTOR[0]) begin 
+		t_1_temp_1 <= constant * SIN_POSITIVE;
+		t_2_temp_1 <= constant * SIN_NEGATIVE;
+	end else begin
+		t_1_temp_1 <= constant * SIN_NEGATIVE;
+		t_2_temp_1 <= constant * SIN_POSITIVE;
+	end
 end
 
 always @(posedge CLK) begin

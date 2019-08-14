@@ -34,7 +34,8 @@ module AC_MOTOR_VECTOR_TIME_TB;
 	always #5 clk <= !clk;
 
 	always @(posedge clk) begin
-		if ((t0 + t1 + t2 + t7 == 2 + 100*10**6 / (5*10**3) || t0 + t1 + t2 + t7 == 100*10**6 / (5*10**3) - 2)) error <= 1;
+		if ((t0 + t1 + t2 + t7 == 2 + 100*10**6 / (5*10**3) || 
+			t0 + t1 + t2 + t7 == 100*10**6 / (5*10**3) - 2)) error <= 1;
 		else error <= 0;
 	end
 
@@ -59,16 +60,3 @@ module AC_MOTOR_VECTOR_TIME_TB;
 		
 
 endmodule
-//
-
-/*
-cd D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_00_21\src\DC_MOTOR
-C:\iverilog\bin\iverilog -s ICARUS_TB -o icarus_tb.o ICARUS_TB.v
-C:\iverilog\bin\vvp icarus_tb.o
-
-oder 
-
-cd D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_SA_01_00\src\DC_MOTOR
-D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_SA_01_00\icarus\iverilog\bin\iverilog -s ICARUS_TB -o icarus_tb.o ICARUS_TB.v
-D:\Dropbox\ABBTS_LABOR_DOZ\MOTION_CONTROL\FPGA\FPGA_MODUL_MAX1000_SA_01_00\icarus\iverilog\bin\vvp icarus_tb.o
-*/

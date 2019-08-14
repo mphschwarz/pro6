@@ -54,18 +54,7 @@ module AC_MOTOR_SWITCH_DELAY_MODULATION_CHANGE_TB;
 		enable <= 1;
 		cw <= 0;
 		ccw <= 1;
-		//frequency <= 2**12-1;
-		//frequency <= 0;
-		// u_str <= 2**12 - 1;
-		// delay <= 500;
-		//#625000 delay <= 1000;
-		//#625000 delay <= 2000;
-		//#1250000 $finish; 
-		//#62500000 $finish; 
-		//#6250000 mod_delay_umin <= 16'b1011111100000000;
-		//#5787630 mod_delay_umin <= 16'b1011111100000000;
 
-		//#5000000 $finish; 
 		#2500000 mod_delay_umin <= 16'b0000000000000000;
 		#2500000 $finish;
 	end 
@@ -89,7 +78,7 @@ module AC_MOTOR_SWITCH_DELAY_MODULATION_CHANGE_TB;
 	AC_MOTOR_COMPARATOR comp3(clk, triangle, sine_3, s1_triangle);
 
 	AC_MOTOR_SINE_SECTOR sine_sector(clk, frequency, sector_unsynced, sine_pos, sine_neg);
-	AC_MOTOR_VECTOR_TIME vector_time(clk, u_str, sine_pos, sine_neg, t0, t1, t2, t7);
+	AC_MOTOR_VECTOR_TIME vector_time(clk, sector_unsynced, u_str, sine_pos, sine_neg, t0, t1, t2, t7);
 	AC_MOTOR_VECTOR_CONTROL vector_control(clk, sector_unsynced, t0, t1, t2, t7, sector_synced, u0, u1, u2, u7);
 	AC_MOTOR_SWITCH_CONTROL switch_control(clk, sector_synced, u0, u1, u2, u7, s1_vector, s2_vector, s3_vector);
 

@@ -96,6 +96,7 @@ module AC_MOTOR_SWITCH_CONTROL_TB;
 
 	AC_MOTOR_VECTOR_TIME vector_time(
 		clk,
+		sector_unsynced,
 		u_str,
 		sine_pos,
 		sine_neg,

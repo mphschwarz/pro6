@@ -8,7 +8,7 @@
 //`timescale 1ns/100ps // for accurate timing testing (actual frequency)
 
 
-module AC_MOTOR_SWITCH_DELAY_TB;
+module AC_MOTOR_SWITCH_DELAY_POWER_CHANGE_TB;
 	integer file;
 	reg clk;
 	reg [11:0] power;
@@ -31,17 +31,39 @@ module AC_MOTOR_SWITCH_DELAY_TB;
 	reg last_s_1_low; 	reg last_s_2_low; 	reg last_s_3_low;
 
 	reg short_error;
+	reg [2:0] u_active;
+	reg [3:0] i_active;
 
 	initial begin
-		$dumpfile("vcd/ac_motor_switch_delay_tb.vcd"); 
-		$dumpvars(0, AC_MOTOR_SWITCH_DELAY_TB); 
+		$dumpfile("vcd/ac_motor_switch_delay_power_change_tb.vcd"); 
+		$dumpvars(0, AC_MOTOR_SWITCH_DELAY_POWER_CHANGE_TB); 
 
 		clk <= 1;
-		power <= 2**12 - 1;
+		power <= 0;
 		mod_delay_umin <= 16'b1000000000000000;
 		enable <= 1;
-		#5000000 $finish; 
+		#25000000 $finish; 
 	end 
+
+	always #6100 power <= power + 1;
+
+	always @(posedge clk) begin
+		if (u0 == 1) u_active <= 0;
+		if (u1 == 1) u_active <= 1;
+		if (u2 == 1) u_active <= 2;
+		if (u7 == 1) u_active <= 3;
+	end
+
+	always @(posedge clk) begin
+		if (s1 == 0 && s2 == 0 && s3 == 0) i_active <= 0;
+		if (s1 == 1 && s2 == 0 && s3 == 0) i_active <= 1;
+		if (s1 == 1 && s2 == 1 && s3 == 0) i_active <= 2;
+		if (s1 == 0 && s2 == 1 && s3 == 0) i_active <= 3;
+		if (s1 == 0 && s2 == 1 && s3 == 1) i_active <= 4;
+		if (s1 == 0 && s2 == 0 && s3 == 1) i_active <= 5;
+		if (s1 == 1 && s2 == 0 && s3 == 1) i_active <= 6;
+		if (s1 == 1 && s2 == 1 && s3 == 1) i_active <= 7;
+	end
 
 	always @(posedge clk) begin
 		if (s1_high && s1_low ||
