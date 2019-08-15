@@ -47,15 +47,15 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "T_LOW[14..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "T_LOW[14..0]" (rect 21 75 81 87)(font "Arial" ))
+		(text "T_1[14..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "T_1[14..0]" (rect 21 75 61 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "T_HIGH[14..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "T_HIGH[14..0]" (rect 21 91 81 103)(font "Arial" ))
+		(text "T_2[14..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "T_2[14..0]" (rect 21 91 62 103)(font "Arial" ))
 		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
@@ -82,15 +82,15 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 264 64)
 		(output)
-		(text "U_LOW" (rect 0 0 36 12)(font "Arial" ))
-		(text "U_LOW" (rect 207 59 243 71)(font "Arial" ))
+		(text "U_1" (rect 0 0 16 12)(font "Arial" ))
+		(text "U_1" (rect 227 59 243 71)(font "Arial" ))
 		(line (pt 264 64)(pt 248 64)(line_width 1))
 	)
 	(port
 		(pt 264 80)
 		(output)
-		(text "U_HIGH" (rect 0 0 36 12)(font "Arial" ))
-		(text "U_HIGH" (rect 207 75 243 87)(font "Arial" ))
+		(text "U_2" (rect 0 0 17 12)(font "Arial" ))
+		(text "U_2" (rect 226 75 243 87)(font "Arial" ))
 		(line (pt 264 80)(pt 248 80)(line_width 1))
 	)
 	(port
@@ -107,7 +107,7 @@ refer to the applicable agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"f_tast"
-		"5000"
+		"10000"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter

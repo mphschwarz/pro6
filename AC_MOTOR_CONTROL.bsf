@@ -54,8 +54,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 360 48)
 		(output)
-		(text "DELAY[10..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "DELAY[10..0]" (rect 280 43 339 55)(font "Arial" ))
+		(text "DELAY[7..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "DELAY[7..0]" (rect 284 43 339 55)(font "Arial" ))
 		(line (pt 360 48)(pt 344 48)(line_width 3))
 	)
 	(port
@@ -78,8 +78,18 @@ refer to the applicable agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
+		"f_clk"
+		"100"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"delay_min_s"
+		"300"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
 		"delay_min"
-		"1000"
+		""
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing

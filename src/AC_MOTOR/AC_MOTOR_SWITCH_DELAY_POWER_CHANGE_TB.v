@@ -39,13 +39,14 @@ module AC_MOTOR_SWITCH_DELAY_POWER_CHANGE_TB;
 		$dumpvars(0, AC_MOTOR_SWITCH_DELAY_POWER_CHANGE_TB); 
 
 		clk <= 1;
-		power <= 0;
+		power <= 4095;
 		mod_delay_umin <= 16'b1000000000000000;
 		enable <= 1;
-		#25000000 $finish; 
+		#12500000 power <= 3070;
+		#12500000 power <= 2047;
+		#12500000 $finish;
+		//#25000000 $finish; 
 	end 
-
-	always #6100 power <= power + 1;
 
 	always @(posedge clk) begin
 		if (u0 == 1) u_active <= 0;

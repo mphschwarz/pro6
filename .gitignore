@@ -1,8 +1,6 @@
 
 motor_control_pcb/
 
-_toolchain/
-
 src/AC_MOTOR/vcd/*
 
 src/AC_MOTOR_VECTOR/vcd/*
