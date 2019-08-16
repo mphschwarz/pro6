@@ -629,7 +629,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 5288 112 5464 128)
+	(rect 5272 112 5448 128)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "U4_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -645,7 +645,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 5288 128 5464 144)
+	(rect 5272 128 5448 144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "U5_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -661,7 +661,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 5288 384 5464 400)
+	(rect 5272 384 5448 400)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "U9_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -677,7 +677,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 5288 368 5464 384)
+	(rect 5272 368 5448 384)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "U8_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -693,7 +693,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 5288 256 5464 272)
+	(rect 5272 256 5448 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "U7_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -757,7 +757,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 5288 240 5464 256)
+	(rect 5272 240 5448 256)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "U6_IN" (rect 90 0 120 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -2897,7 +2897,7 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect -562 1136 -372 1174))
 )
 (symbol
-	(rect 2432 56 2696 168)
+	(rect 2464 56 2728 168)
 	(text "DC_MOTOR_RAMPE" (rect 5 0 113 11)(font "Arial" ))
 	(text "dc_motor_rampe_antrieb" (rect 8 96 135 109)(font "Intel Clear" ))
 	(port
@@ -2950,7 +2950,7 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 248 96))
 	)
-	(annotation_block (parameter)(rect 2432 184 2627 222))
+	(annotation_block (parameter)(rect 2464 184 2659 222))
 )
 (symbol
 	(rect 96 1264 128 1296)
@@ -3066,7 +3066,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 3168 248 3408 328)
+	(rect 3200 248 3440 328)
 	(text "AC_MOTOR_TRIANGLE" (rect 5 0 128 11)(font "Arial" ))
 	(text "inst2" (rect 8 64 31 75)(font "Arial" ))
 	(port
@@ -3113,7 +3113,7 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 224 64))
 	)
-	(annotation_block (parameter)(rect 3168 344 3352 419))
+	(annotation_block (parameter)(rect 3200 344 3384 419))
 )
 (symbol
 	(rect 3576 88 3864 200)
@@ -3484,7 +3484,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 4800 88 4960 232)
+	(rect 4792 88 4952 232)
 	(text "AC_MOTOR_DIRECTION" (rect 5 0 134 11)(font "Arial" ))
 	(text "inst6" (rect 8 128 32 141)(font "Intel Clear" ))
 	(port
@@ -3555,7 +3555,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 3168 544 3480 656)
+	(rect 3200 544 3512 656)
 	(text "AC_MOTOR_SINE_SECTOR" (rect 5 0 151 11)(font "Arial" ))
 	(text "inst13" (rect 8 96 39 109)(font "Intel Clear" ))
 	(port
@@ -3631,10 +3631,10 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 296 96))
 	)
-	(annotation_block (parameter)(rect 3168 664 3386 784))
+	(annotation_block (parameter)(rect 3200 672 3418 792))
 )
 (symbol
-	(rect 4176 464 4352 608)
+	(rect 4208 464 4384 608)
 	(text "AC_MOTOR_SWITCH_CONTROL" (rect 5 0 177 11)(font "Arial" ))
 	(text "inst12" (rect 8 128 37 139)(font "Arial" ))
 	(port
@@ -3705,7 +3705,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 3864 480 4128 624)
+	(rect 3912 480 4176 624)
 	(text "AC_MOTOR_VECTOR_CONTROL" (rect 5 0 179 11)(font "Arial" ))
 	(text "inst11" (rect 8 128 37 139)(font "Arial" ))
 	(port
@@ -3803,10 +3803,10 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 248 128))
 	)
-	(annotation_block (parameter)(rect 3864 616 4072 680))
+	(annotation_block (parameter)(rect 3912 640 4120 704))
 )
 (symbol
-	(rect 2768 72 3128 184)
+	(rect 2792 72 3152 184)
 	(text "AC_MOTOR_CONTROL" (rect 5 0 127 11)(font "Arial" ))
 	(text "inst4" (rect 8 96 31 107)(font "Arial" ))
 	(port
@@ -3881,10 +3881,10 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 344 96))
 	)
-	(annotation_block (parameter)(rect 2768 200 2968 232))
+	(annotation_block (parameter)(rect 2792 200 2992 232))
 )
 (symbol
-	(rect 5072 88 5264 200)
+	(rect 5064 88 5256 200)
 	(text "AC_MOTOR_SWITCH_DELAY" (rect 5 0 160 11)(font "Arial" ))
 	(text "inst14" (rect 8 96 37 107)(font "Arial" ))
 	(port
@@ -3934,7 +3934,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 5072 216 5264 328)
+	(rect 5064 216 5256 328)
 	(text "AC_MOTOR_SWITCH_DELAY" (rect 5 0 160 11)(font "Arial" ))
 	(text "inst16" (rect 8 96 37 107)(font "Arial" ))
 	(port
@@ -3984,7 +3984,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 5072 344 5264 456)
+	(rect 5064 344 5256 456)
 	(text "AC_MOTOR_SWITCH_DELAY" (rect 5 0 160 11)(font "Arial" ))
 	(text "inst17" (rect 8 96 37 107)(font "Arial" ))
 	(port
@@ -4034,7 +4034,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 3544 512 3792 656)
+	(rect 3616 512 3864 656)
 	(text "AC_MOTOR_VECTOR_TIME" (rect 5 0 152 11)(font "Arial" ))
 	(text "inst10" (rect 8 128 37 139)(font "Arial" ))
 	(port
@@ -4133,7 +4133,7 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 232 128))
 	)
-	(annotation_block (parameter)(rect 3544 640 3744 752))
+	(annotation_block (parameter)(rect 3616 672 3816 784))
 )
 (connector
 	(text "SYS_CLK" (rect 90 72 136 85)(font "Intel Clear" ))
@@ -5265,22 +5265,6 @@ refer to the applicable agreement for further details.
 	(pt 504 800)
 )
 (connector
-	(text "SYS_CLK" (rect 2298 72 2344 85)(font "Intel Clear" ))
-	(pt 2296 88)
-	(pt 2432 88)
-)
-(connector
-	(text "ANTRIEB_PWM[15]" (rect 2298 88 2394 101)(font "Intel Clear" ))
-	(pt 2296 104)
-	(pt 2432 104)
-)
-(connector
-	(text "ANTRIEB_PWM[14..0]" (rect 2298 104 2410 115)(font "Arial" ))
-	(pt 2296 120)
-	(pt 2432 120)
-	(bus)
-)
-(connector
 	(pt 3864 120)
 	(pt 3912 120)
 	(bus)
@@ -5423,92 +5407,8 @@ refer to the applicable agreement for further details.
 	(pt 4744 376)
 )
 (connector
-	(pt 4728 184)
-	(pt 4800 184)
-)
-(connector
-	(pt 4728 248)
-	(pt 4728 184)
-)
-(connector
-	(pt 4728 168)
-	(pt 4800 168)
-)
-(connector
-	(pt 4728 120)
-	(pt 4728 168)
-)
-(connector
-	(pt 4744 200)
-	(pt 4800 200)
-)
-(connector
-	(pt 4744 376)
-	(pt 4744 200)
-)
-(connector
-	(pt 4784 120)
-	(pt 4800 120)
-)
-(connector
-	(pt 4976 152)
-	(pt 4960 152)
-)
-(connector
-	(pt 4992 136)
-	(pt 4960 136)
-)
-(connector
-	(pt 5008 120)
-	(pt 4960 120)
-)
-(connector
-	(pt 3928 256)
-	(pt 3928 296)
-	(bus)
-)
-(connector
-	(pt 3928 296)
-	(pt 3928 376)
-	(bus)
-)
-(connector
-	(pt 3408 280)
-	(pt 3560 280)
-)
-(connector
-	(pt 3408 296)
-	(pt 3928 296)
-	(bus)
-)
-(connector
-	(pt 3560 168)
-	(pt 3560 280)
-)
-(connector
 	(pt 3560 168)
 	(pt 3576 168)
-)
-(connector
-	(pt 4800 152)
-	(pt 4752 152)
-)
-(connector
-	(pt 4768 136)
-	(pt 4800 136)
-)
-(connector
-	(text "MOTOR_CLK" (rect 4768 -9 4781 55)(font "Intel Clear" )(vertical))
-	(pt 4784 -8)
-	(pt 4784 120)
-)
-(connector
-	(pt 2696 88)
-	(pt 2712 88)
-)
-(connector
-	(pt 2696 104)
-	(pt 2728 104)
 )
 (connector
 	(text "MOTOR_CLK" (rect 3542 -54 3555 10)(font "Intel Clear" )(vertical))
@@ -5529,44 +5429,6 @@ refer to the applicable agreement for further details.
 	(pt 3944 240)
 )
 (connector
-	(pt 4768 136)
-	(pt 4768 24)
-)
-(connector
-	(pt 2712 88)
-	(pt 2712 24)
-)
-(connector
-	(pt 4768 24)
-	(pt 2712 24)
-)
-(connector
-	(pt 4752 152)
-	(pt 4752 40)
-)
-(connector
-	(pt 2728 104)
-	(pt 2728 40)
-)
-(connector
-	(pt 2728 40)
-	(pt 4752 40)
-)
-(connector
-	(pt 3136 136)
-	(pt 3136 592)
-	(bus)
-)
-(connector
-	(pt 3168 592)
-	(pt 3136 592)
-	(bus)
-)
-(connector
-	(pt 3168 576)
-	(pt 3152 576)
-)
-(connector
 	(pt 4512 424)
 	(pt 4432 424)
 )
@@ -5579,217 +5441,14 @@ refer to the applicable agreement for further details.
 	(pt 4400 168)
 )
 (connector
-	(pt 2744 280)
-	(pt 3152 280)
-)
-(connector
-	(pt 3152 280)
-	(pt 3168 280)
-)
-(connector
 	(text "MODULATON_DELAY_UMIN[0..15]" (rect 1018 408 1191 421)(font "Intel Clear" ))
 	(pt 1008 424)
 	(pt 1136 424)
 	(bus)
 )
 (connector
-	(text "MODULATON_DELAY_UMIN[0..15]" (rect 2560 272 2733 285)(font "Intel Clear" ))
-	(pt 2560 288)
-	(pt 2728 288)
-	(bus)
-)
-(connector
-	(pt 5024 72)
-	(pt 3544 72)
-	(bus)
-)
-(connector
 	(pt 4480 56)
 	(pt 3528 56)
-)
-(connector
-	(pt 2728 288)
-	(pt 2728 136)
-	(bus)
-)
-(connector
-	(pt 3544 72)
-	(pt 3544 120)
-	(bus)
-)
-(connector
-	(pt 3544 120)
-	(pt 3128 120)
-	(bus)
-)
-(connector
-	(pt 3528 104)
-	(pt 3128 104)
-)
-(connector
-	(pt 3528 56)
-	(pt 3528 104)
-)
-(connector
-	(text "MOTOR_CLK" (rect 2720 -65 2733 -1)(font "Intel Clear" )(vertical))
-	(pt 2744 -64)
-	(pt 2744 104)
-)
-(connector
-	(pt 2744 104)
-	(pt 2744 280)
-)
-(connector
-	(pt 3128 136)
-	(pt 3136 136)
-	(bus)
-)
-(connector
-	(pt 3136 136)
-	(pt 3576 136)
-	(bus)
-)
-(connector
-	(pt 2744 104)
-	(pt 2768 104)
-)
-(connector
-	(pt 2696 120)
-	(pt 2768 120)
-	(bus)
-)
-(connector
-	(pt 2728 136)
-	(pt 2768 136)
-	(bus)
-)
-(connector
-	(pt 4976 152)
-	(pt 4976 424)
-)
-(connector
-	(pt 4992 136)
-	(pt 4992 296)
-)
-(connector
-	(pt 5008 120)
-	(pt 5008 168)
-)
-(connector
-	(pt 5056 120)
-	(pt 5072 120)
-)
-(connector
-	(pt 5040 136)
-	(pt 5072 136)
-)
-(connector
-	(pt 5024 152)
-	(pt 5072 152)
-	(bus)
-)
-(connector
-	(pt 5056 248)
-	(pt 5072 248)
-)
-(connector
-	(pt 5040 264)
-	(pt 5072 264)
-)
-(connector
-	(pt 5024 280)
-	(pt 5072 280)
-	(bus)
-)
-(connector
-	(pt 5008 168)
-	(pt 5072 168)
-)
-(connector
-	(pt 4992 296)
-	(pt 5072 296)
-)
-(connector
-	(pt 5056 376)
-	(pt 5072 376)
-)
-(connector
-	(pt 5040 392)
-	(pt 5072 392)
-)
-(connector
-	(pt 5024 408)
-	(pt 5072 408)
-	(bus)
-)
-(connector
-	(pt 4976 424)
-	(pt 5072 424)
-)
-(connector
-	(text "MOTOR_CLK" (rect 5040 -17 5053 47)(font "Intel Clear" )(vertical))
-	(pt 5056 -8)
-	(pt 5056 120)
-)
-(connector
-	(text "ANTRIEB_PWM[15]" (rect 5028 -38 5041 58)(font "Intel Clear" )(vertical))
-	(pt 5040 -32)
-	(pt 5040 136)
-)
-(connector
-	(pt 5024 72)
-	(pt 5024 152)
-	(bus)
-)
-(connector
-	(pt 5056 120)
-	(pt 5056 248)
-)
-(connector
-	(pt 5056 248)
-	(pt 5056 376)
-)
-(connector
-	(pt 5040 136)
-	(pt 5040 264)
-)
-(connector
-	(pt 5040 264)
-	(pt 5040 392)
-)
-(connector
-	(pt 5024 152)
-	(pt 5024 280)
-	(bus)
-)
-(connector
-	(pt 5024 280)
-	(pt 5024 408)
-	(bus)
-)
-(connector
-	(pt 5264 120)
-	(pt 5288 120)
-)
-(connector
-	(pt 5264 136)
-	(pt 5288 136)
-)
-(connector
-	(pt 5264 248)
-	(pt 5288 248)
-)
-(connector
-	(pt 5264 264)
-	(pt 5288 264)
-)
-(connector
-	(pt 5264 376)
-	(pt 5288 376)
-)
-(connector
-	(pt 5264 392)
-	(pt 5288 392)
 )
 (connector
 	(pt 4432 360)
@@ -5828,127 +5487,6 @@ refer to the applicable agreement for further details.
 	(pt 4448 408)
 )
 (connector
-	(pt 3528 544)
-	(pt 3544 544)
-)
-(connector
-	(pt 3496 576)
-	(pt 3480 576)
-	(bus)
-)
-(connector
-	(pt 3512 576)
-	(pt 3512 152)
-	(bus)
-)
-(connector
-	(pt 3512 576)
-	(pt 3544 576)
-	(bus)
-)
-(connector
-	(pt 3128 152)
-	(pt 3512 152)
-	(bus)
-)
-(connector
-	(pt 3512 152)
-	(pt 3576 152)
-	(bus)
-)
-(connector
-	(pt 3544 560)
-	(pt 3496 560)
-	(bus)
-)
-(connector
-	(pt 3480 592)
-	(pt 3544 592)
-	(bus)
-)
-(connector
-	(pt 3544 608)
-	(pt 3480 608)
-	(bus)
-)
-(connector
-	(pt 3832 496)
-	(pt 3496 496)
-	(bus)
-)
-(connector
-	(pt 3496 496)
-	(pt 3496 560)
-	(bus)
-)
-(connector
-	(pt 3496 560)
-	(pt 3496 576)
-	(bus)
-)
-(connector
-	(pt 3848 512)
-	(pt 3864 512)
-)
-(connector
-	(pt 3832 496)
-	(pt 3832 528)
-	(bus)
-)
-(connector
-	(pt 3832 528)
-	(pt 3864 528)
-	(bus)
-)
-(connector
-	(pt 3792 544)
-	(pt 3864 544)
-	(bus)
-)
-(connector
-	(pt 3792 560)
-	(pt 3864 560)
-	(bus)
-)
-(connector
-	(pt 3864 576)
-	(pt 3792 576)
-	(bus)
-)
-(connector
-	(pt 3864 592)
-	(pt 3792 592)
-	(bus)
-)
-(connector
-	(pt 3848 464)
-	(pt 3848 512)
-)
-(connector
-	(pt 3848 464)
-	(pt 4160 464)
-)
-(connector
-	(pt 3528 464)
-	(pt 3528 544)
-)
-(connector
-	(pt 3152 280)
-	(pt 3152 464)
-)
-(connector
-	(pt 3152 464)
-	(pt 3152 576)
-)
-(connector
-	(pt 3152 464)
-	(pt 3528 464)
-)
-(connector
-	(pt 3528 464)
-	(pt 3848 464)
-)
-(connector
 	(pt 4432 424)
 	(pt 4432 528)
 )
@@ -5962,44 +5500,506 @@ refer to the applicable agreement for further details.
 )
 (connector
 	(pt 4400 496)
-	(pt 4352 496)
+	(pt 4384 496)
 )
 (connector
 	(pt 4416 512)
-	(pt 4352 512)
+	(pt 4384 512)
 )
 (connector
 	(pt 4432 528)
-	(pt 4352 528)
+	(pt 4384 528)
 )
 (connector
-	(pt 4128 528)
-	(pt 4176 528)
+	(pt 4192 464)
+	(pt 4192 496)
 )
 (connector
-	(pt 4128 544)
-	(pt 4176 544)
+	(pt 4208 496)
+	(pt 4192 496)
 )
 (connector
-	(pt 4128 560)
-	(pt 4176 560)
-)
-(connector
-	(pt 4128 576)
-	(pt 4176 576)
-)
-(connector
-	(pt 4128 512)
+	(pt 4208 512)
 	(pt 4176 512)
 	(bus)
 )
 (connector
-	(pt 4160 496)
-	(pt 4176 496)
+	(pt 4208 528)
+	(pt 4176 528)
 )
 (connector
-	(pt 4160 496)
-	(pt 4160 464)
+	(pt 4208 544)
+	(pt 4176 544)
+)
+(connector
+	(pt 4208 560)
+	(pt 4176 560)
+)
+(connector
+	(pt 4208 576)
+	(pt 4176 576)
+)
+(connector
+	(pt 3896 464)
+	(pt 3896 512)
+)
+(connector
+	(pt 3912 512)
+	(pt 3896 512)
+)
+(connector
+	(pt 3896 464)
+	(pt 4192 464)
+)
+(connector
+	(pt 3880 496)
+	(pt 3880 528)
+	(bus)
+)
+(connector
+	(pt 3912 528)
+	(pt 3880 528)
+	(bus)
+)
+(connector
+	(pt 3912 560)
+	(pt 3864 560)
+	(bus)
+)
+(connector
+	(pt 3912 576)
+	(pt 3864 576)
+	(bus)
+)
+(connector
+	(pt 3912 592)
+	(pt 3864 592)
+	(bus)
+)
+(connector
+	(pt 3912 544)
+	(pt 3864 544)
+	(bus)
+)
+(connector
+	(pt 3600 464)
+	(pt 3600 544)
+)
+(connector
+	(pt 3616 544)
+	(pt 3600 544)
+)
+(connector
+	(pt 3600 464)
+	(pt 3896 464)
+)
+(connector
+	(pt 3544 152)
+	(pt 3544 576)
+	(bus)
+)
+(connector
+	(pt 3616 576)
+	(pt 3544 576)
+	(bus)
+)
+(connector
+	(pt 3880 496)
+	(pt 3528 496)
+	(bus)
+)
+(connector
+	(pt 3528 560)
+	(pt 3616 560)
+	(bus)
+)
+(connector
+	(pt 3616 592)
+	(pt 3512 592)
+	(bus)
+)
+(connector
+	(pt 3616 608)
+	(pt 3512 608)
+	(bus)
+)
+(connector
+	(pt 3528 576)
+	(pt 3512 576)
+	(bus)
+)
+(connector
+	(pt 3528 496)
+	(pt 3528 560)
+	(bus)
+)
+(connector
+	(pt 3528 560)
+	(pt 3528 576)
+	(bus)
+)
+(connector
+	(pt 3560 280)
+	(pt 3440 280)
+)
+(connector
+	(pt 3928 296)
+	(pt 3440 296)
+	(bus)
+)
+(connector
+	(pt 3560 168)
+	(pt 3560 280)
+)
+(connector
+	(pt 3928 256)
+	(pt 3928 296)
+	(bus)
+)
+(connector
+	(pt 3928 296)
+	(pt 3928 376)
+	(bus)
+)
+(connector
+	(pt 3200 576)
+	(pt 3184 576)
+)
+(connector
+	(pt 3184 464)
+	(pt 3600 464)
+)
+(connector
+	(pt 3184 280)
+	(pt 3184 464)
+)
+(connector
+	(pt 3184 464)
+	(pt 3184 576)
+)
+(connector
+	(pt 3168 136)
+	(pt 3168 592)
+	(bus)
+)
+(connector
+	(pt 3200 592)
+	(pt 3168 592)
+	(bus)
+)
+(connector
+	(pt 3544 72)
+	(pt 3544 120)
+	(bus)
+)
+(connector
+	(pt 3544 120)
+	(pt 3152 120)
+	(bus)
+)
+(connector
+	(pt 3528 104)
+	(pt 3152 104)
+)
+(connector
+	(pt 3528 56)
+	(pt 3528 104)
+)
+(connector
+	(pt 3152 136)
+	(pt 3168 136)
+	(bus)
+)
+(connector
+	(pt 3168 136)
+	(pt 3576 136)
+	(bus)
+)
+(connector
+	(pt 3152 152)
+	(pt 3544 152)
+	(bus)
+)
+(connector
+	(pt 3544 152)
+	(pt 3576 152)
+	(bus)
+)
+(connector
+	(pt 2776 280)
+	(pt 3184 280)
+)
+(connector
+	(pt 3184 280)
+	(pt 3200 280)
+)
+(connector
+	(pt 2776 104)
+	(pt 2792 104)
+)
+(connector
+	(text "MOTOR_CLK" (rect 2752 -65 2765 -1)(font "Intel Clear" )(vertical))
+	(pt 2776 -64)
+	(pt 2776 104)
+)
+(connector
+	(pt 2776 104)
+	(pt 2776 280)
+)
+(connector
+	(text "MODULATON_DELAY_UMIN[0..15]" (rect 2560 272 2733 285)(font "Intel Clear" ))
+	(pt 2560 288)
+	(pt 2760 288)
+	(bus)
+)
+(connector
+	(pt 2760 288)
+	(pt 2760 136)
+	(bus)
+)
+(connector
+	(pt 2792 136)
+	(pt 2760 136)
+	(bus)
+)
+(connector
+	(pt 2792 120)
+	(pt 2728 120)
+	(bus)
+)
+(connector
+	(pt 2760 104)
+	(pt 2728 104)
+)
+(connector
+	(pt 2760 40)
+	(pt 2760 104)
+)
+(connector
+	(pt 2744 88)
+	(pt 2728 88)
+)
+(connector
+	(pt 2744 24)
+	(pt 2744 88)
+)
+(connector
+	(text "ANTRIEB_PWM[14..0]" (rect 2362 104 2474 115)(font "Arial" ))
+	(pt 2464 120)
+	(pt 2360 120)
+	(bus)
+)
+(connector
+	(text "ANTRIEB_PWM[15]" (rect 2362 88 2458 101)(font "Intel Clear" ))
+	(pt 2464 104)
+	(pt 2360 104)
+)
+(connector
+	(text "SYS_CLK" (rect 2362 72 2408 85)(font "Intel Clear" ))
+	(pt 2464 88)
+	(pt 2360 88)
+)
+(connector
+	(pt 2760 40)
+	(pt 4744 40)
+)
+(connector
+	(pt 2744 24)
+	(pt 4760 24)
+)
+(connector
+	(pt 4728 184)
+	(pt 4792 184)
+)
+(connector
+	(pt 4728 248)
+	(pt 4728 184)
+)
+(connector
+	(pt 4728 168)
+	(pt 4792 168)
+)
+(connector
+	(pt 4728 120)
+	(pt 4728 168)
+)
+(connector
+	(pt 4744 200)
+	(pt 4792 200)
+)
+(connector
+	(pt 4744 376)
+	(pt 4744 200)
+)
+(connector
+	(pt 4744 152)
+	(pt 4792 152)
+)
+(connector
+	(pt 4744 40)
+	(pt 4744 152)
+)
+(connector
+	(pt 4760 136)
+	(pt 4792 136)
+)
+(connector
+	(pt 4760 24)
+	(pt 4760 136)
+)
+(connector
+	(pt 4776 120)
+	(pt 4792 120)
+)
+(connector
+	(text "MOTOR_CLK" (rect 4760 -9 4773 55)(font "Intel Clear" )(vertical))
+	(pt 4776 -8)
+	(pt 4776 120)
+)
+(connector
+	(pt 3544 72)
+	(pt 5016 72)
+	(bus)
+)
+(connector
+	(pt 4952 120)
+	(pt 5000 120)
+)
+(connector
+	(pt 4952 136)
+	(pt 4984 136)
+)
+(connector
+	(pt 4952 152)
+	(pt 4968 152)
+)
+(connector
+	(pt 5000 168)
+	(pt 5064 168)
+)
+(connector
+	(pt 4984 296)
+	(pt 5064 296)
+)
+(connector
+	(pt 5048 376)
+	(pt 5064 376)
+)
+(connector
+	(pt 5032 392)
+	(pt 5064 392)
+)
+(connector
+	(pt 5016 408)
+	(pt 5064 408)
+	(bus)
+)
+(connector
+	(pt 4968 424)
+	(pt 5064 424)
+)
+(connector
+	(pt 4968 152)
+	(pt 4968 424)
+)
+(connector
+	(pt 4984 136)
+	(pt 4984 296)
+)
+(connector
+	(pt 5000 120)
+	(pt 5000 168)
+)
+(connector
+	(pt 5032 136)
+	(pt 5064 136)
+)
+(connector
+	(pt 5016 152)
+	(pt 5064 152)
+	(bus)
+)
+(connector
+	(pt 5032 264)
+	(pt 5064 264)
+)
+(connector
+	(pt 5016 280)
+	(pt 5064 280)
+	(bus)
+)
+(connector
+	(pt 5048 120)
+	(pt 5064 120)
+)
+(connector
+	(pt 5048 248)
+	(pt 5064 248)
+)
+(connector
+	(text "ANTRIEB_PWM[15]" (rect 5020 -38 5033 58)(font "Intel Clear" )(vertical))
+	(pt 5032 -32)
+	(pt 5032 136)
+)
+(connector
+	(pt 5016 72)
+	(pt 5016 152)
+	(bus)
+)
+(connector
+	(pt 5016 152)
+	(pt 5016 280)
+	(bus)
+)
+(connector
+	(pt 5016 280)
+	(pt 5016 408)
+	(bus)
+)
+(connector
+	(pt 5032 136)
+	(pt 5032 264)
+)
+(connector
+	(pt 5032 264)
+	(pt 5032 392)
+)
+(connector
+	(text "MOTOR_CLK" (rect 5032 -17 5045 47)(font "Intel Clear" )(vertical))
+	(pt 5048 -8)
+	(pt 5048 120)
+)
+(connector
+	(pt 5048 120)
+	(pt 5048 248)
+)
+(connector
+	(pt 5048 248)
+	(pt 5048 376)
+)
+(connector
+	(pt 5256 120)
+	(pt 5272 120)
+)
+(connector
+	(pt 5256 136)
+	(pt 5272 136)
+)
+(connector
+	(pt 5256 248)
+	(pt 5272 248)
+)
+(connector
+	(pt 5256 264)
+	(pt 5272 264)
+)
+(connector
+	(pt 5256 376)
+	(pt 5272 376)
+)
+(connector
+	(pt 5256 392)
+	(pt 5272 392)
 )
 (junction (pt -672 -64))
 (junction (pt 464 64))
@@ -6014,9 +6014,6 @@ refer to the applicable agreement for further details.
 (junction (pt 712 1224))
 (junction (pt 712 1240))
 (junction (pt 280 1256))
-(junction (pt 3136 136))
-(junction (pt 3512 152))
-(junction (pt 3152 280))
 (junction (pt 3928 296))
 (junction (pt 3928 256))
 (junction (pt 3944 240))
@@ -6025,17 +6022,20 @@ refer to the applicable agreement for further details.
 (junction (pt 4480 264))
 (junction (pt 4496 120))
 (junction (pt 4480 136))
-(junction (pt 5056 248))
-(junction (pt 5040 264))
-(junction (pt 5024 280))
-(junction (pt 5024 152))
-(junction (pt 2744 104))
-(junction (pt 5056 120))
-(junction (pt 5040 136))
-(junction (pt 3496 560))
-(junction (pt 3848 464))
-(junction (pt 3528 464))
-(junction (pt 3152 464))
+(junction (pt 3896 464))
+(junction (pt 3600 464))
+(junction (pt 3544 152))
+(junction (pt 3528 560))
+(junction (pt 3184 464))
+(junction (pt 3184 280))
+(junction (pt 3168 136))
+(junction (pt 2776 104))
+(junction (pt 5016 152))
+(junction (pt 5016 280))
+(junction (pt 5032 136))
+(junction (pt 5032 264))
+(junction (pt 5048 120))
+(junction (pt 5048 248))
 (text "FT2232_CS0" (rect -936 -72 -862 -57)(font "Intel Clear" (font_size 8)))
 (text "FT2232_MISO" (rect 728 -16 810 -1)(font "Intel Clear" (font_size 8)))
 (text "FT2232_SCLK" (rect -472 0 -391 15)(font "Intel Clear" (font_size 8)))

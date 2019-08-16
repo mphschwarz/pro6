@@ -27,11 +27,6 @@ def current_plot_vector(phase):
 
     data = Verilog_VCD.parse_vcd("{}/AC_MOTOR/vcd/ac_motor_switch_delay_tb.vcd".format(file_prefix), siglist=sigs)
 
-    #signal_length = np.maximum(data[high]['tv'][-1][0], data[low]['tv'][-1][0])
-    #s_time_high, s_values_high = src.insert_values(np.array([x[0] for x in data[high]['tv']]),
-    #                                               np.array([x[1] for x in data[high]['tv']]), signal_length)
-    #s_time_low, s_values_low = src.insert_values(np.array([x[0] for x in data[low]['tv']]),
-    #                                             np.array([x[1] for x in data[low]['tv']]), signal_length)
     s_time_low, s_values_low, s_time_high, s_values_high = src.extract_high_low(data, high, low)
 
     s_voltage = src.insert_voltage(s_values_high, s_values_low)
@@ -64,15 +59,7 @@ def current_plot_triangle(phase):
     data = Verilog_VCD.parse_vcd("{}/AC_MOTOR/vcd/ac_motor_switch_delay_triangle_tb.vcd".format(file_prefix),
                                  siglist=sigs)
 
-    #signal_length = np.maximum(data[high]['tv'][-1][0], data[low]['tv'][-1][0])
-    #s_time_high, s_values_high = src.insert_values(np.array([x[0] for x in data[high]['tv']]),
-    #                                               np.array([x[1] for x in data[high]['tv']]), signal_length)
-    #s_time_low, s_values_low = src.insert_values(np.array([x[0] for x in data[low]['tv']]),
-    #                                             np.array([x[1] for x in data[low]['tv']]), signal_length)
     s_time_low, s_values_low, s_time_high, s_values_high = src.extract_high_low(data, high, low)
-
-    # sector_synced_time, sector_synced_values = insert_values(np.array([x[0] for x in data['-']['tv']]),
-    #                                                          np.array([x[1] for x in data['-']['tv']]), 50000000)
 
     s_voltage = src.insert_voltage(s_values_high, s_values_low)
     s_current = src.current(s_voltage)
@@ -108,14 +95,7 @@ def current_plot_modulation_switch(phase):
     data = Verilog_VCD.parse_vcd("{}/AC_MOTOR/vcd/ac_motor_switch_delay_modulation_change_tb.vcd".format(file_prefix),
                                  siglist=sigs)
 
-    # s_time_high, s_values_high = src.insert_values(np.array([x[0] for x in data[high]['tv']]),
-    #                                                np.array([x[1] for x in data[high]['tv']]))
-    # s_time_low, s_values_low = src.insert_values(np.array([x[0] for x in data[low]['tv']]),
-    #                                              np.array([x[1] for x in data[low]['tv']]))
     s_time_low, s_values_low, s_time_high, s_values_high = src.extract_high_low(data, high, low)
-
-    # sector_synced_time, sector_synced_values = insert_values(np.array([x[0] for x in data['-']['tv']]),
-    #                                                          np.array([x[1] for x in data['-']['tv']]), 50000000)
 
     s_voltage = src.insert_voltage(s_values_high, s_values_low)
     s_current = src.current(s_voltage)
@@ -152,15 +132,7 @@ def current_plot_power_ramp(phase):
     data = Verilog_VCD.parse_vcd("{}/AC_MOTOR/vcd/ac_motor_switch_delay_power_change_tb.vcd".format(file_prefix),
                                  siglist=sigs)
 
-    #sample_length = np.maximum(data[low]['tv'][-1][0], data[high]['tv'][-1][0])
-    #s_time_high, s_values_high = src.insert_values(np.array([x[0] for x in data[high]['tv']]),
-    #                                               np.array([x[1] for x in data[high]['tv']]), sample_length)
-    #s_time_low, s_values_low = src.insert_values(np.array([x[0] for x in data[low]['tv']]),
-    #                                             np.array([x[1] for x in data[low]['tv']]), sample_length)
     s_time_low, s_values_low, s_time_high, s_values_high = src.extract_high_low(data, high, low)
-
-    # sector_synced_time, sector_synced_values = insert_values(np.array([x[0] for x in data['-']['tv']]),
-    #                                                          np.array([x[1] for x in data['-']['tv']]), 50000000)
 
     s_voltage = src.insert_voltage(s_values_high, s_values_low)
     s_current = src.current(s_voltage)

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MAX1000
-Thu Aug 15 16:44:36 2019
+Fri Aug 16 12:18:39 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -106,7 +106,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug 15 16:44:35 2019           ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 16 12:18:39 2019           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; MAX1000                                         ;
 ; Top-level Entity Name              ; MAX1000                                         ;
@@ -7446,7 +7446,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:31     ;
+; Top            ; 00:00:17     ;
 +----------------+--------------+
 
 
@@ -7456,7 +7456,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Aug 15 16:43:35 2019
+    Info: Processing started: Fri Aug 16 12:18:05 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MAX1000 -c MAX1000
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -7695,17 +7695,17 @@ Warning (10230): Verilog HDL assignment warning at AC_MOTOR_TRIANGLE.v(33): trun
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_TRIANGLE.v(43): truncated value with size 32 to match size of target (24) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_TRIANGLE/AC_MOTOR_TRIANGLE.v Line: 43
 Info (12128): Elaborating entity "AC_MOTOR_SWITCH_CONTROL" for hierarchy "AC_MOTOR_SWITCH_CONTROL:inst12"
 Info (12128): Elaborating entity "AC_MOTOR_VECTOR_CONTROL" for hierarchy "AC_MOTOR_VECTOR_CONTROL:inst11"
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(45): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 45
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(46): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 46
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(47): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 47
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(48): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 48
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(54): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 54
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(55): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 55
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(56): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 56
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(58): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 58
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(59): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 59
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(60): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 60
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(61): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 61
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(62): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 62
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(63): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 63
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(57): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 57
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(65): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 65
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(67): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 67
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(68): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 68
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(69): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 69
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(70): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 70
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(71): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 71
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(72): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 72
 Info (12128): Elaborating entity "AC_MOTOR_SINE_SECTOR" for hierarchy "AC_MOTOR_SINE_SECTOR:inst13"
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE_SECTOR.v(26): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_SINE_SECTOR.v Line: 26
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE_SECTOR.v(32): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_SINE_SECTOR.v Line: 32
@@ -7953,10 +7953,10 @@ Info (21057): Implemented 8549 device resources after synthesis - the final reso
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 14 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 133 warnings
-    Info: Peak virtual memory: 1274 megabytes
-    Info: Processing ended: Thu Aug 15 16:44:36 2019
-    Info: Elapsed time: 00:01:01
-    Info: Total CPU time (on all processors): 00:01:25
+    Info: Peak virtual memory: 1275 megabytes
+    Info: Processing ended: Fri Aug 16 12:18:39 2019
+    Info: Elapsed time: 00:00:34
+    Info: Total CPU time (on all processors): 00:00:50
 
 
 +------------------------------------------+

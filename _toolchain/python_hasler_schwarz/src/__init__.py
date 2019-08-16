@@ -58,7 +58,7 @@ def filter_values(signal, f_cutoff, order=2, f_sample=2 * 100 * np.power(10, 6))
     :param signal: PWM value imported from .vcd file
     :param f_cutoff: cutoff frequency adjusted for sampling frequency
     :param order: order of butterworth filter
-    :param f_sample: Motorclock
+    :param f_sample: Motorclock mit 100 MHz
     :return: filtered PWM signal in np.array
     """
     b, a = sig.butter(order, f_cutoff / (f_sample / 2), btype='low', analog=False)

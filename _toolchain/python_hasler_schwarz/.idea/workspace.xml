@@ -178,7 +178,7 @@
       <workItem from="1565597934060" duration="19278000" />
       <workItem from="1565713021118" duration="13230000" />
       <workItem from="1565859193656" duration="32000" />
-      <workItem from="1565859287056" duration="12285000" />
+      <workItem from="1565859287056" duration="13056000" />
     </task>
     <servers />
   </component>
@@ -190,18 +190,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/CurrentPlot.py</url>
-          <line>110</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/CurrentPlot.py</url>
-          <line>167</line>
+          <line>139</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/CurrentPlot.py</url>
-          <line>155</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/__init__.py</url>
