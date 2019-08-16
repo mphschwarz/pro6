@@ -30,6 +30,15 @@ reg [14:0] t_7_counter;
 initial begin
 	sector <= 0;
 	tast_index <= 0;
+	t_0 <= 0;
+	t_0_counter <= 0;
+	t_1 <= 0;
+	t_1_counter <= 0;
+	t_2 <= 0;
+	t_2_counter <= 0;
+	t_7 <= 0;
+	t_7_counter <= 0;
+
 	U_0 <= 0;
 	U_1 <= 0;
 	U_2 <= 0;

@@ -1,14 +1,14 @@
-Fitter Status : Successful - Mon Aug 12 11:51:57 2019
+Fitter Status : Successful - Thu Aug 15 16:46:48 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 Revision Name : MAX1000
 Top-level Entity Name : MAX1000
 Family : MAX 10
 Device : 10M16SAU169C8G
 Timing Models : Final
-Total logic elements : 7,489 / 15,840 ( 47 % )
-    Total combinational functions : 6,787 / 15,840 ( 43 % )
-    Dedicated logic registers : 2,997 / 15,840 ( 19 % )
-Total registers : 2997
+Total logic elements : 7,561 / 15,840 ( 48 % )
+    Total combinational functions : 6,856 / 15,840 ( 43 % )
+    Dedicated logic registers : 3,000 / 15,840 ( 19 % )
+Total registers : 3000
 Total pins : 47 / 130 ( 36 % )
 Total virtual pins : 0
 Total memory bits : 23,040 / 562,176 ( 4 % )

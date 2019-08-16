@@ -49,6 +49,7 @@ module AC_MOTOR_VECTOR_TIME_TB;
 
 	AC_MOTOR_VECTOR_TIME vector_time(
 		clk,
+		sector,
 		u_str,
 		sine_pos,
 		sine_neg,

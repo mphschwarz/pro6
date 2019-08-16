@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MAX1000
-Mon Aug 12 11:50:37 2019
+Thu Aug 15 16:44:36 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -67,8 +67,8 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
  59. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult4
  60. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult2
  61. Parameter Settings for Inferred Entity Instance: AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div0
- 62. Parameter Settings for Inferred Entity Instance: AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div2
- 63. Parameter Settings for Inferred Entity Instance: AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div1
+ 62. Parameter Settings for Inferred Entity Instance: AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div1
+ 63. Parameter Settings for Inferred Entity Instance: AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div2
  64. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult0
  65. Parameter Settings for Inferred Entity Instance: AC_MOTOR_SINE:inst3|lpm_mult:Mult1
  66. Parameter Settings for Inferred Entity Instance: AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult0
@@ -106,15 +106,15 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Aug 12 11:50:36 2019           ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 15 16:44:35 2019           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; MAX1000                                         ;
 ; Top-level Entity Name              ; MAX1000                                         ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 8,397                                           ;
-;     Total combinational functions  ; 6,785                                           ;
-;     Dedicated logic registers      ; 3,072                                           ;
-; Total registers                    ; 3072                                            ;
+; Total logic elements               ; 8,440                                           ;
+;     Total combinational functions  ; 6,854                                           ;
+;     Dedicated logic registers      ; 3,075                                           ;
+; Total registers                    ; 3075                                            ;
 ; Total pins                         ; 47                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 23,040                                          ;
@@ -320,20 +320,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                       ;
 +---------------------------------------------+-----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 8,397                                                                       ;
+; Estimated Total logic elements              ; 8,440                                                                       ;
 ;                                             ;                                                                             ;
-; Total combinational functions               ; 6785                                                                        ;
+; Total combinational functions               ; 6854                                                                        ;
 ; Logic element usage by number of LUT inputs ;                                                                             ;
-;     -- 4 input functions                    ; 2492                                                                        ;
-;     -- 3 input functions                    ; 2177                                                                        ;
-;     -- <=2 input functions                  ; 2116                                                                        ;
+;     -- 4 input functions                    ; 2488                                                                        ;
+;     -- 3 input functions                    ; 2247                                                                        ;
+;     -- <=2 input functions                  ; 2119                                                                        ;
 ;                                             ;                                                                             ;
 ; Logic elements by mode                      ;                                                                             ;
-;     -- normal mode                          ; 4162                                                                        ;
-;     -- arithmetic mode                      ; 2623                                                                        ;
+;     -- normal mode                          ; 4224                                                                        ;
+;     -- arithmetic mode                      ; 2630                                                                        ;
 ;                                             ;                                                                             ;
-; Total registers                             ; 3072                                                                        ;
-;     -- Dedicated logic registers            ; 3072                                                                        ;
+; Total registers                             ; 3075                                                                        ;
+;     -- Dedicated logic registers            ; 3075                                                                        ;
 ;     -- I/O registers                        ; 0                                                                           ;
 ;                                             ;                                                                             ;
 ; I/O pins                                    ; 47                                                                          ;
@@ -345,8 +345,8 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                                                           ;
 ;                                             ;                                                                             ;
 ; Maximum fan-out node                        ; PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 3093                                                                        ;
-; Total fan-out                               ; 29600                                                                       ;
+; Maximum fan-out                             ; 3096                                                                        ;
+; Total fan-out                               ; 29820                                                                       ;
 ; Average fan-out                             ; 2.96                                                                        ;
 +---------------------------------------------+-----------------------------------------------------------------------------+
 
@@ -356,11 +356,11 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                         ; Entity Name             ; Library Name ;
 +---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |MAX1000                                          ; 6785 (3)            ; 3072 (0)                  ; 23040       ; 0          ; 14           ; 0       ; 7         ; 47   ; 0            ; 0          ; |MAX1000                                                                                                                                                    ; MAX1000                 ; work         ;
+; |MAX1000                                          ; 6854 (3)            ; 3075 (0)                  ; 23040       ; 0          ; 14           ; 0       ; 7         ; 47   ; 0            ; 0          ; |MAX1000                                                                                                                                                    ; MAX1000                 ; work         ;
 ;    |AC_MOTOR_COMPARATOR:inst22|                   ; 13 (13)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_COMPARATOR:inst22                                                                                                                         ; AC_MOTOR_COMPARATOR     ; work         ;
 ;    |AC_MOTOR_COMPARATOR:inst23|                   ; 13 (13)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_COMPARATOR:inst23                                                                                                                         ; AC_MOTOR_COMPARATOR     ; work         ;
 ;    |AC_MOTOR_COMPARATOR:inst24|                   ; 13 (13)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_COMPARATOR:inst24                                                                                                                         ; AC_MOTOR_COMPARATOR     ; work         ;
-;    |AC_MOTOR_CONTROL:inst4|                       ; 33 (33)             ; 56 (56)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_CONTROL:inst4                                                                                                                             ; AC_MOTOR_CONTROL        ; work         ;
+;    |AC_MOTOR_CONTROL:inst4|                       ; 36 (36)             ; 59 (59)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_CONTROL:inst4                                                                                                                             ; AC_MOTOR_CONTROL        ; work         ;
 ;    |AC_MOTOR_DIRECTION:inst6|                     ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_DIRECTION:inst6                                                                                                                           ; AC_MOTOR_DIRECTION      ; work         ;
 ;    |AC_MOTOR_MODULATION:inst25|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_MODULATION:inst25                                                                                                                         ; AC_MOTOR_MODULATION     ; work         ;
 ;    |AC_MOTOR_MODULATION:inst26|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_MODULATION:inst26                                                                                                                         ; AC_MOTOR_MODULATION     ; work         ;
@@ -398,8 +398,8 @@ refer to the applicable agreement for further details.
 ;    |AC_MOTOR_SWITCH_DELAY:inst16|                 ; 38 (38)             ; 18 (18)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SWITCH_DELAY:inst16                                                                                                                       ; AC_MOTOR_SWITCH_DELAY   ; work         ;
 ;    |AC_MOTOR_SWITCH_DELAY:inst17|                 ; 38 (38)             ; 18 (18)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_SWITCH_DELAY:inst17                                                                                                                       ; AC_MOTOR_SWITCH_DELAY   ; work         ;
 ;    |AC_MOTOR_TRIANGLE:inst2|                      ; 23 (23)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_TRIANGLE:inst2                                                                                                                            ; AC_MOTOR_TRIANGLE       ; work         ;
-;    |AC_MOTOR_VECTOR_CONTROL:inst11|               ; 166 (166)           ; 127 (127)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11                                                                                                                     ; AC_MOTOR_VECTOR_CONTROL ; work         ;
-;    |AC_MOTOR_VECTOR_TIME:inst10|                  ; 2516 (159)          ; 309 (309)                 ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10                                                                                                                        ; AC_MOTOR_VECTOR_TIME    ; work         ;
+;    |AC_MOTOR_VECTOR_CONTROL:inst11|               ; 163 (163)           ; 127 (127)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11                                                                                                                     ; AC_MOTOR_VECTOR_CONTROL ; work         ;
+;    |AC_MOTOR_VECTOR_TIME:inst10|                  ; 2584 (185)          ; 309 (309)                 ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10                                                                                                                        ; AC_MOTOR_VECTOR_TIME    ; work         ;
 ;       |lpm_divide:Div0|                           ; 736 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div0                                                                                                        ; lpm_divide              ; work         ;
 ;          |lpm_divide_gvl:auto_generated|          ; 736 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div0|lpm_divide_gvl:auto_generated                                                                          ; lpm_divide_gvl          ; work         ;
 ;             |sign_div_unsign_inh:divider|         ; 736 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div0|lpm_divide_gvl:auto_generated|sign_div_unsign_inh:divider                                              ; sign_div_unsign_inh     ; work         ;
@@ -420,10 +420,10 @@ refer to the applicable agreement for further details.
 ;                |mpar_add:sub_par_add|             ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; mpar_add                ; work         ;
 ;                   |lpm_add_sub:adder[0]|          ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; lpm_add_sub             ; work         ;
 ;                      |add_sub_drg:auto_generated| ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_drg:auto_generated ; add_sub_drg             ; work         ;
-;       |lpm_mult:Mult1|                            ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult1                                                                                                         ; lpm_mult                ; work         ;
-;          |mult_1os:auto_generated|                ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult1|mult_1os:auto_generated                                                                                 ; mult_1os                ; work         ;
-;       |lpm_mult:Mult2|                            ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult2                                                                                                         ; lpm_mult                ; work         ;
-;          |mult_1os:auto_generated|                ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult2|mult_1os:auto_generated                                                                                 ; mult_1os                ; work         ;
+;       |lpm_mult:Mult1|                            ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult1                                                                                                         ; lpm_mult                ; work         ;
+;          |mult_1os:auto_generated|                ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult1|mult_1os:auto_generated                                                                                 ; mult_1os                ; work         ;
+;       |lpm_mult:Mult2|                            ; 21 (0)              ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult2                                                                                                         ; lpm_mult                ; work         ;
+;          |mult_1os:auto_generated|                ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |MAX1000|AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult2|mult_1os:auto_generated                                                                                 ; mult_1os                ; work         ;
 ;    |ADC_LTC2313_12_MOV_AVG:adc1|                  ; 367 (261)           ; 232 (170)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1                                                                                                                        ; ADC_LTC2313_12_MOV_AVG  ; work         ;
 ;       |ADC_LTC2313_12:adc_ltc2313_12|             ; 106 (106)           ; 62 (62)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12                                                                                          ; ADC_LTC2313_12          ; work         ;
 ;    |ADC_LTC2313_12_MOV_AVG:adc2|                  ; 207 (195)           ; 165 (141)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2                                                                                                                        ; ADC_LTC2313_12_MOV_AVG  ; work         ;
@@ -434,8 +434,8 @@ refer to the applicable agreement for further details.
 ;       |ADC_LTC2313_12:adc_ltc2313_12|             ; 12 (12)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12                                                                                          ; ADC_LTC2313_12          ; work         ;
 ;    |ADC_LTC2313_12_MOV_AVG:adc5|                  ; 207 (195)           ; 166 (142)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5                                                                                                                        ; ADC_LTC2313_12_MOV_AVG  ; work         ;
 ;       |ADC_LTC2313_12:adc_ltc2313_12|             ; 12 (12)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12                                                                                          ; ADC_LTC2313_12          ; work         ;
-;    |ADC_LTC2313_12_MOV_AVG:adc6|                  ; 245 (219)           ; 166 (142)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6                                                                                                                        ; ADC_LTC2313_12_MOV_AVG  ; work         ;
-;       |ADC_LTC2313_12:adc_ltc2313_12|             ; 26 (26)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12                                                                                          ; ADC_LTC2313_12          ; work         ;
+;    |ADC_LTC2313_12_MOV_AVG:adc6|                  ; 246 (219)           ; 166 (142)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6                                                                                                                        ; ADC_LTC2313_12_MOV_AVG  ; work         ;
+;       |ADC_LTC2313_12:adc_ltc2313_12|             ; 27 (27)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12                                                                                          ; ADC_LTC2313_12          ; work         ;
 ;    |CLOCK_GENERATOR:clock_generator|              ; 159 (159)           ; 99 (99)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|CLOCK_GENERATOR:clock_generator                                                                                                                    ; CLOCK_GENERATOR         ; work         ;
 ;    |DAC_AD5061:dac1|                              ; 107 (107)           ; 52 (52)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|DAC_AD5061:dac1                                                                                                                                    ; DAC_AD5061              ; work         ;
 ;    |DAC_AD5061:dac2|                              ; 27 (27)             ; 18 (18)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAX1000|DAC_AD5061:dac2                                                                                                                                    ; DAC_AD5061              ; work         ;
@@ -845,8 +845,6 @@ Encoding Type:  One-Hot
 ; AC_MOTOR_TRIANGLE:inst2|triangle_dir[0]                                   ; Stuck at VCC due to stuck port data_in                                                ;
 ; AC_MOTOR_CONTROL:inst4|AMPLITUDE[11]                                      ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[11]                                      ;
 ; AC_MOTOR_CONTROL:inst4|AMPLITUDE[10]                                      ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[10]                                      ;
-; AC_MOTOR_CONTROL:inst4|AMPLITUDE[9]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[9]                                       ;
-; AC_MOTOR_CONTROL:inst4|AMPLITUDE[8]                                       ; Merged with AC_MOTOR_CONTROL:inst4|FREQUENCY[8]                                       ;
 ; DAC_AD5061:dac3|state~7                                                   ; Lost fanout                                                                           ;
 ; DAC_AD5061:dac3|state~8                                                   ; Lost fanout                                                                           ;
 ; DAC_AD5061:dac3|state~9                                                   ; Lost fanout                                                                           ;
@@ -5638,7 +5636,9 @@ Encoding Type:  One-Hot
 ; AC_MOTOR_SINE_SECTOR:inst13|sine~4356                                     ; Stuck at GND due to stuck port clock                                                  ;
 ; AC_MOTOR_SINE_SECTOR:inst13|sine~4357                                     ; Stuck at GND due to stuck port clock                                                  ;
 ; AC_MOTOR_SINE_SECTOR:inst13|sine~4358                                     ; Stuck at GND due to stuck port clock                                                  ;
-; Total Number of Removed Registers = 7168                                  ;                                                                                       ;
+; AC_MOTOR_SINE_SECTOR:inst13|sine~4359                                     ; Stuck at GND due to stuck port clock                                                  ;
+; AC_MOTOR_SINE_SECTOR:inst13|sine~4360                                     ; Stuck at GND due to stuck port clock                                                  ;
+; Total Number of Removed Registers = 7165                                  ;                                                                                       ;
 +---------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
 * Table truncated at 5000 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
@@ -5735,9 +5735,9 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3072  ;
+; Total registers                              ; 3075  ;
 ; Number of registers using Synchronous Clear  ; 216   ;
-; Number of registers using Synchronous Load   ; 17    ;
+; Number of registers using Synchronous Load   ; 25    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 2090  ;
@@ -5796,7 +5796,7 @@ Encoding Type:  One-Hot
 ; DREHZAHLMESSUNG:drehzahlmessung|ctr_mov_avg[0]                           ; 9       ;
 ; ADC_LTC2313_12_MOV_AVG:adc1|ctr_mov_avg[0]                               ; 9       ;
 ; AC_MOTOR_SINE_SECTOR:inst13|SECTOR[2]                                    ; 3       ;
-; AC_MOTOR_SINE_SECTOR:inst13|SECTOR[0]                                    ; 4       ;
+; AC_MOTOR_SINE_SECTOR:inst13|SECTOR[0]                                    ; 72      ;
 ; AC_MOTOR_SINE:inst3|ampl_int[0]                                          ; 3       ;
 ; AC_MOTOR_SINE:inst3|ampl_int[1]                                          ; 3       ;
 ; AC_MOTOR_SINE:inst3|ampl_int[2]                                          ; 3       ;
@@ -5808,8 +5808,6 @@ Encoding Type:  One-Hot
 ; AC_MOTOR_SINE:inst3|ampl_int[8]                                          ; 3       ;
 ; AC_MOTOR_SINE:inst3|ampl_int[9]                                          ; 3       ;
 ; AC_MOTOR_SINE:inst3|ampl_int[10]                                         ; 3       ;
-; AC_MOTOR_CONTROL:inst4|FREQUENCY[8]                                      ; 15      ;
-; AC_MOTOR_CONTROL:inst4|FREQUENCY[9]                                      ; 14      ;
 ; AC_MOTOR_CONTROL:inst4|FREQUENCY[10]                                     ; 13      ;
 ; AC_MOTOR_CONTROL:inst4|FREQUENCY[11]                                     ; 12      ;
 ; AC_MOTOR_VECTOR_TIME:inst10|t_2_temp_2[8]                                ; 2       ;
@@ -5820,6 +5818,9 @@ Encoding Type:  One-Hot
 ; AC_MOTOR_SINE:inst3|freq_int[6]                                          ; 1       ;
 ; AC_MOTOR_SINE:inst3|freq_int[4]                                          ; 1       ;
 ; AC_MOTOR_SINE:inst3|freq_int[0]                                          ; 1       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[9]                                      ; 2       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[8]                                      ; 2       ;
+; AC_MOTOR_CONTROL:inst4|FREQUENCY[7]                                      ; 2       ;
 ; AC_MOTOR_CONTROL:inst4|FREQUENCY[6]                                      ; 2       ;
 ; AC_MOTOR_CONTROL:inst4|FREQUENCY[5]                                      ; 2       ;
 ; AC_MOTOR_CONTROL:inst4|FREQUENCY[4]                                      ; 2       ;
@@ -5849,8 +5850,7 @@ Encoding Type:  One-Hot
 ; AC_MOTOR_SINE_SECTOR:inst13|memory_neg[3]                                ; 120     ;
 ; AC_MOTOR_SINE_SECTOR:inst13|memory_neg[4]                                ; 125     ;
 ; AC_MOTOR_SINE_SECTOR:inst13|memory_neg[1]                                ; 145     ;
-; AC_MOTOR_SINE_SECTOR:inst13|memory_neg[6]                                ; 105     ;
-; Total number of inverted registers = 102*                                ;         ;
+; Total number of inverted registers = 103*                                ;         ;
 +--------------------------------------------------------------------------+---------+
 * Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
@@ -5873,82 +5873,82 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------+
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac3|index[3]                                                  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac2|index[3]                                                  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac1|index[8]                                                  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12|index[8]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|index[6]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|index[8]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|index[8]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|index[7]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[10]       ;
-; 3:1                ; 108 bits  ; 216 LEs       ; 108 LEs              ; 108 LEs                ; Yes        ; |MAX1000|SPI_HOST:spi_host|DATA_OUT[75]                                            ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|WDT:wdt|counter[14]                                                       ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|SEL_SPI_INPUT:sel_spi_input|counter[13]                                   ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_data_mosi[0]                                          ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|SPI_HOST:spi_host|spi_cmd_enable                                          ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|spi_clk_ctr[10]                                         ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_data_miso[6]                                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac2|index[5]                                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac1|index[11]                                                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12|index[10]       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|index[10]       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|index[4]        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|index[4]        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|index[10]       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[11]       ;
+; 3:1                ; 108 bits  ; 216 LEs       ; 108 LEs              ; 108 LEs                ; Yes        ; |MAX1000|SPI_HOST:spi_host|DATA_OUT[73]                                            ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|WDT:wdt|counter[8]                                                        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|SEL_SPI_INPUT:sel_spi_input|counter[7]                                    ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_data_mosi[10]                                         ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|SPI_HOST:spi_host|spi_cmd_read                                            ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|spi_clk_ctr[11]                                         ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_data_miso[7]                                          ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |MAX1000|SPI_HOST:spi_host|cmd[6]                                                  ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_cmd[6]                                                ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|i_cmd[7]                                                ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SWITCH_DELAY:inst14|delay_counter[4]                             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SWITCH_DELAY:inst17|delay_counter[4]                             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SWITCH_DELAY:inst16|delay_counter[1]                             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SWITCH_DELAY:inst17|delay_counter[6]                             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SWITCH_DELAY:inst16|delay_counter[4]                             ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|state[1]                                  ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|state[7]                                      ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|state[14]                                     ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|state[15]                                     ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|state[15]                                     ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|state[0]                                      ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|state[1]                                      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|state[3]                                      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|state[2]                                      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|state[8]                                      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|state[13]                                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|state[7]                                      ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|counter[4]                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|speed_temp[5]                             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |MAX1000|DC_MOTOR_RAMPE:dc_motor_rampe_antrieb|CCW                                 ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11|t_0_counter[11]                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11|t_7_counter[3]                             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |MAX1000|AC_MOTOR_DIRECTION:inst6|S2_OUT                                           ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11|t_2_counter[4]                             ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11|t_1_counter[12]                            ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_3[8]                                        ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_1[1]                                        ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_2[1]                                        ;
-; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac3|ctr_clk_delay[7]                                          ;
-; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac2|ctr_clk_delay[13]                                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|speed_temp[26]                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |MAX1000|DC_MOTOR_RAMPE:dc_motor_rampe_antrieb|CW                                  ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11|t_0_counter[4]                             ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11|t_1_counter[2]                             ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11|t_2_counter[0]                             ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11|t_7_counter[12]                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |MAX1000|AC_MOTOR_DIRECTION:inst6|S3_OUT                                           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11|U_7                                        ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_3[1]                                        ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_1[8]                                        ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; Yes        ; |MAX1000|AC_MOTOR_SINE:inst3|mem_index_2[8]                                        ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac3|ctr_clk_delay[5]                                          ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac2|ctr_clk_delay[7]                                          ;
 ; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |MAX1000|DAC_AD5061:dac1|ctr_clk_delay[3]                                          ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[4]  ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[11] ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[8]  ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[12] ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[2]  ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[11] ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:spi_cs_filter|ctr1[0]                                      ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[7]  ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[3]  ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[1]  ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[4]  ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[11] ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 15 LEs               ; 45 LEs                 ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|ctr_clk_spi[15] ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:spi_cs_filter|ctr1[2]                                      ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|DIG_INP_FILTER:spi_cs_filter|ctr0[3]                                      ;
-; 18:1               ; 32 bits   ; 384 LEs       ; 192 LEs              ; 192 LEs                ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|summe_mov_avg[8]                          ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr1[4]           ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr0[0]           ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr1[0]         ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr0[0]         ;
+; 18:1               ; 32 bits   ; 384 LEs       ; 192 LEs              ; 192 LEs                ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|summe_mov_avg[2]                          ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr1[1]           ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_cs|ctr0[2]           ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr1[1]         ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_mosi|ctr0[1]         ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr1[4]          ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |MAX1000|SPI_HOST:spi_host|SPI_INP_FILTER_HOST:spi_inp_filter_clk|ctr0[3]          ;
-; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|INP_FILTER:inp_filter|ctr1[1]             ;
-; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|INP_FILTER:inp_filter|ctr0[3]             ;
-; 9:1                ; 3 bits    ; 18 LEs        ; 15 LEs               ; 3 LEs                  ; Yes        ; |MAX1000|AC_MOTOR_SWITCH_CONTROL:inst12|S_1                                        ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |MAX1000|AC_MOTOR_VECTOR_CONTROL:inst11|U_2                                        ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[31]                             ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[21]                             ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[5]                              ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[12]                             ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[18]                             ;
-; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[28]                             ;
-; 9:1                ; 12 bits   ; 72 LEs        ; 24 LEs               ; 48 LEs                 ; Yes        ; |MAX1000|DC_MOTOR_RAMPE:dc_motor_rampe_antrieb|VALUE_OUT[10]                       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac3|index[0]                                                  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac2|index[1]                                                  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac1|index[0]                                                  ;
+; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|INP_FILTER:inp_filter|ctr1[5]             ;
+; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |MAX1000|DREHZAHLMESSUNG:drehzahlmessung|INP_FILTER:inp_filter|ctr0[1]             ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 15 LEs               ; 3 LEs                  ; Yes        ; |MAX1000|AC_MOTOR_SWITCH_CONTROL:inst12|S_2                                        ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|summe_mov_avg[12]                             ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|summe_mov_avg[15]                             ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|summe_mov_avg[30]                             ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|summe_mov_avg[16]                             ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|summe_mov_avg[30]                             ;
+; 10:1               ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|summe_mov_avg[14]                             ;
+; 9:1                ; 12 bits   ; 72 LEs        ; 24 LEs               ; 48 LEs                 ; Yes        ; |MAX1000|DC_MOTOR_RAMPE:dc_motor_rampe_antrieb|VALUE_OUT[6]                        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac3|index[2]                                                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac2|index[4]                                                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|DAC_AD5061:dac1|index[2]                                                  ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc6|ADC_LTC2313_12:adc_ltc2313_12|index[0]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|index[0]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc5|ADC_LTC2313_12:adc_ltc2313_12|index[3]        ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc4|ADC_LTC2313_12:adc_ltc2313_12|index[2]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|index[1]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|index[0]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[1]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc3|ADC_LTC2313_12:adc_ltc2313_12|index[3]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc2|ADC_LTC2313_12:adc_ltc2313_12|index[3]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |MAX1000|ADC_LTC2313_12_MOV_AVG:adc1|ADC_LTC2313_12:adc_ltc2313_12|index[0]        ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MAX1000|DAC_AD5061:dac3|state                                                     ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MAX1000|DAC_AD5061:dac2|state                                                     ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MAX1000|DAC_AD5061:dac1|state                                                     ;
@@ -7009,7 +7009,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div2 ;
+; Parameter Settings for Inferred Entity Instance: AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div1 ;
 +------------------------+----------------+----------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                               ;
 +------------------------+----------------+----------------------------------------------------+
@@ -7032,7 +7032,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div1 ;
+; Parameter Settings for Inferred Entity Instance: AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div2 ;
 +------------------------+----------------+----------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                               ;
 +------------------------+----------------+----------------------------------------------------+
@@ -7413,31 +7413,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 47                          ;
-; cycloneiii_ff         ; 3072                        ;
+; cycloneiii_ff         ; 3075                        ;
 ;     ENA               ; 1902                        ;
 ;     ENA SCLR          ; 172                         ;
 ;     ENA SLD           ; 16                          ;
 ;     SCLR              ; 44                          ;
-;     SLD               ; 1                           ;
-;     plain             ; 937                         ;
+;     SLD               ; 9                           ;
+;     plain             ; 932                         ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 6788                        ;
-;     arith             ; 2623                        ;
-;         2 data inputs ; 772                         ;
-;         3 data inputs ; 1851                        ;
-;     normal            ; 4165                        ;
-;         0 data inputs ; 48                          ;
+; cycloneiii_lcell_comb ; 6857                        ;
+;     arith             ; 2630                        ;
+;         2 data inputs ; 774                         ;
+;         3 data inputs ; 1856                        ;
+;     normal            ; 4227                        ;
+;         0 data inputs ; 49                          ;
 ;         1 data inputs ; 209                         ;
 ;         2 data inputs ; 1090                        ;
-;         3 data inputs ; 326                         ;
-;         4 data inputs ; 2492                        ;
+;         3 data inputs ; 391                         ;
+;         4 data inputs ; 2488                        ;
 ; cycloneiii_mac_mult   ; 7                           ;
 ; cycloneiii_mac_out    ; 7                           ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 45                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 55.80                       ;
-; Average LUT depth     ; 16.48                       ;
+; Average LUT depth     ; 16.39                       ;
 +-----------------------+-----------------------------+
 
 
@@ -7446,7 +7446,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:19     ;
+; Top            ; 00:00:31     ;
 +----------------+--------------+
 
 
@@ -7456,7 +7456,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Mon Aug 12 11:49:58 2019
+    Info: Processing started: Thu Aug 15 16:43:35 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MAX1000 -c MAX1000
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -7660,6 +7660,7 @@ Info (12128): Elaborating entity "AC_MOTOR_CONTROL" for hierarchy "AC_MOTOR_CONT
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(26): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 26
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(29): truncated value with size 32 to match size of target (8) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 29
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(30): truncated value with size 32 to match size of target (8) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 30
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(43): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 43
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(46): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 46
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_CONTROL.v(47): truncated value with size 32 to match size of target (8) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR/AC_MOTOR_CONTROL.v Line: 47
 Info (12128): Elaborating entity "AC_MOTOR_COMPARATOR" for hierarchy "AC_MOTOR_COMPARATOR:inst24"
@@ -7699,18 +7700,12 @@ Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(46)
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(47): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 47
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(48): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 48
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(56): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 56
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(58): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 58
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(59): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 59
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(60): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 60
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(61): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 61
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(62): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 62
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(63): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 63
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(64): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 64
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(66): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 66
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(67): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 67
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(68): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 68
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(69): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 69
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(70): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 70
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_CONTROL.v(71): truncated value with size 32 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_CONTROL.v Line: 71
 Info (12128): Elaborating entity "AC_MOTOR_SINE_SECTOR" for hierarchy "AC_MOTOR_SINE_SECTOR:inst13"
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE_SECTOR.v(26): truncated value with size 32 to match size of target (13) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_SINE_SECTOR.v Line: 26
 Warning (10230): Verilog HDL assignment warning at AC_MOTOR_SINE_SECTOR.v(32): truncated value with size 32 to match size of target (9) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_SINE_SECTOR.v Line: 32
@@ -7722,11 +7717,11 @@ Warning (10030): Net "sine.data_a" at AC_MOTOR_SINE_SECTOR.v(23) has no driver o
 Warning (10030): Net "sine.waddr_a" at AC_MOTOR_SINE_SECTOR.v(23) has no driver or initial value, using a default initial value '0' File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_SINE_SECTOR.v Line: 23
 Warning (10030): Net "sine.we_a" at AC_MOTOR_SINE_SECTOR.v(23) has no driver or initial value, using a default initial value '0' File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_SINE_SECTOR.v Line: 23
 Info (12128): Elaborating entity "AC_MOTOR_VECTOR_TIME" for hierarchy "AC_MOTOR_VECTOR_TIME:inst10"
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_TIME.v(44): truncated value with size 32 to match size of target (27) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 44
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_TIME.v(65): truncated value with size 39 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 65
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_TIME.v(66): truncated value with size 39 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 66
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_TIME.v(67): truncated value with size 39 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 67
-Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_TIME.v(68): truncated value with size 39 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 68
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_TIME.v(45): truncated value with size 32 to match size of target (27) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 45
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_TIME.v(72): truncated value with size 39 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 72
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_TIME.v(73): truncated value with size 39 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 73
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_TIME.v(74): truncated value with size 39 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 74
+Warning (10230): Verilog HDL assignment warning at AC_MOTOR_VECTOR_TIME.v(75): truncated value with size 39 to match size of target (15) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 75
 Info (12128): Elaborating entity "DC_MOTOR_ANTRIEB" for hierarchy "DC_MOTOR_ANTRIEB:dc_motor_antrieb"
 Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(67): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/DC_MOTOR/DC_MOTOR.v Line: 67
 Warning (10230): Verilog HDL assignment warning at DC_MOTOR.v(70): truncated value with size 32 to match size of target (12) File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/DC_MOTOR/DC_MOTOR.v Line: 70
@@ -7778,14 +7773,14 @@ Info (278001): Inferred 12 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult3" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_TRIANGLE/AC_MOTOR_SINE.v Line: 109
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult4" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_TRIANGLE/AC_MOTOR_SINE.v Line: 110
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult2" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_TRIANGLE/AC_MOTOR_SINE.v Line: 104
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Div0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 65
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Div2" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 67
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Div1" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 66
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Div0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 72
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Div1" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 73
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Div2" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 74
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_TRIANGLE/AC_MOTOR_SINE.v Line: 102
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_SINE:inst3|Mult1" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_TRIANGLE/AC_MOTOR_SINE.v Line: 103
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Mult0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 44
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Mult2" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 49
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Mult1" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 48
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Mult0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 45
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Mult2" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 55
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AC_MOTOR_VECTOR_TIME:inst10|Mult1" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 52
 Info (12130): Elaborated megafunction instantiation "AC_MOTOR_SINE_SECTOR:inst13|altsyncram:sine_rtl_0"
 Info (12133): Instantiated megafunction "AC_MOTOR_SINE_SECTOR:inst13|altsyncram:sine_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -7867,8 +7862,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
 Info (12131): Elaborated megafunction instantiation "AC_MOTOR_SINE:inst3|lpm_mult:Mult2|multcore:mult_core|mul_lfrg:$00030", which is child of megafunction instantiation "AC_MOTOR_SINE:inst3|lpm_mult:Mult2" File: /home/mschwarz/fhnw/software/quartus/quartus/libraries/megafunctions/multcore.tdf Line: 958
 Info (12131): Elaborated megafunction instantiation "AC_MOTOR_SINE:inst3|lpm_mult:Mult2|multcore:mult_core|mul_lfrg:$00032", which is child of megafunction instantiation "AC_MOTOR_SINE:inst3|lpm_mult:Mult2" File: /home/mschwarz/fhnw/software/quartus/quartus/libraries/megafunctions/multcore.tdf Line: 970
 Info (12131): Elaborated megafunction instantiation "AC_MOTOR_SINE:inst3|lpm_mult:Mult2|altshift:external_latency_ffs", which is child of megafunction instantiation "AC_MOTOR_SINE:inst3|lpm_mult:Mult2" File: /home/mschwarz/fhnw/software/quartus/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
-Info (12130): Elaborated megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 65
-Info (12133): Instantiated megafunction "AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div0" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 65
+Info (12130): Elaborated megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 72
+Info (12133): Instantiated megafunction "AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div0" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 72
     Info (12134): Parameter "LPM_WIDTHN" = "39"
     Info (12134): Parameter "LPM_WIDTHD" = "25"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -7883,8 +7878,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_t3c File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/add_sub_t3c.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
     Info (12023): Found entity 1: add_sub_u3c File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/add_sub_u3c.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div2" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 67
-Info (12133): Instantiated megafunction "AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div2" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 67
+Info (12130): Elaborated megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div1" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 73
+Info (12133): Instantiated megafunction "AC_MOTOR_VECTOR_TIME:inst10|lpm_divide:Div1" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 73
     Info (12134): Parameter "LPM_WIDTHN" = "39"
     Info (12134): Parameter "LPM_WIDTHD" = "24"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -7895,8 +7890,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_hnh File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/sign_div_unsign_hnh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_cle.tdf
     Info (12023): Found entity 1: alt_u_div_cle File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/alt_u_div_cle.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 44
-Info (12133): Instantiated megafunction "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult0" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 44
+Info (12130): Elaborated megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult0" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 45
+Info (12133): Instantiated megafunction "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult0" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 45
     Info (12134): Parameter "LPM_WIDTHA" = "15"
     Info (12134): Parameter "LPM_WIDTHB" = "12"
     Info (12134): Parameter "LPM_WIDTHP" = "27"
@@ -7916,8 +7911,8 @@ Info (12131): Elaborated megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_drg.tdf
     Info (12023): Found entity 1: add_sub_drg File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/add_sub_drg.tdf Line: 22
 Info (12131): Elaborated megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult0" File: /home/mschwarz/fhnw/software/quartus/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
-Info (12130): Elaborated megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult2" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 49
-Info (12133): Instantiated megafunction "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult2" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 49
+Info (12130): Elaborated megafunction instantiation "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult2" File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 55
+Info (12133): Instantiated megafunction "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mult2" with the following parameter: File: /home/mschwarz/fhnw/pro6/pro6_fpga/src/AC_MOTOR_VECTOR/AC_MOTOR_VECTOR_TIME.v Line: 55
     Info (12134): Parameter "LPM_WIDTHA" = "27"
     Info (12134): Parameter "LPM_WIDTHB" = "12"
     Info (12134): Parameter "LPM_WIDTHP" = "39"
@@ -7929,8 +7924,8 @@ Info (12133): Instantiated megafunction "AC_MOTOR_VECTOR_TIME:inst10|lpm_mult:Mu
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_1os.tdf
     Info (12023): Found entity 1: mult_1os File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/mult_1os.tdf Line: 30
-Info (13014): Ignored 66 buffer(s)
-    Info (13019): Ignored 66 SOFT buffer(s)
+Info (13014): Ignored 108 buffer(s)
+    Info (13019): Ignored 108 SOFT buffer(s)
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LED3" is stuck at GND
     Warning (13410): Pin "LED4" is stuck at GND
@@ -7950,18 +7945,18 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (15899): PLL "PLL:pll|altpll:altpll_component|PLL_altpll2:auto_generated|pll1" has parameters clk3_multiply_by and clk3_divide_by specified but port CLK[3] is not connected File: /home/mschwarz/fhnw/pro6/pro6_fpga/db/PLL_altpll2.v Line: 43
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "U28_OUT"
-Info (21057): Implemented 8507 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 8549 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 8400 logic cells
+    Info (21061): Implemented 8442 logic cells
     Info (21064): Implemented 45 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 14 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 138 warnings
-    Info: Peak virtual memory: 1277 megabytes
-    Info: Processing ended: Mon Aug 12 11:50:37 2019
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:00:56
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 133 warnings
+    Info: Peak virtual memory: 1274 megabytes
+    Info: Processing ended: Thu Aug 15 16:44:36 2019
+    Info: Elapsed time: 00:01:01
+    Info: Total CPU time (on all processors): 00:01:25
 
 
 +------------------------------------------+
